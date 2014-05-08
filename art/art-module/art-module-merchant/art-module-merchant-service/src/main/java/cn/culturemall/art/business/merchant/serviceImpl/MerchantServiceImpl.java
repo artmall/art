@@ -111,4 +111,22 @@ public class MerchantServiceImpl implements MerchantService {
 		return true;
 	}
 
+	@Override
+	public ReturnData<Merchant> findMerchantById(Long merchantId) {
+		ReturnData<Merchant> returnData = new ReturnData<Merchant>();
+		if (merchantId == null) {
+			returnData.setReturnCode(ReturnCode.PARAM_ERROR.getCode());
+			return returnData;
+		}
+		try {
+			Merchant merchant = merchantDao.findById(merchantId);
+			returnData.setResultData(merchant);
+			returnData.setReturnCode(ReturnCode.SUCCESS.getCode());
+		} catch (Exception e) {
+			log.error("service exception", e);
+			returnData.setReturnCode(ReturnCode.EXCEPTION.getCode());
+		}
+		return returnData;
+	}
+
 }
