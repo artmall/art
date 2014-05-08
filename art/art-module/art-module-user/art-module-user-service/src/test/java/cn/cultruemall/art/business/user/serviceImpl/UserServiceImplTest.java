@@ -28,25 +28,30 @@ public class UserServiceImplTest {
 	@Autowired
 	private UserService userService;
 
-	@Test
-	public void testSaveUser() {
+	private ReturnData<User> save() {
 		User user = new User();
 		user.setLogin_name("登陆名");
 		user.setNickname("昵称");
 		user.setPassword("123456");
 		user.setReal_name("测试真实姓名");
 		user.setSex(GENDER.FEMALE);
-
 		ReturnData<User> returnData = userService.saveUser(user);
-
 		if (returnData.getReturnCode() != ReturnCode.SUCCESS.getCode()) {
 			Assert.fail();
 		}
+		return returnData;
+	}
+
+	@Test
+	public void testSaveUser() {
+		this.save();
 	}
 
 	@Test
 	public void testDeleteUserById() {
-		ReturnData<VOID> returnData = userService.deleteUserById(1L);
+		User user = this.save().getResultData();
+		ReturnData<VOID> returnData = userService.deleteUserById(user
+				.getUser_id());
 		if (returnData.getReturnCode() != ReturnCode.SUCCESS.getCode()) {
 			Assert.fail();
 		}
@@ -54,8 +59,8 @@ public class UserServiceImplTest {
 
 	@Test
 	public void testUpdateUser() {
-		User user = new User();
-		user.setUser_id(2L);
+		User user = this.save().getResultData();
+		user.setUser_id(user.getUser_id());
 		user.setLogin_name("登陆名1");
 		user.setNickname("昵称1");
 		user.setPassword("1234561");
@@ -69,8 +74,13 @@ public class UserServiceImplTest {
 
 	@Test
 	public void testFindUserById() {
-		ReturnData<User> returnData = userService.findUserById(2L);
+		User user = this.save().getResultData();
+		ReturnData<User> returnData = userService.findUserById(user
+				.getUser_id());
 		if (returnData.getReturnCode() != ReturnCode.SUCCESS.getCode()) {
+			Assert.fail();
+		}
+		if (returnData.getResultData() == null) {
 			Assert.fail();
 		}
 	}
