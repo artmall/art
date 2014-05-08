@@ -76,4 +76,12 @@ public class MerchantServiceImplTest {
 		}
 	}
 
+	@Test
+	public void testFindMerchantById() {
+		ReturnData<Merchant> returnData = merchantService.findMerchantById(3L);
+		if (returnData.getReturnCode() != ReturnCode.SUCCESS.getCode()) {
+			Assert.fail();
+		}
+	}
+
 }
