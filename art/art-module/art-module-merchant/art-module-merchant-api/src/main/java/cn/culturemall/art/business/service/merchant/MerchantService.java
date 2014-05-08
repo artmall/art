@@ -1,6 +1,6 @@
-package cn.culturemall.art.business.merchant.service;
+package cn.culturemall.art.business.service.merchant;
 
-import cn.culturemall.art.business.merchant.domain.Merchant;
+import cn.culturemall.art.business.domain.merchant.Merchant;
 import cn.culturemall.art.common.service.ReturnData;
 import cn.culturemall.art.common.service.VOID;
 

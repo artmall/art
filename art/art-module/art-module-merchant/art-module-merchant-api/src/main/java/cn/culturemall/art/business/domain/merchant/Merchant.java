@@ -1,4 +1,4 @@
-package cn.culturemall.art.business.merchant.domain;
+package cn.culturemall.art.business.domain.merchant;
 
 import cn.culturemall.art.common.domain.DomainObject;
 import cn.culturemall.art.common.enums.GENDER;
