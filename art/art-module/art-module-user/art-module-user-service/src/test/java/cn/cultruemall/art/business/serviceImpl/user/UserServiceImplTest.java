@@ -29,7 +29,7 @@ public class UserServiceImplTest {
 	private UserService userService;
 
 	private ReturnData<User> save() {
-		User user = new User(); 
+		User user = new User();  
 		user.setLogin_name("登陆名");
 		user.setNickname("昵称");
 		user.setPassword("123456");
