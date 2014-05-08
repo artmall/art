@@ -2,7 +2,7 @@ package cn.culturemall.art.business.service.user;
 
 import java.util.List;
 
-import cn.culturemall.art.business.user.domain.User;
+import cn.culturemall.art.business.domain.user.User;
 import cn.culturemall.art.common.service.ReturnData;
 import cn.culturemall.art.common.service.ReturnPageData;
 import cn.culturemall.art.common.service.VOID;
