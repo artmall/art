@@ -1,4 +1,4 @@
-package cn.culturemall.art.business.user.serviceImpl;
+package cn.culturemall.art.business.serviceImpl.user;
 
 import java.util.List;
 
@@ -7,9 +7,9 @@ import org.apache.commons.logging.LogFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import cn.culturemall.art.business.user.dao.UserDao;
-import cn.culturemall.art.business.user.domain.User;
-import cn.culturemall.art.business.user.service.UserService;
+import cn.culturemall.art.business.dao.user.UserDao;
+import cn.culturemall.art.business.domain.user.User;
+import cn.culturemall.art.business.service.user.UserService;
 import cn.culturemall.art.common.service.ReturnCode;
 import cn.culturemall.art.common.service.ReturnData;
 import cn.culturemall.art.common.service.ReturnPageData;

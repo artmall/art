@@ -1,10 +1,10 @@
-package cn.culturemall.art.business.user.dao;
+package cn.culturemall.art.business.dao.user;
 
 import java.util.List;
 
 import org.apache.ibatis.annotations.Param;
 
-import cn.culturemall.art.business.user.domain.User;
+import cn.culturemall.art.business.domain.user.User;
 import cn.culturemall.art.common.dao.CrudDao;
 
 public interface UserDao extends CrudDao<Long, User> {
