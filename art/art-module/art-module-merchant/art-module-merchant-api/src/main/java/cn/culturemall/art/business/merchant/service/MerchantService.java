@@ -12,4 +12,6 @@ public interface MerchantService {
 
 	ReturnData<VOID> updateMerchant(Merchant merchant);
 
+	ReturnData<Merchant> findMerchantById(Long merchantId);
+
 }
