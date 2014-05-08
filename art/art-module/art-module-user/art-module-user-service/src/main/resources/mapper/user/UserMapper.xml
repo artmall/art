@@ -2,7 +2,7 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
 "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
-<mapper namespace="cn.culturemall.art.business.user.dao.UserDao">
+<mapper namespace="cn.culturemall.art.business.dao.user.UserDao">
 
 	<insert id="save" useGeneratedKeys="true" keyProperty="user_id">
 		insert into users (login_name, password, nickname, real_name, sex) values (#{login_name}, #{password}, #{nickname}, #{real_name}, #{sex})

@@ -17,7 +17,7 @@
 		http://www.springframework.org/schema/lang http://www.springframework.org/schema/lang/spring-lang-3.2.xsd
 		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-3.2.xsd">
 	
-	<context:component-scan base-package="cn.culturemall.art.business.user.serviceImpl" />
+	<context:component-scan base-package="cn.culturemall.art.business.serviceImpl" />
 	
 	<bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource" destroy-method="close">
 		<property name="driverClass" value="com.mysql.jdbc.Driver"/>
@@ -41,12 +41,12 @@
   	<bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
   		<property name="dataSource" ref="dataSource" />
   		<property name="mapperLocations" value="classpath*:mapper/**/*.xml" />
-  		<property name="typeAliasesPackage" value="cn.culturemall.art.business.user.domain" />
+  		<property name="typeAliasesPackage" value="cn.culturemall.art.business.domain" />
   		<property name="typeHandlersPackage" value="cn.culturemall.art.common.typeHanlder"/>
 	</bean>
 	
 	<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
-  		<property name="basePackage" value="cn.culturemall.art.business.user.dao" />
+  		<property name="basePackage" value="cn.culturemall.art.business.dao" />
 	</bean>
 	
 	<bean id="userTxManager"
