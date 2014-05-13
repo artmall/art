@@ -30,6 +30,17 @@ public enum PRODUCT_STATUS {
 		this.name = name;
 	}
 	
-	
+	public static PRODUCT_STATUS valueOf(int code) {
+		switch (code) {
+		case 0:
+			return OFF_SHELVES;
+		case 1:
+			return WAIT_SHELVES;
+		case 2:
+			return SHELVES;
+		default:
+			return null;
+		}
+	}
     
 }
