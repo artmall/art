@@ -29,4 +29,15 @@ public enum TRADE_MODEL {
 		this.name = name;
 	}
 	
+	public static TRADE_MODEL valueOf(int code) {
+		switch (code) {
+		case 0:
+			return NORMAL_MODEL;
+		case 1:
+			return AUCTION_MODEL;
+		default:
+			return null;
+		}
+	}
+	
 }
