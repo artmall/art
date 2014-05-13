@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="cn.culturemall.art.business.dao.merchant.ProductDao">
+
+	<insert id="save" useGeneratedKeys="true" keyProperty="product_id">
+		insert into product 
+		(categroy_id, merchant_id, club_id, product_name, product_price, storage_num, sell_num, status, create_time, keyword, short_desc, detail_desc, update_time, sort_order, is_freeze, trade_model) 
+		values (#{categroy_id}, #{merchant_id}, #{club_id}, #{product_name}, #{product_price}, #{storage_num}, #{sell_num}, #{status}, #{create_time}, #{keyword}, #{short_desc}, #{detail_desc}, #{update_time}, #{sort_order}, #{is_freeze}, #{trade_model})
+	</insert>
+	
+	<delete id="deleteById" parameterType="long">
+		delete from product where product_id = #{product_id}
+	</delete>
+	
+	<update id="update">
+		update product
+		<set>
+			<if test="categroy_id != null">club_id = #{club_id},</if>
+			<if test="merchant_id != null">nickname = #{nickname},</if>
+			<if test="club_id != null">login_name = #{login_name},</if>
+			<if test="product_name != null">password = #{password},</if>
+			<if test="product_price != null">real_name = #{real_name},</if>
+			<if test="storage_num != null">telephone = #{telephone},</if>
+			<if test="sell_num != null">mobile_phone = #{mobile_phone},</if>
+			<if test="status != null">emall = #{emall},</if>
+			<if test="create_time != null">identity_card = #{identity_card},</if>
+			<if test="keyword != null">sex = #{sex},</if>
+			<if test="short_desc != null">short_desc = #{short_desc},</if>
+			<if test="detail_desc != null">detail_desc = #{detail_desc},</if>
+			<if test="update_time != null">update_time = #{update_time},</if>
+			<if test="sort_order != null">sort_order = #{sort_order},</if>
+			<if test="is_freeze != null">is_freeze = #{is_freeze},</if>
+			<if test="trade_model != null">trade_model = #{trade_model},</if>
+		</set>
+		where product_id = #{product_id}
+	</update>
+	
+	<select id="findById" parameterType="long" resultType="Product">
+		select * from product where product_id = #{product_id}
+	</select>
+
+</mapper>
