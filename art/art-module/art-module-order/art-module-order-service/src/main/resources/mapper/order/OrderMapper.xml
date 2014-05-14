@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="cn.culturemall.art.business.dao.order.OrderDao">
+
+	<insert id="save" useGeneratedKeys="true" keyProperty="order_id">
+		insert into orders 
+		(
+		order_code, 
+		product_id, 
+		merchant_id, 
+		user_id, 
+		order_status, 
+		trade_mode, 
+		is_pay, 
+		pay_mode, 
+		amount, 
+		pay_time, 
+		last_pay_time, 
+		create_time
+		) 
+		values 
+		(
+		#{order_code}, 
+		#{product_id}, 
+		#{merchant_id}, 
+		#{user_id}, 
+		#{order_status}, 
+		#{trade_mode}, 
+		#{is_pay}, 
+		#{pay_mode}, 
+		#{amount}, 
+		#{pay_time}, 
+		#{last_pay_time}, 
+		#{create_time}
+		)
+	</insert>
+	
+	<delete id="deleteById" parameterType="long">
+		delete from orders where order_id = #{order_id}
+	</delete>
+
+	<update id="update">
+		update orders
+		<set>
+			<if test="order_code != null">order_code = #{order_code},</if>
+			<if test="product_id != null">product_id = #{product_id},</if>
+			<if test="merchant_id != null">merchant_id = #{merchant_id},</if>
+			<if test="user_id != null">user_id = #{user_id},</if>
+			<if test="order_status != null">order_status = #{order_status},</if>
+			<if test="trade_mode != null">trade_mode = #{trade_mode},</if>
+			<if test="is_pay != null">is_pay = #{is_pay},</if>
+			<if test="pay_mode != null">pay_mode = #{pay_mode},</if>
+			<if test="amount != null">amount = #{amount},</if>
+			<if test="pay_time != null">pay_time = #{pay_time},</if>
+			<if test="last_pay_time != null">last_pay_time = #{last_pay_time},</if>
+			<if test="create_time != null">create_time = #{create_time},</if>
+		</set>
+		where order_id = #{order_id}
+	</update>
+	
+	<select id="findById" parameterType="long" resultType="Order">
+		select * from orders where order_id = #{order_id}
+	</select>
+
+</mapper>
