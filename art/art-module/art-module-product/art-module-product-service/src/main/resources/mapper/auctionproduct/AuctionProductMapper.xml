@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="cn.culturemall.art.business.dao.auctionproduct.AuctionProductDao">
+
+	<insert id="save" useGeneratedKeys="true" keyProperty="auction_id">
+		insert into auction_product 
+		(product_id, merchant_id, club_id, user_id, start_time, end_time, current_user_id, current_price, lowest_price, step_price, times) 
+		values (#{product_id}, #{merchant_id}, #{club_id}, #{user_id}, #{start_time}, #{end_time}, #{current_user_id}, #{current_price}, #{lowest_price}, #{step_price}, #{times})
+	</insert>
+	
+	<delete id="deleteById" parameterType="long">
+		delete from auction_product where auction_id = #{auction_id}
+	</delete>
+	
+	<update id="update">
+		update auction_product
+		<set>
+			<if test="product_id != null">product_id = #{product_id},</if>
+			<if test="merchant_id != null">merchant_id = #{merchant_id},</if>
+			<if test="club_id != null">club_id = #{club_id},</if>
+			<if test="user_id != null">user_id = #{user_id},</if>
+			<if test="start_time != null">start_time = #{start_time},</if>
+			<if test="end_time != null">end_time = #{end_time},</if>
+			<if test="current_user_id != null">current_user_id = #{current_user_id},</if>
+			<if test="current_price != null">current_price = #{current_price},</if>
+			<if test="lowest_price != null">lowest_price = #{lowest_price},</if>
+			<if test="step_price != null">step_price = #{step_price},</if>
+			<if test="times != null">times = #{times},</if>
+		</set>
+		where auction_id = #{auction_id}
+	</update>
+	
+	<select id="findById" parameterType="long" resultType="AuctionProduct">
+		select * from auction_product where auction_id = #{auction_id}
+	</select>
+
+</mapper>
