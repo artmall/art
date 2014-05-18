@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+#parse("common/common.html")
+</head>
+<body>
+
+	$!{user.username}
+	<br/>
+	$!{user.password}
+	<br/>
+	$!{user.gender.name}($!{user.gender.code})
+	
+	<br/>
+	$!{paramMap.currentTime}
+	<br/>
+	$!{paramMap.b1}
+	<br/>
+	$!{paramMap.b2}
+	<br/>
+	#if(${paramMap.b1})
+	TRUE
+	#end
+	#if(${paramMap.b2})
+	FALSE
+	#end
+	
+	<br/>
+	<table>
+		<thead>
+			<td>用户名</td><td>密码</td>
+		</thead>
+		#foreach($admin in $adminList)
+		<tr>
+			<td>$!{admin.username}</td>
+			<td>$!{admin.password}</td>
+		</tr>
+		#end
+	</table>
+
+</body>
+</html>
