@@ -1,6 +1,6 @@
 /*==============================================================*/
 /* DBMS name:      MySQL 5.0                                    */
-/* Created on:     2014/5/8 23:23:37                            */
+/* Created on:     2014/5/12 1:25:30                            */
 /*==============================================================*/
 
 
@@ -85,7 +85,7 @@ create table merchant
    password             varchar(50) not null,
    real_name            varchar(30) not null,
    telephone            varchar(20),
-   mobile_phone         int(20) not null,
+   mobile_phone         varchar(20) not null,
    emall                varchar(20) not null,
    identity_card        varchar(20) not null,
    sex                  tinyint(1) not null,
@@ -114,7 +114,7 @@ create table orders
    trade_mode           tinyint(1) not null comment '0：正常购买
             1：竞拍购买',
    is_pay               tinyint(1),
-   pay_mode             tinyint(1) not null comment '0：支付宝
+   pay_mode             tinyint(1) comment '0：支付宝
             1：银行',
    amount               double(11,2) not null,
    pay_time             datetime,
@@ -134,7 +134,6 @@ create table product
    merchant_id          bigint,
    club_id              bigint not null,
    product_name         varchar(20) not null,
-   category_id          tinyint(1) not null,
    product_price        double(11,2) not null,
    storage_num          int(5),
    sell_num             int(6),
