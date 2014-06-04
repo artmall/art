@@ -1,0 +1,9 @@
+.in {
+	MARGIN: 0px auto; WIDTH: 910px
+}
+.pbox {
+	POSITION: relative
+}
+.box {
+	WIDTH: 910px; HEIGHT: 310px; VISIBILITY: visible; OVERFLOW: hidden
+}

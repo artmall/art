@@ -1,0 +1,1761 @@
+@charset "utf-8";
+/*------------------------------------------------
+Styles Create: 2011-5-7     Author: MR Li JiaXiong
+Styles Last Update: 2011-11-28
+*Filename:                    layout.css
+*Version:                     1.0.0
+*Website:                     良票前台
+*Page width:                  960px
+------------------------------------------------*/
+/*城市及类型选择*/
+.sift-box{ margin: 10px 0 0 0; position:relative;padding-bottom:13px;zoom:1; }
+.sift { border: 2px solid #f5f5f5;padding:10px 20px; border-top-color:#c3d600; clear:both; overflow:hidden;zoom:1;}
+.sift ul{/*overflow:hidden; clear:both;zoom:1px;*/}
+.sift ul li{display:block; clear:both;zoom:1; overflow:hidden;margin-bottom:2px;}
+.sift ul li strong{ font-weight: bold; float: left; font-size:16px; color:#7e7e7e; height:30px; line-height:30px; }
+.sift ul li ol {width:865px;overflow: hidden; zoom: 1; float:left;*width:855px;}
+.sift ul li ol.last { border-bottom: none;}
+.sift ul li ol li { height:30px; line-height:30px; float: left; clear:none; padding: 0 5px 0 4px;/* 保留width:100%;max-width:80px;_width:expression(document.body.clientWidth > 600 ? "80px" : "auto");*/display:inline-block;}
+/*保留.sift ul li.cg ol li{width:100%;max-width:110px;_width:expression(document.body.clientWidth > 600 ? "110px" : "auto");display:inline-block;}*/
+.sift ul li ol li a {height: 20px; line-height:20px;_height: 20px;_line-height:20px; font-size:14px; padding:5px 8px; color: #666; _display:block; float:left; white-space: nowrap;}
+.sift ul li ol li a:hover {color: #fff!important;background-color: #014715;}
+.sift ul li ol li a.on { background-color: #014715; color: #fff;}
+.sift ul li ol li a.on:hover { color: #fff!important;}
+.sift ul li.slide-hd{ display:none;}
+.slide{width:92px; height:15px; display:block; position:absolute; bottom:0;left:438px; background:url(http://dui.damai.cn/secondhand_ticket/img/slide_down.png) no-repeat 0 -15px;}
+.slie-b{background:url(http://dui.damai.cn/secondhand_ticket/img/slide_down.png) no-repeat 0 0;}
+.container-1 {margin: 30px 0 0 0;}
+.container-2 {margin:10px 0 0 0; clear: both; overflow: hidden;zoom:1;}
+.city-item-slet-pt{ position: relative;}
+.container-2 .fl-270,.container-2 .fr-270 { width: 270px; float: left;}
+.container-2 .fr-680,.container-2 .fl-680 { width: 680px; float: right;}
+.container-2 .fl-680 {float: left; position:relative;}
+.container-2 .fl-670{ width: 670px;}
+.container-2 .fr-270 {float: right;}
+.search-info { background-color: #f5f5f5; color: #666; height: 30px; line-height: 30px; padding: 0 10px;}
+.search-info span { color: #00651c;}
+.container-2 .my-nav { width: 198px; float: left;border: 1px solid #ccc; }
+.container-2 .my-main { width: 750px; float: right;z-index:400;}
+.my-nav h2 { height: 38px; border-bottom: 1px solid #ccc; background: #fbfbfb; line-height: 38px; font-size:16px; font-family:\5fae\8f6f\96c5\9ed1; padding: 0 10px 0 20px;color: #595959 ;position:relative;}
+.my-nav h2 a{color:#015B1A !important;}
+.my-nav ul{padding:0 10px 5px 10px;}
+.my-nav ul li { height: 30px; line-height: 30px; border-bottom: 1px dashed #ccc;}
+.bdr{ border-bottom:none !important;}
+.my-nav ul li a { display: block; height: 30px; padding: 0 0 0 35px; color:#666; background:#ffffff url(http://dui.damai.cn/secondhand_ticket/images/self-tip.gif) no-repeat 24px center;}
+.my-nav ul li a:hover,.my-nav ul li a.on {text-decoration: none; color:#02581b !important;}
+.my-main .here { margin: 0; height: 32px; line-height: 32px;}
+.my-main .here a { color: #555555;}
+.my-con { border: 1px solid #f5f5f5; margin: 10px 0 0 0; background-color: #fff; padding: 10px;}
+.my-con-1-m {border: 1px solid #ebeff4; margin: 10px 0 0 0;}
+.my-con-1{ margin: 10px 0 75px 0;}
+.my-con-1-m h3 { border-bottom: 1px solid #ebeff4; background-color: #f3f3f3; color: #00651c; height: 30px; line-height: 30px; padding: 0 10px;}
+.my-con-1-m-con { padding: 10px 20px;}
+.my-con-1-m-con dl { overflow: hidden; zoom: 1; margin: 0 0 15px 0;}
+.my-con-1-m-con dt,.my-con-1-m-con dd{ float: left; line-height: 22px; color: #555; font-family:Verdana, Geneva, sans-serif;}
+.address_btn{padding:0 2px;width:50px;_margin-top:1px;color:#4b6789; height:22px;}
+.my-con-1-m-con dt { width: 72px; float: left; text-align: right;}
+.my-con-1-m-con dd{ letter-spacing:2px;}
+.my-con-1-m-con dt.w96 { width: 72px;}
+.my-con-1-m-con .input { width: 150px; float: left;}
+.my-con-1-m-con .input input { border: 1px solid #eaeaea; padding: 3px; width: 198px; height: 18px; line-height: 18px;}
+.my-con-1-m-con .file input{border: 1px solid #a0b7cb; padding: 3px;}
+.my-con-1-m-con .other { width: 200px; float: left;margin-left:72px;*margin-left:36px;_margin-left:24px;}
+.my-con-1-m-con .other-lwd{margin-left:72px;}
+.my-con-1-m-con .text { width: 250px; float: left; color: #999; line-height: 22px;}
+.my-con-1-m-con .button { clear: both; padding: 0 0 0 72px;}
+.my-con-1-m-con .text-v{vertical-align:middle;}
+.my-con-1-m-con .tips { padding: 0 0 10px 72px; color: #f60;}
+.my-con-1-m-con .textarea { width: 300px; float: left;}
+.my-con-1-m-con .textarea textarea { width: 280px; height: 50px; padding: 3px; border: 1px solid #eaeaea; resize: none;}
+.my-con-1-m-con .select {float: left; color: #999; line-height: 22px;}
+.w95{width:90px; height:20px; border:1px solid #eaeaea; padding-left: 5px; color: #555;}
+.w265{width:265px !important;}
+.select-rws{width:150px !important;}
+.my-con-1-m-con .checkbox { width: 50px; float: left; line-height: 22px;}
+.ico-numb{ display:inline-block;width:135px;height:24px;}
+.ico-mlt{height:24px;margin-left:10px;line-height:24px;}
+
+.my-con-2-m { border: 1px solid #ebeff4; margin: 10px 0 0 0;}
+.my-con-2-m h3 { height: 30px; border-bottom: 1px solid #ebeff4; background-color: #f3f3f3; line-height: 30px; padding: 0 10px; color: #666;}
+.my-con-2-m h3 span { color: #00651c; padding: 0 10px 0 0;}
+.my-con-2-m-con { padding: 10px; color: #666;}
+.my-con-2-m-con input.text { border: 1px solid #a0b7cb; padding: 3px; height: 14px; line-height: 14px; margin: 0 10px;}
+.my-con-2-m-con select { border: 1px solid #a0b7cb; padding: 1px; margin: 0 10px;}
+.my-con-2-m-con input.w240 { width: 240px;}
+.my-con-2-m-con input.w180 { width: 180px;}
+.my-con-2-m-con input.w150 { width: 150px;}
+.my-con-2-m-con input.w80 { width: 81px;}
+.my-con-2-m-con .express { overflow: hidden; zoom: 1;}
+.my-con-2-m-con .express li { width: 95px; float: left; margin: 0 0 10px 0;}
+.my-con-2-m-con .express li .checkbox span { color: #333;}
+.my-con-2-m-con .bank-account { overflow: auto; zoom: 1;}
+.my-con-2-m-con .bank-account li { width: 250px; float: left; margin: 0 0 10px 0;}
+.my-con .dl-1 { overflow: hidden; zoom: 1; border-bottom: 1px solid #fff; width: 720px; padding: 0 20px 5px 20px; margin: 0 0 2px 0; line-height: 30px; background-color:#f3f3f3;clear: both;}
+.my-con .dl-b{overflow: hidden; zoom: 1; border-bottom: 1px solid #fff; width: 85px;padding:5px; margin: 0 0 2px 0; line-height: 25px; background-color:#f3f3f3; float: left; height:152px;font-size:12px;    color: #999999;}
+.my-con .dl-b img{ border:5px solid #fff;height:75x;width:75px;}
+.pic-top{margin:8px 0 0 0;width:75px; height:75px; display:block;}
+.pic-top img{_margin:8px 0 0 0;}
+.my-con .dl-b .modify{*margin-top:5px;}
+.my-con .dl-c{ overflow: hidden; zoom: 1; border-bottom: 1px solid #fff; width: 620px; padding: 0 20px 5px 20px; margin: 0 0 2px 5px;height:33px; line-height: 33px; background-color:#f3f3f3; float:left;}
+.my-con .dl-1 dt,.my-con .dl-c dt { float: left; width:75px; color: #666; text-align: right;padding-top:3px;}
+.my-con .dl-1 dt{ text-align:right;}
+.my-con .dl-c dt,.my-con .dl-c dd { text-align:center;padding-top:3px;_padding-top:5px;}
+.my-con .dl-c .modify{ float: right; width: 50px;}
+.my-con .dl-c dd { text-align:left;}
+.my-con .dl-c dt{width:50px;}
+.my-con .dl-1 .detail, .my-con .dl-c .detail{ float: left; width: 260px; color: #999;padding:3px 20px 0 5px;}
+.my-con .dl-c .detail-br{padding:15px 0;height:18px;line-height:18px; }
+.detail-rwd{width:400px !important;}
+.my-con .dl-1 .detail-s,.my-con .dl-c .detail-s{ width: 100px;}
+.my-con .dl-1 .modify { float: right; width: 50px;padding-top:5px;}
+.my-con .dl-1 .other ,.my-con .dl-c .other { float: left; width: 100px; color: #999;}
+.address-box{ height:25px;margin: 15px 0 0 0; }
+.new-address{line-height:25px;width:430px; color:#aaaaaa;}
+.new-address strong{ color:#02581b;}
+
+.address-btn,.address-btn:hover,.resived{ background:url(http://dui.damai.cn/secondhand_ticket/img/receive.png) no-repeat;}
+.address-btn{width:100px; height:25px; background-position: 0 0; border:medium;margin:0 10px 0 0;padding-left:15px; color:#666 !important; _border:none;}
+.address-btn:hover{ background-position:0 -25px;}
+.my-con-1-nav {overflow: auto; zoom: 1; height: 31px; overflow: hidden; }
+.my-con-1-nav li { width: 90px; height: 31px; float: left;}
+.my-con-1-nav li a { display: block;height: 30px; text-align: center; line-height: 30px; color:#555;}
+.my-con-1-nav li a:hover { color: #00651c!important;}
+.my-con-1-nav li a.on{ color:#014a16; font-weight:bold;}
+.bdr-cor{ border-top:2px solid #c3d600;}
+.resived{ background-position: 55px -119px;}
+.my-add{ height:30px; background:#f7f7f7;}
+.my-add span{ line-height: 30px; height: 30px;padding-left:20px; color:#555; font-size:14px;}
+.my-add a{ color:#007423;padding:8px 25px 8px 0;}
+.add-hd{padding:1px; background:#fff; border-bottom:1px  solid #eaeaea; border-top:1px  solid #eaeaea;}
+.table-wrap-1 { margin: 10px 0 0 0; border: 1px solid #ebeff4; border-bottom: none;}
+.table-wrap-1-tips { color: #f60; height: 30px; line-height: 30px; padding: 0 10px;}
+.table-wrap-1 table td { border-bottom: 1px solid #ebeff4; padding: 10px; color: #666;}
+.table-wrap-1 table thead th { background-color: #f3f3f3; padding: 0 10px; height: 30px; font-weight: normal;}
+.table-wrap-1 table tbody tr:hover { background-color: #f8f8f8;}
+
+.my-main .query { border: 1px solid #ebeff4; background-color: #f8f8f8; margin: 10px 0 0 0; padding: 10px 10px 0 10px; *padding: 10px; position:relative;}
+.my-main .query-m { height: 25px; *height: 23px;color: #666;margin: 0 0 10px 0;}
+.query-m a{ color:#666;margin-right:15px;}
+.my-main .query-m input.text { border: 1px solid #a0b7cb; padding: 3px; height: 14px; line-height: 14px;}
+.my-main .query-m select { border: 1px solid #a0b7cb; padding: 1px; z-index:0;}
+.my-main .query-m input.w180 { width: 180px;}
+.my-main .query-m input.w80 { width: 81px;}
+.my-main .query-m input#from,.my-main .query-m input#to { background: #fff url(http://dui.damai.cn/secondhand_ticket/img/ico-4.gif) 69px 2px no-repeat;}
+
+.table-control { margin: 5px 0 0 0; padding: 0 0 0 10px;}
+.table-control a { color: #f60; padding: 0 15px}
+.table-control a:hover{color: #f60 !important; font-weight:bold;}
+.table-control .checkbox { padding: 0 10px 0 0;}
+.table-control .checkbox span { color: #f60;}
+
+.my-table-1 { margin: 5px 0 0 0; color: #666; line-height: 1.5;_border-right:1px solid #ebeff4;z-index:400;}
+.my-table-1 td,.my-table-1 th { border: 1px solid #ebeff4; padding: 5px 10px;}
+.my-table-1 td.td-wid{width:150px !important;overflow:hidden;}
+.ticket-storagerack{width:65px;height:25px;display:block;float:left;font-weight:normal;}
+.my-table-1 td.poster a { display: inline-block; width: 94px; height: 76px; padding: 1px; border: 1px solid #e3e3e3;}
+.my-table-1 td.poster a:hover { border-color: #00651c;}
+.my-table-1 td.poster a img { display: inline-block; width: 94px;}
+.my-table-1 td.overstriking{ font-family:微软雅黑;}
+.my-table-1 td.gary-c{ color:#cecece;}
+.my-table-1 th { background-color: #f3f3f3; font-weight: normal;}
+.my-table-1 th .checkbox span { color: #666;}
+.my-table-1 td .ib { display: inline-block;}
+.my-table-1 td .w150 { width: 150px;}
+.my-page { margin: 10px 0 0 0; text-align: right; color: #333; z-index:200;}
+.my-page a { margin: 0 0 0 5px}
+/*搜索页*/
+.clear{ clear:both; overflow:hidden;zoom:1;}
+.show-list-1 { overflow: hidden; zoom: 1; padding: 10px 0; border-bottom: 1px dashed #c1c1c1;}
+.noborder{ border:none;}
+.show-list-box{ border:1px solid #eaeaea;padding:0 10px 0 25px;}
+.show-list-1 .poster { width: 123px; height: 167px; float: left; overflow: hidden;}
+.show-list-1 .poster a { display: block; width: 123px; height: 167px;}
+.show-list-1 .poster a img { display: block; width: 123px; height: 167px;}
+.show-list-1 .detail-1 { width: 465px; float: left;margin:0 2px 0 15px;}
+.search-info-con1,.search-info-con2{ color: #666;}
+.search-info-con1{ border-bottom:2px solid #c3d600; height: 32px; line-height: 32px;}
+.top10{margin-top:10px;}
+.top5{margin-top:5px;}
+.search-info-con1 a{ height:32px;padding:0 16px; color:#555; font-size: 14px; display:inline-block; background:url(http://dui.damai.cn/secondhand_ticket/images/all-shopping.gif) no-repeat  left center; }
+.search-info-con1 a:hover{color:#014A16 !important;}
+.search-info-con1 span { color: #00651c;}
+.search-info-con2{ background-color: #f5f5f5; height:43px;padding:1px; border:1px solid #eaeaea;}
+.search-details-nav1{width:300px; float:left; line-height:43px;padding-left:20px;}
+.search-details-nav2{width:365px; float:right;}
+.sort{height:43px; float:left;}
+.sort li{ float:left;}
+.sort li a{ height:22px; line-height:22px;padding:0 30px 0 15px;display:inline-block;margin:10px 0; border:1px solid #eaeaea;color:#555555;}
+.sort .gray_up{ background: #fff url(http://dui.damai.cn/secondhand_ticket/img/gray_up.png)no-repeat 45px 5px; color:#555 !important;}
+.sort .gray_down{ background: #fff url(http://dui.damai.cn/secondhand_ticket/img/gray_down.png) no-repeat 45px 5px; color:#555 !important; }
+.sort .green_down{ background:#fff url(http://dui.damai.cn/secondhand_ticket/img/green_down.png) no-repeat 45px 5px !important;; color:#555 !important;}
+.sort .green_up{ background: #fff url(http://dui.damai.cn/secondhand_ticket/img/green_up.png) no-repeat 45px 5px; color:#555 !important;}
+.sort li a.c1{ border-right:none;}
+.search-con-find{margin: 10px 20px 9px 0; float:right;}
+.search-con{ height:22px; float: left; line-height:22px;/**padding:5px 0;*height:12px;*line-height:12px;*/width:115px; border:1px solid #eaeaea;margin-right:3px;padding-left:5px; color:#BBBBBB;}
+.search-find{ height:24px; float: left; line-height: 24px; display: block; border: medium none;padding:0 15px;*padding:0 5px; border:1px solid #eaeaea;background:url(http://dui.damai.cn/secondhand_ticket/images/search_find.gif);cursor:pointer;}
+.detail-con1{width:465px;_width:465px; position:relative; float:left;}
+.detail-1 h2{ font-size:14px; color:#555; font-family:宋体;line-height:35px;margin-top:-6px;width:350px;}
+.detail-1 h2 a{ color:#555;}
+.detail-1 p{ line-height:25px; color:#a3a3a3;width:350px;_width:360px;}
+.detail-1 p span,.detail-1 p span a{ color:#555;}
+.detail-1 p span strong.t2{padding-left:35px;}
+.detail-1 p span strong.t3{padding-left:25px;}
+.detail-1 p strong,.keyword strong{ color:#a3a3a3; font-weight:normal;}
+
+.discount{width:106px; height:89px; background:url(http://dui.damai.cn/secondhand_ticket/img/discount.png) no-repeat left top; position:absolute; right:-20px;top:20px;padding:15px 0 0 20px;}
+.discount span{ font-size:48px; color:#fff;font-family:\5fae\8f6f\96c5\9ed1;}
+.detail-con3{width:232px; float:right;margin-top:15px;overflow:hidden;_width:236px;}
+.ticket-infor{ border:1px solid #e6e6e6;padding:1px;width:216px;_height:76px;overflow:hidden;_width:217px;}
+.ticket-infor dl{width:85px;padding:10px 0 0 23px;_padding:10px 0 0 16px; background:#f7f7f7 url(http://dui.damai.cn/secondhand_ticket/img/center_line.jpg) no-repeat right center; float:left;}
+.ticket-infor dl.c1{ background:#f7f7f7;}
+.ticket-infor dl dt{ height:30px; line-height:30px !important; font-size:14px; color:#555; font-weight:bold;width:92px !important;}
+.ticket-infor dl dd{ height:35px; line-height:35px; color:#ff5a00; font-size:16px;font-family:\5fae\8f6f\96c5\9ed1;}
+.ticket-infor dl dd strong{ font-size:24px;}
+.ticket-infor2{margin-top:29px;_display:inline-block; height: 36px;}
+.ticket-infor2 a{width:105px; height:36px; display:block;text-indent:-9999px;margin-top:5px; float:left;}
+.ticket-infor2 a.b1{ background:url(http://dui.damai.cn/secondhand_ticket/img/buy1.gif) no-repeat left top;margin-right:10px;margin-top:0;}
+.ticket-infor2 a.b2{ background:url(http://dui.damai.cn/secondhand_ticket/img/sales.gif) no-repeat left top;margin-top:0;}
+.ticket-infor2 a.b1:hover,.ticket-infor2 a.b2:hover{ background-position:0 -36px;}
+/*轮播器开始*/
+.banner-indexes{width:960px;margin:10px auto 0 auto; z-index:800;}
+.banner{width:675px; float:left;}
+#banner_con { height: 250px;overflow: hidden;position: relative; width:675px;}
+#banner_con .imgs li {float: left; position:absolute;}
+/*这里是是轮播器按钮*/
+.sp {background: url(http://dui.damai.cn/secondhand_ticket/images/btn_black.jpg) no-repeat scroll 0 13px transparent;overflow: hidden;}
+.cl-btn{width:675px; height:36px; background:#f5f5f5; position:relative;}
+.cl-btn ul{ height:36px;}
+.cl-btn ul li{float:left;display:none; height:36px; line-height:36px;}
+.cl-btn ul li a{ float:left;}
+.cl-btn ol {width:100px;height:36px; position:absolute; right:0; bottom:0;}
+.cl-btn ol li {cursor: pointer;display: inline;float:left; height:20px;padding:8px 0;text-indent: -9999em; width: 20px;}
+.cl-btn ol li.on { background-image:url(http://dui.damai.cn/secondhand_ticket/images/btm_red.png);}
+.banner-h{ height:36px; line-height:36px;width:675px; float:left; text-indent:30px; font-size:14px; color:#555;}
+.banner-h a{color:#555; }
+
+.indexs-menu{width:270px; float:right;}
+.indexs-in{width:258px;border:1px solid #eaeaea;padding:5px; background:#f7f7f7;}
+.indexs-detail{}
+.indexs-detail tr td{width:127px; height:61px;}
+.indexs-d1,.indexs-d3,.indexs-d5{border-right:1px solid #eaeaea;}
+.indexs-d1,.indexs-d2,.indexs-d3,.indexs-d4{border-bottom:1px solid #eaeaea; }
+.indexs-detail tr td a{ width:127px; height:61px; display:block; background:url(http://dui.damai.cn/secondhand_ticket/img/indexs_menu.png) no-repeat 0 0;}
+.indexs-detail tr td.indexs-d2 a{ background-position:-128px 0;}
+.indexs-detail tr td.indexs-d3 a{ background-position:0 -61px;}
+.indexs-detail tr td.indexs-d4 a{ background-position:-128px -61px;}
+.indexs-detail tr td.indexs-d5 a{ background-position:-1px -122px;}
+.indexs-detail tr td.indexs-d6 a{ background-position:-128px -122px;}
+.statement{margin-top:10px;}
+.statement dl{ clear:both; overflow:hidden;zoom:1;}
+.statement dl dt,.statement dl dd{color:#7e7e7e;}
+.statement dl dt{height:30px; display:inline-block; float:left;margin-right:5px;}
+.lightgreen{ color:#C3D600 !important;}
+
+/*查看购物车*/
+/*flow*/
+.flow-line-9{margin: -27px auto 0;text-align: left;width: 672px;}
+.shoping-Vehicle-box{width:960px; height:78px;}
+.shoping-Vehicle-box ul{ height:40px;margin-top:10px;}
+.shoping-Vehicle-box ul li{ float:left; display:block;}
+.shoping-Vehicle-box ul li a{ display:block; padding:10px 5px;; font-size:18px; color:#fff;float:left;width:177px; height:20px; text-align:center;margin-right:5px; font-weight:bold;background:url(http://dui.damai.cn/secondhand_ticket/images/ensurehover.gif) no-repeat left 0;_background:url(http://dui.damai.cn/secondhand_ticket/images/ensurehover.gif) no-repeat left 2px;}
+.shoping-Vehicle-box ul li a span{ color:#ff0000;}
+.shoping-Vehicle-box ul li a.ensure,.shoping-Vehicle-box ul li a:hover{background:url(http://dui.damai.cn/secondhand_ticket/images/ensure2.gif) no-repeat left top;_background:url(http://dui.damai.cn/secondhand_ticket/images/ensure2.gif) no-repeat left 2px; color:#00651c !important; text-decoration:none;}
+.shoping-Vehicle-box ul li a.freedom{}
+.shoping-Vehicle-menu{width:958px; height:36px; background:#eeeeee; border-top:0;}
+.shoping-Vehicle-menu ol{ height:38px;width:650px; float:left;}
+.shoping-Vehicle-menu ol li{ display:block; float:left; line-height:38px;}
+.shoping-Vehicle-menu ol li input{margin:0 10px; vertical-align:middle;*margin-bottom:2px;_margin-top:7px;}
+.shoping-Vehicle-menu ol li a{ display:block; float:left; line-height:38px;padding-right:20px;}
+.shoping-Vehicle-menu p{width:130px; float: left; line-height:38px; color:#999;}
+.shoping-Vehicle-menu p strong{ color:#ff9900; font-size:14px; font-weight:normal; font-family:Tahoma, Geneva, sans-serif;}
+.shoping-Vehicle-menu a.pay{ height:18px; line-height:18px;width:38px; background:#ff9900; float:right;padding:10px 22px 10px 22px; font-size:16px; text-align:center; color:#fff; font-family:微软雅黑;}
+.shoping-Vehicle-menu a.pay:hover{ color:#fff !important; text-decoration:none; background:#FC0;}
+.shoping-Vehicle-list{margin:10px 0;}
+.shoping-Vehicle-in{width:132px; height:101px; float:left;border:1px solid #efefef; border-right:none;}
+.shoping-Vehicle-check{width:15px; height:55px; float:left;margin-top:46px;margin-left:10px;_display:inline;_margin-left:8px;}
+.shoping-Vehicle-in img{padding:1px; border:1px solid #e3e6db;width:94px; height:77px;margin:10px 0 0 5px;_display:inline;_margin-left:0px;}
+.shoping-Vehicle-list table{width:826px; text-align:left; float:left;}
+.shoping-Vehicle-list table td{height:33px;border:1px solid #efefef; text-indent:20px; color:#666;}
+.shoping-Vehicle-list table p{width:250px; height:33px; float:left; line-height:33px;}
+.star-box3{width:200px;float:left;padding:5px 0;_padding:7px 0 0 3px; height:20px; line-height:20px; text-indent:5px;}
+.star-box3 span{margin-right:0;_margin-right:5px; cursor:pointer;}
+.star-boxlr-g{font-weight:normal;padding:5px 0;_padding:7px 0 0 3px; height:20px; line-height:20px; display:inline-block; color:#00651c; float:left;_text-indent:17px;}
+.shoping-Vehicle-list table td span{ color:#00651c; line-height:33px;}
+.shoping-Vehicle-list table td span.txt-m{margin-left:1px;}
+.shoping-Vehicle-list table td b{ color:#ff663a;}
+.flow-line-3-6 div,.flow-line-3-5 div{width:0%;}
+/*详情页ultimate*/
+.item-details-box{ border:1px solid #eaeaea;padding:20px;margin-top:10px; background:url(http://dui.damai.cn/secondhand_ticket/img/hot_sales.png) no-repeat right top;}
+.item-details-lt{width:277px; float:left;}
+.details-img{width:277px; height:373px;}
+.details-img img{ display:block;width:277px; height:373px;}
+.share-into{ background:#f2f2f2 url(http://dui.damai.cn/secondhand_ticket/img/share_into.png) no-repeat left top; height:55px;width:277px;}
+.share-in{ height:31px;width:265px;padding:14px 0 10px 12px;}
+.share-go{width:75px; height:31px; line-height:31px; float:left;  font-family:\5fae\8f6f\96c5\9ed1;color:#8f8f8f; font-size:18px;}
+.share-in ul{width:190px; float:left;}
+.share-in ul li{ float:left; display:block;}
+.share-in ul li a{ height:32px;width:32px;display:block; float:left;_display:inline;margin-right:5px;}
+.share-in ul li a.sina{ background:url(http://dui.damai.cn/secondhand_ticket/img/sina.png) no-repeat left top;}
+.share-in ul li a.dou{ background:url(http://dui.damai.cn/secondhand_ticket/img/dou.png) no-repeat left top;}
+.share-in ul li a.add{background:url(http://dui.damai.cn/secondhand_ticket/img/add.png) no-repeat left top;margin-left:5px;}
+.share-in ul li a.number{width:32px;padding:5px 12px 5px 18px; height:22px;background:url(http://dui.damai.cn/secondhand_ticket/img/number.gif) no-repeat left top; color:#565656; font-size:16px; font-family:\5fae\8f6f\96c5\9ed1;}
+.item-details-rt{float:right;width:621px;}
+.item-details-rt h2{ height:62px; line-height:62px; font-size:24px; color:#555;  font-family:\5fae\8f6f\96c5\9ed1; margin-top: -22px;_margin-top: -20px;}
+.item-details-con{padding:10px 0 20px 0; border:1px solid #eaeaea; border-left:none; border-right:none;}
+.item-cons{ width: 285px; overflow: hidden;}
+.item-cons li{ height:35px; line-height:35px;font-size:14px;}
+.item-cons li strong{ color:#aaaaaa; font-weight:normal;}
+.item-cons li a,.item-cons li span{color:#555;}
+.hot-boatrace-box { width:280px; padding: 25px 0;}
+.hot-boatrace-box a{ width: 128px; height: 68px; line-height: 22px; font-size: 14px;font-family:\5fae\8f6f\96c5\9ed1; font-weight: 800; color: #fff; display: inline-block; float: left;  background: url(http://dui.damai.cn/secondhand_ticket/img/bg_auction_btn.png) no-repeat 0 0;}
+.hot-boatrace-box a.btn_response{ width: 108px; height: 48px; padding: 10px;}
+.hot-boatrace-box a.btn_response span{ font-size: 18px;}
+.hot-boatrace-box a:hover{ background-position: 0 -68px;  color: #fff !important;}
+.hot-boatrace-box a.btn_hot{ background-position: 0 -136px; margin-left: 20px;text-indent: -9999px;}
+.hot-boatrace-box a.btn_hot:hover{ background-position: 0 -204px;}
+.ticket-infor4{width:617px;*width:616px;_width:617px;margin-top:10px;overflow:hidden;clear:both;height:119px;}
+.ticket-infor4 dl{padding: 25px 29px 19px 29px; width:150px;text-align:center; background:#f7f7f7 url(http://dui.damai.cn/secondhand_ticket/img/center_line2.gif) no-repeat right center;}
+.ticket-infor4 dl.c1{padding-right:22px;}
+.ticket-infor4 dl dd{margin-top:10px;}
+.ticket-infor4 dl dd strong{ font-size:30px; font-weight:normal;}
+.actor-instruc{ line-height:22px; color:#aaa; text-align:justify;margin-top:10px; height: 110px; overflow: hidden;}
+.actor-instruc strong{ font-size:14px;}
+.menu-nav{margin-top:30px;}
+.m3 a{padding:0 10px; height:31px;width:60px; background:url(http://dui.damai.cn/secondhand_ticket/img/m2_a.gif) repeat-x 0 0; border:1px solid #eaeaea; border-bottom:none; border-left:none; text-align:center;}
+.m3 a.c1{ border-left:1px solid #eaeaea; }
+.m3 a.on,.m3 a:hover{ background:url(http://dui.damai.cn/secondhand_ticket/images/all-shopping.gif) no-repeat 0 0; color:#014a16 !important; font-weight:bold !important;}
+.menu-list{padding:20px; border:1px solid #eaeaea; position:relative; z-index: 10000; zoom:1;}
+.menu-list ul{ margin-top: 15px;overflow: hidden; width:888px;}
+.menu-list ul li{ line-height:45px; float:left;overflow:hidden;margin-bottom:10px;width:800px;}
+.menu-list ul li.my-wid{ width:60px;}
+.menu-list ul li strong,.field-choose-box strong,.state-choose-box strong{ color:#aaaaaa; float:left; height:28px; line-height:28px;width:60px; font-weight:normal;}
+.menu-list ul li a{width:55px; text-align:center;padding:0 5px;margin-bottom:10px; height:28px; display:inline-block; float:left; line-height:28px; color:#555;margin-right:5px;*margin-right:2px; border:1px solid #eaeaea;}
+.menu-list ul li a.on,.menu-list ul li a:hover{color: #555555 !important; background:url(http://dui.damai.cn/secondhand_ticket/img/menu_list3.gif) no-repeat 0 0;}
+.menu-list ul li a.w1,.menu-list ul li a.onw1{ width:77px;}
+.menu-list ul li a.onw1,.menu-list ul li a.w1:hover{ background:url(http://dui.damai.cn/secondhand_ticket/img/menu_list1.jpg) no-repeat 0 0;}
+.menu-list ul li a.w2,.menu-list ul li a.onw2{ width:95px; height:24px;padding:5px 10px; line-height:13px; text-align:left;}
+.menu-list ul li a.onw2,.menu-list ul li a.w2:hover{ background:url(http://dui.damai.cn/secondhand_ticket/img/menu_list2.jpg) no-repeat 0 0;}
+.menu-list .beg_price{margin-left: 20px; float: left; color: #aaaaaa;}
+.menu-list .beg_price dt,
+.menu-list .beg_price dd{ float: left; height: 37px; line-height: 37px;}
+.menu-list .beg_price dd{ color: #555;}
+.menu-list .beg_price dd.col{ color: #ff7219;}
+.menu-list .beg_price dd span{ color: #0063dd;}
+.menu-list .go_beg{ width: 108px; height: 27px; float: right; display: inline-block; line-height: 27px; margin-top: 5px; color: #555; text-align: center; background: url(http://dui.damai.cn/secondhand_ticket/img/addresses.png) no-repeat 0 0;}
+.menu-list .go_beg:hover{ background-position: 0 -27px; color: #333 !important;}
+
+.field-choose-box{ height: 45px; z-index:10001;  position: relative;}
+.table-item-detail{width:100%; border:1px solid #eaeaea; border-top:none; border-bottom:none;}
+.table-item-detail tr th{ height:36px; background:url(http://dui.damai.cn/secondhand_ticket/img/item_th.png) repeat-x 0 0; padding-left: 20px;}
+.table-item-detail tr th.mr{ text-indent:60px;}
+.table-item-detail tr{ z-index:700px;}
+.table-item-detail tr td{  padding:27px 0 28px 20px;border-bottom:1px solid #eaeaea; color:#555;}
+.star-boxn{width:105px;float:right;margin-right:78px;*margin-right:75px;_margin-right:0;}
+.star-boxn span{margin-left:0;}
+.table-item-detail tr td.clr1{ color:#ff5a00; font-weight:bold; font-family: Verdana, Geneva, sans-serif;}
+.table-item-detail tr td.clr2 a{ color:#0063dc !important;}
+.table-item-detail tr td.a{ color: #aaaaaa;}
+.table-state-detail tr td{ padding: 15px 0 15px 20px;}
+.table-item-detail tr td.lht span{ display: inline-block; margin-top: 6px;}
+/*星星提示*/
+.red-star1,.red-star2,.red-star3,.red-star4,.red-star5{height:17px;display:block; cursor:pointer;}
+.red-star1{width:18px; background:url(http://dui.damai.cn/secondhand_ticket/img/red-star.png) no-repeat 0 0;}
+.red-star2{width:38px; background:url(http://dui.damai.cn/secondhand_ticket/img/red-star.png) no-repeat 0 0;}
+.red-star3{width:58px;background:url(http://dui.damai.cn/secondhand_ticket/img/red-star.png) no-repeat 0 0;}
+.red-star4{width:79px;background:url(http://dui.damai.cn/secondhand_ticket/img/red-star.png) no-repeat 0 0;}
+.red-star5{width:99px;background:url(http://dui.damai.cn/secondhand_ticket/img/red-star.png) no-repeat 0 0;}
+/*星星提示结束*/
+/*查看购物车，联系卖家，收藏开始*/
+.operation-box{ position:relative;z-index:800px;}
+.operation-lt{width:95px;padding-top:10px; float:left;}
+.operation-a1,.operation-a2,.operation-a3{ float:left; cursor: pointer;}
+.operation-a1{width:19px; height:13px;background:url(http://dui.damai.cn/secondhand_ticket/images/favorites1.png) no-repeat 0 0;margin-right:8px; position:relative;}
+.operation-a2{width:19px; height:18px; background:url(http://dui.damai.cn/secondhand_ticket/images/contacts_buyer1.png) 0 0;margin-right:8px;}
+.operation-a3{width:21px; height:15px;background:url(http://dui.damai.cn/secondhand_ticket/images/view_seat1.png) no-repeat 0 0;}
+.operation-rt{width:21px; float:right;margin-right:20px;_display:inline;}
+.redstar-promtp-box{ background:url(http://dui.damai.cn/secondhand_ticket/images/t_stars_lt.png) no-repeat left top;padding-top:12px;*text-indent:0;}
+.redstar-prompt{width:181px;/* height:170px; */background:url(http://dui.damai.cn/secondhand_ticket/images/t_stars_bt.png) no-repeat left bottom; position:absolute; left:-34px;; top:5px; z-index:1000 !important;zoom:1;*text-indent:0;}
+.prompt-con{margin:0 0 8px 0; *text-indent:0; _z-index:1000;zoom:1;background:url(http://dui.damai.cn/secondhand_ticket/images/t_stars_cr.png)  repeat-y left top;*width:161px;*padding:0 10px;}
+.prompt-con-n{padding: 15px 10px 10px 15px;}
+.prompt-con li{ height:28px; line-height:28px; color:#fff; display:block;}
+.prompt-con li span{ float:left; display:inline-block; color:#c3d600;width:56px;}
+.operation-b1,.operation-b2,.operation-b3{width:67px; height:32px;background:url(http://dui.damai.cn/secondhand_ticket/images/add_collections.png) no-repeat 0 0; position:absolute;top:-27px; left:-27px; color:#fff;padding:5px 0 0 0; text-indent:0; text-align:center; }
+.operation-b2{ left:0;}
+.operation-b3{ left: 31px;}
+.operation-b1-b{ background:url(http://dui.damai.cn/secondhand_ticket/images/favorites2.png) no-repeat 0 0;}
+.operation-b2-b{background:url(http://dui.damai.cn/secondhand_ticket/images/contacts_buyer2.png) no-repeat 0 0;}
+.operation-b3-b{background:url(http://dui.damai.cn/secondhand_ticket/images/view_seat2.png) no-repeat 0 0;}
+.table-box{ position:relative;}
+.change-other{width:51px; height:148px; display:block; position:absolute; right:-51px; top:0; background:url(http://dui.damai.cn/secondhand_ticket/img/change_other.png) no-repeat 0 0;}
+.line-chooseseat{width:960px; height:611px; display:none;}
+/*查看购物车，联系卖家，收藏结束*/
+.want-buy,.CRselectBox a span.CRselectValue{background:url(http://dui.damai.cn/secondhand_ticket/img/buygoes.png) no-repeat ;}
+.operation-con a{ display: inline-block; height: 30px; line-height: 30px; padding-right: 4px; color: #0063dc;}
+.want-buy{height:30px; line-height: 30px; text-align: center;width:89px;display:block;font-family:\5fae\8f6f\96c5\9ed1; font-size: 14px; background-position: -62px -22px; color: #555 !important; margin-right: 15px;_margin-right: 10px;}
+.want-buy:hover{ background-position: -62px -52px; color: #555 !important;}
+.table-item-detail tr th a{height: 36px; line-height: 36px;display: block;overflow: hidden;}
+.star_gray_down,
+.star_gray_down95{ background: url(http://dui.damai.cn/secondhand_ticket/img/gray_down.png) no-repeat 80px center;_background: url(http://dui.damai.cn/secondhand_ticket/img/gray_down.png) no-repeat 80px 11px;}
+.star_green_down,
+.star_green_down95{ background: url(http://dui.damai.cn/secondhand_ticket/img/green_down.png) no-repeat 80px center;_background: url(http://dui.damai.cn/secondhand_ticket/img/green_down.png) no-repeat 80px 11px;}
+.star_green_up29,
+.star_green_up53,
+.star_green_up41{ background: url(http://dui.damai.cn/secondhand_ticket/img/green_up.png) no-repeat 29px center;_background: url(http://dui.damai.cn/secondhand_ticket/img/green_up.png) no-repeat 29px 11px;}
+.star_gray_up29,
+.star_gray_up53,
+.star_gray_up41,
+.star_gray_up95{ background: url(http://dui.damai.cn/secondhand_ticket/img/gray_up.png) no-repeat 29px center;_background: url(http://dui.damai.cn/secondhand_ticket/img/gray_up.png) no-repeat 29px 11px;}
+.star_green_up53,
+.star_gray_up53{ background-position: 53px center; _background-position: 53px 11px;}
+.star_gray_up41,
+.star_green_up41{ background-position: 41px center; _background-position: 41px 11px;}
+.star_green_down95,
+.star_gray_down95{background-position: 95px center; _background-position: 95px 11px;}
+
+/*竞拍列表页*/
+.taxis-uprup41{background-position: 41px center;_background-position: 41px 11px;}
+.taxis-updown41{background-position: 41px center;_background-position: 41px 11px;}
+.taxis-uprup95{ background-position: 95px center;_background-position: 95px 11px;}
+.taxis-updown95{background-position: 95px center;_background-position: 95px 11px;}
+/*竞拍终极页*/
+.mt-10{ margin-top: -10px !important;font-family:\5fae\8f6f\96c5\9ed1; font-size: 24px; color: #666;}
+.mt-10 strong{ color: #ff5a00; font-family:Verdana, Geneva, sans-serif; font-size: 30px;}
+.btn-ing{ width: 81px; height:27px; line-height: 27px; border: medium none; text-align: center; color: #ff6301; background: url(http://dui.damai.cn/secondhand_ticket/images/btn_ing.png) no-repeat 0 0;font-family:\5fae\8f6f\96c5\9ed1; font-size: 14px; margin-top: 20px; cursor: pointer;}
+.auction-details-list{ padding: 0 0 0 5px; margin: 5px 0 0 0;}
+.auction-ul{ width: 255px;}
+.auction-details-list ul li{ line-height: 30px; color: #aaaaaa;}
+.auction-details-list ul li span{ color: #555;}
+.auction-details-list2{ border: 1px solid #eaeaea; padding: 10px 0 0 0 ; border-top:none; position: relative;}
+.auction-details-list2 h3{ padding-right: 65px; height: 56px; background: #f6f6f6; font-weight:bold; line-height: 39px; color: #555; font-size: 16px; text-align: right; margin-top:-8px; background: url(http://dui.damai.cn/secondhand_ticket/images/auction_hdbg.png) repeat-x 0 0; border:1px solid #eaeaea; border-right:none; border-left:none;}
+.auction-list-table tr th,.auction-list-table tr td{ height:35px; text-align: center; border-right: 1px solid #eaeaea;}
+.auction-list-table tr th{ background: #f6f6f6;height:37px;}
+.auction-list-table tr td.cr{ height:38px;background: #f6f6f6;}
+.auction-list-table tr td.n,.auction-list-table tr th.n{ border:none;}
+.auction-list-table tr td span{ display: inline-block; margin: 3px 0 0 0; }
+.auction-list-table tr td em img,.auction-list-table tr th em img{ vertical-align: middle; margin-right:3px;}
+.auction-bigbtn{ width:277px; height:28px; padding: 12px 3px 9px 10px; background: url(http://dui.damai.cn/secondhand_ticket/images/auction_bigbtn.png) no-repeat 0 0;position: absolute; left: 15px; top: -8px; z-index: 5;}
+.auction-bigbtn span{ color: #fff;font-family:\5fae\8f6f\96c5\9ed1; font-size: 18px;}
+.reduction-tip,.plus,.bid{ background: url(http://dui.damai.cn/secondhand_ticket/images/bid.png) no-repeat 0 0;}
+.reduction-tip,.plus{ width: 15px; height: 15px; display: inline-block; margin: 5px 5px 0 5px;}
+.reduction-tip{ background-position: 0 -188px; margin:5px 5px 0 0;}
+.plus{ background-position: 0 -110px;}
+.po-btn{ width: 55px; height:26px;}
+.bid{ width: 74px; height: 27px; margin-left: 3px; border: medium none; text-align: center; color:#619429;font-family:Verdana, Geneva, sans-serif; font-size: 14px; background-position: 0 0;}
+.bid:hover{ background-position: 0 -27px;}
+/*伪下拉--场次选择*/
+.CRselectBox {width: 115px; height: 41px; z-index: 10000; margin-left: 60px;} /*显示最外层div的样式*/
+.CRselectBoxHover {width: 115px; height: 41px; }
+.CRselectBox a span.CRselectValue {width:71px; padding: 2px 30px 2px 14px; height: 37px; color: #555; font-weight: bold; line-height:18px; display:block; background-position: -70px -197px;} /*显示最外层div下显示所选值的a的样式*/
+.CRselectBoxOptions {width: 112px;/*宽度要少一像素*/ border: 1px solid #008626;display: none; background:#fbfbfb; overflow: visible !important; z-index:10001; position:absolute;} /*显示层下ul的样式*/
+.CRselectBoxOptions li{ width: 112px; height:41px; border-bottom:1px solid 3ccc; border-top:1px solid #ccc;}
+.CRselectBoxOptions a{ width: 112px !important; height:41px !important; text-align:inherit !important;line-height: 20px !important;display:block;background: none !important;}/*ul下li 里a的样式*/
+.CRselectBoxOptions a span{ color: #555;width:72px; padding: 0 20px; height: 41px;line-height: 20px !important; display: block;}
+.CRselectBoxOptions a:hover span{ background: #ccdf00; cursor: pointer;} /*ul下li 里a的效果*/
+.CRselectBoxOptions a.selected{}
+/* 解决 firefox 点击放大出现虚线框，从而导致滚动条的问题  */
+.CRselectBox a { outline: none; text-decoration:none;}
+.CRselectBox a:focus { outline: none; text-decoration:none;}
+/*伪下拉结束*/
+/*用户中心换页总写*/
+.lp-v101uc-pageination{clear: both; color: #666666; height: 26px;padding: 15px 0 0 0; text-align: right;}
+.lp-v101uc-pageination a {border: 1px solid #E1E1E1;font-family: 'simSun';padding: 5px 10px;}
+.lp-v101uc-pageination a.on{background: none repeat scroll 0 0 #014e17;border: 1px solid #014e17;color: #FFFFFF;}
+.ml10 { margin-left: 10px;}
+.lp-v101uc-pageination a,.lp-v101uc-pageination a.oning{ color: #333;}
+.lp-v101uc-pageination .endpages,.lp-v101uc-pageination .firstpages,.lp-v101uc-pageination .prev,.lp-v101uc-pageination .next{ color: #999;}
+.lp-v101uc-pageination .firstpages,.lp-v101uc-pageination .prev{margin-right:10px;}
+.lp-v101uc-pageination .next {margin: 0 10px;}
+.lp-v101uc-pageination .t { border: 1px solid #d5d5d5; padding: 2px 0;position: relative;text-align: center; width: 30px; vertical-align: middle;}
+.lp-v101uc-pageination .sured {border: 1px solid #d5d5d5;cursor: pointer; height:25px;*height:24px; *line-height: 24px;padding: 0 10px;*padding: 0 5px 0 5px; margin: 1px 5px 0 5px; background: #fff; vertical-align: middle; color: #333;}
+/*伪下拉-状态选择*/
+.state-choose-box,
+.state_beg_box{ width: 190px; height: 45px; margin-left: 20px; position: relative;}
+.state_beg_box{ width: 145px;_width: 148px;}
+
+.CSselectBox,
+.CSselectBeg {width: 124px; height: 28px; z-index: 10000; margin-left: 60px;} /*显示最外层div的样式*/
+.CSselectBoxHover,
+.CSselectBeg {width: 80px; height: 28px; }
+.CSselectBox a span.CSselectValue,
+.CSselectBeg a span.CSselectValue {width:60px; padding: 5px 35px 5px 30px; height: 18px; color: #555; font-weight: bold; line-height:18px; display:block; background: url(http://dui.damai.cn/secondhand_ticket/images/state_bg.png) no-repeat 0 0;} /*显示最外层div下
+显示所选值的a的样式*/
+.CSselectBeg a span.CSselectValue{ width: 70px; padding: 5px 10px 5px 5px; background: url(http://dui.damai.cn/secondhand_ticket/img/bg_beg_step.png) no-repeat 0 0;}
+.CSselectBoxOptions,
+.CSselectBegOptions {width: 121px;/*宽度要少一像素*/ border: 1px solid #008626;display: none; background:#fbfbfb; overflow: visible !important; z-index:10001; position:absolute;} /*显示层下ul的样式*/
+.CSselectBegOptions{ width: 80px !important;}
+.CSselectBoxOptions li,
+.CSselectBegOptions li{ width: 121px; height:28px; border-bottom:1px solid 3ccc; border-top:1px solid #ccc;}
+.CSselectBegOptions li{ width: 80px;}
+.CSselectBoxOptions a,
+.CSselectBegOptions a{ width: 121px !important; height:28px !important; text-align:inherit !important;line-height: 20px !important;display:block;background: none !important;}/*ul下li 里a的样式*/
+.CSselectBegOptions a{ width: 80px !important;}
+.CSselectBoxOptions a span,
+.CSselectBegOptions a span{ color: #555;width:49px; padding: 0 36px; height: 28px;line-height: 28px !important; display: block;}
+.CSselectBegOptions a span{ padding:0 16px 0 15px;}
+.CSselectBoxOptions a:hover span,
+.CSselectBegOptions a:hover span{ background: #ccdf00; cursor: pointer;} /*ul下li 里a的效果*/
+.CSselectBoxOptions a.selected{}
+/* 解决 firefox 点击放大出现虚线框，从而导致滚动条的问题  */
+.CSselectBox a { outline: none; text-decoration:none;}
+.CSselectBox a:focus { outline: none; text-decoration:none;}
+/*伪下拉结束*/
+/*t-collect弹出层*/
+.t-coollecting,.t-seller-Information,.t-collect-saler,.t-jion,.t-view-seat{ border:4px solid #bebebe;width:410px; height:229px;z-index:12000; position:fixed; left:50%; top:50%;margin:-119px 0 0 -209px; _position:absolute;_margin-top:0;}
+.t-view-seat{width:960px;height:611px;border:none;display:none;position:fixed; left:50%; top:50%;margin:-310px 0 0 -484px; _position:absolute;_margin-top:0; background:#fff; z-index:11000}
+.t-view-bos{width:960px;height:611px;padding-top:10px;position:relative;}
+.view-seat-h{width:960px;height:611px;z-index:200;border:1px solid #ccc; border-top:none;}
+#currentSeatShow{z-index:100;}
+.shut-btnse{ position:absolute; right:0; top:0;}
+.collect-h{height:37px;background:url(http://dui.damai.cn/secondhand_ticket/img/collect_h.png) repeat-x 0 0;border:1px solid #ccc;}
+.t-collect h2{width:220px; color:#555; float:left; line-height:37px; font-weight:bold;padding-left:10px; font-size:14px;}
+.collect-h a{width:20px; height:21px;float:right; display:block; background:url(http://dui.damai.cn/secondhand_ticket/images/shut_pic.png) no-repeat 5px 5px;margin:8px 5px 0 0;_display:inline;}
+.t-collect-con{width:373px; background:#fff; height:171px;padding:17px 0 0 35px; border:1px solid #b7b6b6;}
+.t-collect-p{padding:17px 15px 0 20px;}
+.t-collect p{ line-height:25px; color:#666;width:275px;margin-left:18px;}
+.t-collect p.text-l{ text-align:right; float:right;}
+.textarea2{ height:72px;width:360px;padding:5px; border:1px solid #c8c8c8; color:#555;}
+.t-btn{ height:26px;margin-top:20px;}
+.t-btn a{width:81px; height:20px; line-height:20px; display:block; float:left; text-align:center;padding:3px 0; color:#555;}
+.t-btn a:hover{ color:#555;}
+.t-btn a.btn-bg{ background:url(http://dui.damai.cn/secondhand_ticket/img/continues_shopping.png) no-repeat 0 0; color:#fff; font-weight:bold; font-size:14px;}
+.t-btn a.w55{width:55px;}
+.t-collect p.w220{ width:220px;margin-left:55px;}
+.t-collect-con p span{ color:#ff5800;}
+.t-collect p.txt-size{color:#015b1a; font-size:24px; line-height:53px; font-weight:bold; font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif; background:url(http://dui.damai.cn/secondhand_ticket/img/hook.png) no-repeat 0 10px;}
+.t-collect p.text-indent{ text-indent:40px;}
+.t-collect p.txt-col{ color:#009900;width:300px;margin-left:10px;}
+.t-share-btn{ height:30px;margin-bottom:12px;}
+.t-share-btn input{width:250px; height:22px;margin:0 5px 0 10px; float:left;*padding:5px 0;}
+.t-share-btn button{width:40px; height:30px; background:#009900; border:medium; *border:none; color:#fff; font-weight:bold; font-size:14px;display:block; float:left;*height:33px;}
+.t-collect p.txt-t{ color:#555; font-size:14px;width:275px;padding-left:37px;}
+.t-collect p.txt-d{ font-size:20px; font-family:\5fae\8f6f\96c5\9ed1; color:#015b1a; background:url(http://dui.damai.cn/secondhand_ticket/img/hook.png) no-repeat 0 10px;padding-left:40px;}
+.jion-in{ height:30px;margin-top:15px;}
+.jion-in a{width:81px; height:26px; line-height:26px;  text-align:center;color:#fff;display:block; float:right; background:url(http://dui.damai.cn/secondhand_ticket/img/continues_shopping.png) no-repeat 0 0;margin-right:5px; font-weight:bold;font-size:13px;}
+.add-into a{ float:left;margin-left:55px; _display:inline;}
+.jion-in a.go-on{width:121px; background:url(http://dui.damai.cn/secondhand_ticket/img/go_Shopping_trolley.png) no-repeat 0 0;margin:0 105px 0 10px;}
+.add-into a.go-on{margin-right:0;}
+.jion-in a:hover{ color:#fff !important;}
+.t-seller-Information ul{ background:#fff; height:185px;padding:5px 25px 0 25px;}
+.t-seller-Information ul li{ line-height:25px;color: #555; width:360px;}
+.t-seller-Information ul li strong{font-weight: normal;}
+.t-seller-Information ul li span.cl{ color:#0f7cd7; padding-left: 0;}
+.t-seller-Information ul li span.clor{ color:#f45000; font-weight:bold;margin-right:60px;}
+/*详情页2(选座图）*/
+.seating-map{ height:550px;margin-top:10px; border:1px solid #cdcdcd; position:relative;}
+/*我的购物-申购信息确认*/
+.txt-b{font-size:12px; color: #555; margin: 0 10px 0 0;}
+.sg-menu{padding-left:10px;}
+.sg-menu-nav{height: 39px;width: 960px;}
+.sg-menu-nav ul{height: 40px;margin-top: 10px;}
+.sg-menu-nav ul li{display: block; float: left;}
+.sg-menu-nav ul li a{ background: url("http://dui.damai.cn/secondhand_ticket/images/ensurehover.gif") no-repeat scroll left top transparent;color: #FFFFFF;display: block;float: left;font-size: 20px;font-weight: bold; height: 24px; margin-right: 5px;padding: 8px 5px;width: 177px;}
+.sg-menu-nav ul li a.ensure,.sg-menu-nav  ul li a:hover{background:url(http://dui.damai.cn/secondhand_ticket/images/ensure.gif) no-repeat left top; color:#00651c !important; text-decoration:none;}
+.sg-menu-box{border-bottom: 1px solid #eaeaea; padding-bottom: 1px;}
+.sg-menu-into{background:#f7f7f7;height: 42px; padding: 0 20px; }
+.sg-menu-con1-up,.sg-menu-con1-down,.sg-menu-con1-uprt,.sg-menu-con1-downbt{ border: 1px solid #eaeaea;}
+.sg-menu-con1-down{ margin: 6px 0 0 0;}
+.sg-menu-con1-downbt{ margin: 10px 0 0 0;}
+.sg-menu-con1-downbt input{ vertical-align: middle;}
+.sg-menu-box li{ display:block; float:left;}
+.sg-menu-box a{padding-left:12px; background:url(http://dui.damai.cn/secondhand_ticket/images/sg_menu.png) no-repeat left center;  display: block;float: left;line-height: 38px;}
+.sg-menu-in{margin:4px 10px 0 0;}
+.sg-menu-in button{float:left;display:block; float:right; color:#fff; border:medium;*border:none;}
+.sg-menu-in button.fang:hover{ background:#F90; cursor:pointer;}
+.sg-menu-in button.fang{width:77px; height:30px;background:#ff6600;margin-right:5px;}
+.sg-menu-in button.dele{width:81px; height:30px; background:#ea0000;}
+.sg-menu-in button.dele:hover{ background:#F33; cursor:pointer;}
+.sg-menu-contains{padding:10px 20px;}
+.sg-menu-list{ float:left; height: 268px;margin-right:11px; border: 1px solid #eaeaea; *height: 272px;}
+.sg-menu-con1-box{ border-right: 1px solid #eaeaea; padding:1px; float:left;border-right:1px solid #eaeaea; }
+.sg-menu-con1-box2,.submission-box{ border-bottom: 1px solid #eaeaea; padding:1px; float:left; border-right:none; }
+.sg-menu-con1-in{width:16px; padding: 100px 7px; height:66px;*height:70px;font-size:14px;color:#00651c; background: #f7f7f7;}
+.sg-menu-con1-in2,.sg-menu-con1-in3,.sg-menu-con1-in4,.sg-menu-con1-in5{ background: #F7F7F7;}
+.sg-menu-con1-in3,.sg-menu-con1-in4,.sg-menu-con1-in5{ height: 16px; padding: 7px 10px;}
+.sg-menu-con1-in2{ height: 65px;padding: 42px 7px; width: 16px;}
+.sg-menu-con1-in3{width: 284px;}
+.sg-menu-con1-in4,.sg-menu-con1-in5{width: 282px;}
+.sg-menu-con1-in5 a{ color: #0063dc;}
+.sg-menu-con2{width:245px;background:#fff; float:left;}
+.sg-menu-con2 ul,.sg-menu-list3 ul{padding:10px;}
+.sg-menu-con1-downbt ul{padding:10px;*padding: 5px 10px 4px 10px;}
+.sg-menu-con4 ul{ padding:5px;}
+.sg-menu-con1-uprt ul{ padding:5px 10px;}
+.sg-menu-con1-down ul{ padding: 6px 10px;*padding: 5px 10px}
+.sg-menu-con2 ul li,sg-menu-list3 ul li,.sg-menu-con4 ul li,.sg-menu-con1-down ul li,.sg-menu-con1-uprt ul li,.sg-menu-con1-downbt ul li{ height:35px; line-height:35px; color:#015b1a; clear: both; overflow: hidden;}
+.sg-menu-con1-downbt ul li span{ _height: 30px; _line-height: 30px; display: inline-block;}
+.sg-menu-con1-down ul li a{ color: #0063dc; margin-left: 5px;}
+.star-boxed{ float:left; margin: 10px 0 0 0;}
+.sg-menu-con2 ul li strong,g-menu-list3 ul li strong,.sg-menu-con4 ul li strong,.sg-menu-con1-down ul li strong,.sg-menu-con1-uprt ul li strong,.sg-menu-con1-downbt ul li strong{ color:#555; font-weight:normal;}
+.sg-menu-con1-downbt ul li strong{_line-height:30px;_height: 30px; _display: inline-block;}
+.sg-menu-con2 ul li a.star-2{ display:block;width:145px; height:27px; background:url(http://dui.damai.cn/secondhand_ticket/images/star_1.gif) no-repeat left top; float:right;padding-right:12px;}
+.sg-menu-con2 ul li span{ color:#015b1a;}
+.people{margin-left:20px;}
+.sg-menu-list5{float:left;width:306px;}
+.sg-menu-con3{background:#fff; float:left;}
+.sg-menu-con3 ol{padding:10px 10px 0 10px;}
+.sg-menu-con3 ol li{ line-height:33px; background:url(http://dui.damai.cn/secondhand_ticket/images/sg_menu_list3.gif) no-repeat left center; padding-left:20px; clear:both;}
+.sg-menu-con3 ol li label{width:48px; line-height:33px; height:33px; color:#00651c; display:block; float:left;}
+.sg-menu-con3 ol li input{width:180px; color:#00651c; height:22px; border:1px solid #00651c; vertical-align:middle;margin-right:10px;}
+.sg-menu-con3 ol li button{width:47px;height:24px; line-height:24px; border:1px solid #999; vertical-align:middle;}
+.sg-menu-con4{background:#fff; float:left; width: 272px;}
+.sg-menu-list3{float:left;margin-right:11px; width: 308px;}
+.submission{ margin: 20px 0 0 0; width: 958px; border: 1px solid #eaeaea; border-top: 2px solid #c3d600;}
+.submission-box { width:956px; float:none;}
+.submission h2{ height:18px; background:#f7f7f7;padding:15px 10px;color:#555; font-size:15px; font-weight:bold;}
+.submission-con{padding:10px 20px;}
+.submission-con p{ line-height:30px;}
+.submission-con p strong{ color:#00651c; font-weight:normal;}
+.submission-con p span,.submission-con p b{ color:#ff6600;}
+.submission-con p b{ font-size:14px; font-family:Tahoma, Geneva, sans-serif;}
+.submission-con p a.cl{margin-left:5px; color:#ff6600;}
+.submission-con p a.go-another{color: #FFFFFF; height: 30px;width: 76px; text-align: center;border: medium none;font-family: 微软雅黑;font-size: 14px; display: inline-block; background:url(http://dui.damai.cn/secondhand_ticket/images/submission.png) no-repeat -70px -17px;}
+.submission-con p a.go-another:hover{ background-position:-70px -47px; color: #FFF !important;}
+/*我的购物车-确订订单信息*/
+.flow-line-3-9 div{width:32%;}
+.sg-menu-list4{float:left;width:361px;}
+.sg-menu-con5{background:#fff;}
+.sg-menu-con5 h2,.sg-menu-con6 h2{width:341px;padding:10px; height:15px; line-height:18px; background:#f0f0f0; font-size: 14px;font-weight: bold;color:#00651c; }
+.sg-menu-con5 ol,.sg-menu-con6 ol{padding:5px; display:block;}
+.sg-menu-con5 ol li,.sg-menu-con6 ol li{ height:25px; line-height:26px;_line-height:25px; color:#666; display:block;}
+.sg-menu-con5 ol li span{margin-left:20px;}
+.sg-menu-con5 ol input,.sg-menu-con6 ol input{ vertical-align:middle;margin:0 5px}
+.sg-menu-con6{background:#fff;color:#00651c;margin-top:10px; }
+.sg-menu-con6 a{ display:block; float:right;color:#666; font-weight:normal;}
+/*我的购物车-选择支付方式*/
+.flow-line-3-8 div{width:68%;}
+.payment-table{margin-top:20px; border: 1px solid #eaeaea; overflow: hidden; padding-bottom: 10px;}
+.payment-table table{width:960px; }
+.payment-table table th,.payment-table table td{ height:36px;text-align:center;color: #555; padding-right: 20px;}
+.payment-table table th{ background: url(http://dui.damai.cn/secondhand_ticket/images/payway_th.png) repeat-x 0 0;}
+.payment-table table td{ height: 40px;}
+.payment-table table td span{color: #555; }
+.payment-table table td span.cr6600{ color:#fe6600;}
+.payment-bank{margin-top:10px; border: 1px solid #ebebeb; padding: 20px;}
+.payment-nav{height:34px; border-bottom: 1px solid #c3d600;}
+.payment-nav ul  li,.payment-nav ul  li a,.payment-list ol li img{ display:block; float:left;}
+.payment-nav ul  li a{ width: 109px; height: 32px; line-height: 32px; display: inline-block; color: #555; background: url(http://dui.damai.cn/secondhand_ticket/images/paytype.png) repeat-x 0 0; border: 1px solid #eaeaea;text-align: center; font-size: 14px;}
+.payment-nav ul  li a:hover,.payment-nav ul  li a.on{ background: url(http://dui.damai.cn/secondhand_ticket/images/paytype_hover.png) no-repeat 0 0 ; color:#014a16 !important; font-weight: bold; border:1px solid #c3d600;}
+.payment-list{width:850px;}
+.payment-list ol,.payment-list ul{margin-top:10px;}
+.payment-list ul li{ line-height: 30px; color: #555; padding: 0 0 0 15px;}
+.payment-list ul li span,.paysured p font{ color: #ff5a00;}
+.payment-list ol li{ display:block;width:145px;_width:153px; line-height:26px; height:26px;padding:15px 10px 15px 10px;_padding-left:6px; float:left;}
+.payment-list ol li input{ vertical-align:middle; float:left;margin: 5px 15px 0 5px;}
+.payment-go{ height: 30px;}
+.paysured{ margin: 20px 0; padding:0 20px;}
+.paysured p{ display:block; line-height: 25px; color: #555;}
+/*我的购物车-完成良票订单*/
+.flow-line-3-7 div{width:100%;}
+/*我的良票-买票中心-我的买票交易-已完成的交易*/
+.table-contro9{ background:#f3f3f3; height:30px; line-height:30px; text-indent:10px;}
+.table-contro9 span{margin-left:5px; color:#666;}
+/*我的良票-买票中心-买票投诉管理-我的投诉管理*/
+.my-table-9 th,.my-table-9 td{ text-align:center;height:30px; border:1px solid #ebeff4;}
+.my-table-9 th{ background:#cccccc; color:#666;}
+.my-table-9{ border-bottom:1px solid #ebeff4;}
+.my-table-9 td.blues{ color:#3a7de5;}
+.table-contro8{ height:20px; background:#f8f8f7;padding:5px 0;margin-top:5px;}
+.table-contro8 a,.table-notop a.track-record,.table-notop a.t-color1{width:55px; height:15px;padding:2px 15px; display:inline-block; float:left;margin:0 10px; border:1px solid #c4c4c4; line-height:15px; background:url(http://dui.damai.cn/secondhand_ticket/images/track_record01.gif) repeat-x left top; text-align:center;}
+.table-contro8 a.track-record,.table-contro8 a:hover,.table-notop a.track-record:hover{ font-weight:bold; text-decoration:none;color:#ff6600 !important;}
+.table-contro8 a.track-record,.table-contro8 a.t-color1{background:#00651c; color:#fff!important; border:1px solid #00651c;}
+.table-contro8 a.t-color1,.table-contro8 a.t-color2{margin:0 0 0 10px;}
+.table-contro8 a.t-color1{border:1px solid #00651c; font-weight:bold;}
+.table-notop{margin-top:0;}
+.table-contro8 a.t-color1:hover{background:#00651c; color:#fff!important; border:1px solid #00651c; font-weight:normal;}
+.table-contro8 a.t-color2:hover{color:#00651c!important;}
+.table-notop a.track-record{ line-height:13px;*line-height:15px; color:#ff6600;margin:0;}
+.c-blue{ color:#00651c!important;}
+.table-notop a.c-blue:hover{ font-weight:bold;color:#00651c !important;}
+/*我的良票-买票中心-买卖枚值管理-我的买票积分*/
+.jf-th-color th{ background:#f3f3f3; border:none;}
+.jf-th-color td,.cx-th-color td{ height:40px; color:#666666;}
+/*我的良票-买票中心-买卖枚值管理-我的买票诚信*/
+.cx-th-color th{ background:#f3f3f3; border:none; font-family:微软雅黑; font-weight:bold;}
+/*我的良票-卖票中心-我的票品管理-货架上的票品*/
+.fl-rt{ float:right;*padding:3px 5px 1px 5px;*line-height:15px !important;}
+.rm{margin-right:10px;}
+/*我的良票-卖票中心-我的交易管理-已完成的交易*/
+.my-table-8{margin:0px;}
+.table-contro7{margin-top:10px;height:14px;line-height:14px;padding:8px 0;}
+.change-mt{margin-top:0;}
+/* 我的钱包-首页*/
+.my-index-info-detail ul.my-purse{width:290px;_width:301px; float:left;}
+.safe-step{ float:left;}
+.sale1{width:107px; height:17px; float:left; margin:3px 0 0 10px;;background:url(http://dui.damai.cn/secondhand_ticket/images/safe.png) no-repeat -106px top; }
+.sale1 div{width:107px; height:17px; background:url(http://dui.damai.cn/secondhand_ticket/images/safe.png) no-repeat left top; }
+.my-index-info-detail ul a.step{ float:left; line-height:13px; margin:3px 0 0 10px; background: none; border:none;}
+.my-index-info-detail ul a.step:hover{ border:none;}
+.yirenzhen-img,.mailbox-img,.phone-img{display:inline-block; line-height:22px; }
+.yirenzhen-img{width:65px; text-indent:20px; background:url(http://dui.damai.cn/secondhand_ticket/images/yirenzhen_img.gif) no-repeat left 5px;}
+.mailbox-img{width:85px; text-indent:20px; background:url(http://dui.damai.cn/secondhand_ticket/images/mailbox_img.gif)  no-repeat left 5px;}
+.phone-img{width:75px;text-indent:13px; background:url(http://dui.damai.cn/secondhand_ticket/images/phone_img.gif) no-repeat left 5px;}
+.recharge-PayPal{width:234px; float:left;padding:5px 10px 0 0;}
+.recharge-PayPal p{margin-right:10px;line-height:38px; font-size:14px;margin-top:2px;}
+.recharge-PayPal a.recharge,.recharge-PayPal a.PayPal{ width:81px; height:31px;display:inline-block; text-indent:-9999px;*display:block; *float:left; line-height:31px;}
+.recharge-PayPal a.recharge{ background:url(http://dui.damai.cn/secondhand_ticket/images/recharge.gif) no-repeat 0 0;}
+.recharge-PayPal a.recharge:hover{ background-position:0 -31px;}
+.recharge-PayPal a.PayPal{ background:url(http://dui.damai.cn/secondhand_ticket/images/PayPal.gif) no-repeat 0 0;margin-left:10px;}
+.recharge-PayPal a.PayPal:hover{ background-position:0 -31px;}
+.my-index-h3 a.txt-p{padding:2px 10px;margin-left:10px;*padding:3px 10px 1px 10px; border: 1px solid #C4C4C4;_margin-top:3px;color:#00651c;}
+.my-index-h3 a.txt-p:hover{border: 1px solid #00651c; color:#00651c !important；}
+.raise-menu{_float:left;height:30px;line-height:30px;}
+.t-lh{border: 1px solid #C4C4C4;margin-left: 10px;padding: 2px 10px; background: url("http://dui.damai.cn/secondhand_ticket/images/track_record01.gif") repeat-x scroll left top ; line-height:30px;}
+.t-lh:hover{ font-weight:bold; color:#00651c !important;}
+.my-index-h3 a.newly,.my-index-h3 a.newly:hover{ background:none; border:none;_margin-top:3px;}
+.my-table-7{ color:#666;}
+.my-main .query-m input.w120{width:120px;}
+.my-main .h30{height:30px;}
+.my-main .h30 a{margin-left:15px;}
+.my-main .h30 a.txt-bg{padding:5px 10px;line-height:15px;  background:#00651c; color:#fff;}
+.my-main .h30 a.txt-bg:hover{ background:#31A6FE !important; color:#fff !important;}
+/*我的良票-我的钱包-我的账户管理-个人信息管理*/
+.my-data{background-color: #F8F8F8;border: 1px solid #EBEFF4;margin: 10px 0 0;}
+.my-index-data{height: 30px;line-height: 30px;  background:#f3f3f3;padding:0 10px;}
+.my-data-list{padding:10px; color:#666;}
+.my-data-list-con{width:350px; float:left;}
+.my-data-list-Prompt{width:400px; float:left;}
+.my-data-list-Prompt ol{width:350px; float:left;}
+.my-data-list-Prompt ol li{ line-height:25px; color:#666;}
+.my-data-list-Prompt-in{ height:100px;width:20px;padding:7px 5px; float:left; line-height:15px; font-weight:bold; color:#ff8800;}
+.my-data-list p{ line-height:30px;padding:0 10px;}
+.my-data-list p a.txt-bg {background: none repeat scroll 0 0 #00651c; color: #FFFFFF;line-height: 15px;padding: 3px 10px;margin-left:20px;}
+.my-data-list p a.txt-bg:hover{ color:#fff !important; background:#31A6FE;}
+/*我的良票-我的钱包-我的账户管理-安全信息管理*/
+.safe-manage{background:#f8f8f7;margin:10px 0;}
+.safe-manage-nav{ height:40px; background:#f8f8f7; line-height:40px; border:1px solid #ebeff4;}
+.safe-manage-nav ol{padding:0 20px;}
+.safe-manage-nav ol li{ line-height:40px;width:120px; float:left;}
+.safe-manage-nav ol li input{ vertical-align:middle;margin-right:5px;}
+.safe-manage-con{background:#f8f8f7;}
+.safe-manage-con ul li{ height:70px; border:1px solid #ebeff4; border-top:none;padding:5px 23px;}
+.safe-manage-con ul li p{ line-height:30px; color:#666;}
+.safe-manage-con ul li p input.manage{border: 1px solid #A0B7CB; height: 14px;line-height: 14px;
+padding: 3px;}
+.my-index-info-detail ul.my-purse li a{ background:none; border:1px solid #f8f8f8;}
+/*我的消息-我的消息首页*/
+.w73{width:73px !important;padding:3px 15px !important;background: none repeat scroll 0 0 #00651c; color:#fff;}
+.w73:hover{ color:#fff !important;}
+.txt666{color:#666; line-height:35px;}
+.m10{margin-top:10px;}
+.my-information-hd{width:100%;}
+.my-information-hd h3{background-color: #F8F8F7;height: 30px;line-height: 30px;padding: 0 15px; color:#666666; text-align:left;  margin: 2px 5px; clear:both; overflow:hidden; zoom:1;}
+.control-up{ display:none;}
+.w35{width:35px;padding:0 5px;background: none repeat scroll 0 0 #00651c;color: #FFFFFF; text-align:center; float:right;margin-right:10px; height:22px; line-height:22px;margin:4px 0 4px 10px;}
+.w35:hover{ color:#fff !important;background:#00651c;}
+.my-information-hd ul{padding:0 20px;}
+.my-information-hd ul li{ line-height:35px; text-align:left;}
+.send-m{width:98%;}
+.send{width:75px; height:20px; line-height:20px;margin:0;padding:5px;_margin:2px 0;}
+.txt-lm{margin-left:3px !important;}
+/*我的良票-我的消息-买家消息管理-我的订阅消息*/
+.w160{width:160px;}
+/*我的良票-我的消息-买家消息管理-发布买票消息*/
+.my-buy-ticket-news,.my-buy-ticket-setup{width:100%; overflow:hidden;}
+.my-buy-ticket-news dl,.my-buy-ticket-setup dl{ clear:both; overflow:hidden;padding:1px 0;}
+.my-buy-ticket-news dt,.my-buy-ticket-setup dt{width:65px; float:left; line-height:40px; color:#00651c;}
+.my-buy-ticket-news dd,.my-buy-ticket-setup dd{width:480px; float:left; line-height:40px;padding:3px 0;}
+.my-buy-ticket-setup dd{width:580px;}
+.my-buy-ticket-news dd input,.my-buy-ticket-setup dd input{width:380px;border: 1px solid #A0B7CB;height: 24px;line-height: 14px;padding: 3px; vertical-align:middle; float:left;_height:20px;_padding:5px 3px; _line-height:20px;}
+.my-buy-ticket-news dd button,.my-buy-ticket-setup dd button{ float:right;width:80px; height:30px; vertical-align:middle;}
+.my-buy-ticket-setup dd button{margin-right:10px;}
+.textarea-1{width:600px; height:200px;}
+.my-buy-ticket-setup ul li{ display:inline-block; line-height:35px;}
+.my-buy-ticket-setup ul li a{ display:inline-block; float:left;padding:0 8px; color:#666;}
+.my-buy-ticket-setup dd input.w82{width:82px;}
+.my-buy-ticket-setup dd span{ float:left;}
+.btn-m3:hover{ background:#00651c; text-decoration:none; color:#fff;}
+/*我的良票-我的消息-买家消息管理-我的卖家名册*/
+.txt-top{margin:7px 10px 7px 0;}
+/*充值信息*/
+.module-1-con4 ul{ background:#fff;}
+.module-1-con4 ul li{ line-height:40px; border:1px solid #eaeaea; border-top:none; text-indent:20px; color:#555;}
+.module-1-con4 ul li span{ color:#555;}
+.module-1-con4 .wid{border: 1px solid #eaeaea;height: 22px; line-height:22px; display: inline-block;vertical-align: middle; width: 90px; text-align:center;}
+/*integral-page*/
+.integral-page{width:898px;margin:-2px auto 0 auto; clear:both; overflow:hidden;padding:15px 30px; border:1px solid #eaeaea; background: #fff;}
+.integral-page ul{ margin:0 15px 0 245px; _display:inline; float:left;}
+.integral-page ul li{ display:block; float:left;}
+.integral-page ul li.more{padding:0 5px; line-height:22px; height:22px;}
+.integral-page ul li a,.integral-page ul li a.up{ float:left;padding:0 7px; border:1px solid #ccc;margin-right:3px; text-align:center; height:22px; line-height:22px; color:#535353;}
+.integral-page ul li a.up{width:22px;background:url(http://dui.damai.cn/secondhand_ticket/img/page_up.gif) no-repeat left top; text-indent:-9999px;padding:0;}
+.integral-page ul li a.up:hover{ background:url(http://dui.damai.cn/secondhand_ticket/img/page_uphover.png) no-repeat left top;}
+.integral-page ul li a.first{  background:#014715; color:#fff;}
+.integral-page ul li a.down{width:56px; height:22px; background:url(http://dui.damai.cn/secondhand_ticket/img/page_next2.gif) no-repeat left top; text-indent:-9999px;padding:0;*height:20px;vertical-align:middle; line-height:22px;}
+.integral-page ul li a.down:hover{ background:url(http://dui.damai.cn/secondhand_ticket/img/page_nexthover.gif) no-repeat left top;}
+.integral-page ul li a:hover{ background:#014715; color:#fff !important; font-family:Tahoma, Geneva, sans-serif;}
+.integral-page-check{width:300px; color:#535353; height:22px; line-height:22px; float:left;}
+.integral-page-check span{margin-right:5px;}
+.integral-page-check .t{width:30px;margin:0 5px; height:22px; border:1px solid #e0e0e0; text-align:center; vertical-align:middle; *height:18px;*padding:2px 0;}
+.integral-page-check button{width:39px; height:22px; line-height:22px; background:url(http://dui.damai.cn/secondhand_ticket/img/page_sure.gif) no-repeat left top;text-indent:-9999px; border:medium; cursor:pointer;*border:none;margin-left:2px; vertical-align:middle;_margin-left:5px;}
+/*页数*/
+.page { text-align: center; font-family: \5b8b\4f53; margin: 10px 0 0 0;}
+.page a { display: inline-block; padding: 5px 10px; background-color: #f5f5f5; margin: 0 5px; color: #333;}
+.page a.on { background-color: #00651c; color: #fff;}
+.page a.on:hover { color: #fff!important;}
+
+.here { margin: 15px 0 0 0; color: #aaaaaa;}
+.here a { color: #666;}
+.page-line{padding:0 5px;*height:15px; *line-height:15px;*padding:2px 5px;}
+.show { margin: 10px 0 0 0; overflow: auto; zoom: 1;}
+.show-poster { border: 1px solid #ccc; width: 438px; height: 438px; float: left; overflow: hidden;}
+.show-poster .img { padding: 4px; border-bottom: 1px solid #ccc;}
+.show-poster .img img { display: block; width: 430px; height: 350px;}
+.show-poster .share-ti { color: #00651c; font-weight: bold; font-size: 14px; width: 16px; float: left; margin: 12px 10px 0 12px; _margin: 12px 6px 0 12px;}
+.show-poster .share { overflow: hidden; zoom: 1; margin: 10px 0 0 0; float: left; width: 400px; _width: 404px;}
+.show-poster .share li { width: 88px; height: 40px; border: 1px solid #ccc; float: left; padding: 8px 0; margin: 0 10px 0 0;}
+.show-poster .share li a { display: block; width: 32px; height: 40px; padding: 0 0 0 57px; background-image: url(http://dui.damai.cn/secondhand_ticket/img/ico-web-b.gif); background-repeat: no-repeat; line-height: 20px;}
+.show-poster .share li a.weibo { background-position: 6px 0;}
+.show-poster .share li a.tqq { background-position: 6px -40px;}
+.show-poster .share li a.tsohu { background-position: 6px -80px;}
+.show-poster .share li a.t163 { background-position: 6px -120px;}
+
+.show-detail { width: 510px; float: right; position: relative;}
+.show-detail h1 { font-size: 14px; font-weight: bold; color: #666; height: 31px; line-height: 31px;}
+.show-detail-nav { overflow: auto; zoom: 1; height: 32px; overflow: hidden; position: absolute; right: 0; top: 0;}
+.show-detail-nav li { width: 62px; height: 32px; float: left; margin: 0 0 0 3px;}
+.show-detail-nav li a { display: block; width: 60px; height: 30px; border: 1px solid #00651c; background-color: #00651c; color: #fff; text-align: center; line-height: 30px;}
+.show-detail-nav li a:hover { color: #fff!important;}
+.show-detail-nav li.hover a { border-bottom: none; height: 31px; background-color: #fff; color: #00651c;}
+.show-detail-nav li.hover a:hover { color: #00651c!important;}
+.show-detail-main { border: 1px solid #00651c; min-height: 407px; _height: 407px;}
+.show-detail-main .detail-1 { padding: 10px 10px 5px 10px;}
+.show-detail-main .detail-1 dt { display: none;}
+.show-detail-main .detail-1 .place { color: #999; padding: 0 0 5px 0; border-bottom: 1px solid #ccc; margin: 0 0 5px 0;}
+.show-detail-main .detail-1 .place span { color: #00651c;}
+.show-detail-main .detail-1 .time { padding: 0 0 10px 0; border-bottom: 1px solid #ccc;}
+.show-detail-main .detail-1 .time span { padding: 0 0 5px 0;}
+.show-detail-main .ticket-list-1 { margin: 0 10px; padding: 0 0 10px 0; border-bottom: 1px solid #ccc;}
+.show-detail-main .ticket-list-1 a { margin: 0 3px 3px 0;}
+.show-detail-main .ticket-list-1-ti { display: block; margin: 0 10px 5px 10px; color: #00651c;}
+.show-detail-main .choose-seat { margin: 10px 10px 0 10px; color: #00651c;}
+.show-detail-main .choose-seat a { display: inline-block; background-color: #00651c; color: #fff; padding: 4px 8px;}
+.show-detail-main .choose-seat a:hover { color: #fff!important;}
+.show-detail-main .choose-seat .venue { border: 1px solid #ccc; width: 486px; overflow: hidden; margin: 0 0 10px 0; display: none;}
+.table-list-1 { margin: 10px 0 0 0;}
+.table-list-1 thead { background-color: #666; height: 30px; line-height: 30px; color: #ccc;}
+.table-list-1 thead th { padding: 0 0 0 10px;}
+.table-list-1 tbody tr { background-color: #f5f5f5; color: #666;}
+.table-list-1 tbody tr:hover { background-color: #ddd;}
+.table-list-1 tbody tr td { padding: 10px; border-bottom: 1px solid #fff;}
+.table-list-2 { margin: 10px 0 0 0;}
+.table-list-2 thead { background-color: #eee; height: 30px; line-height: 30px; color: #666;}
+.table-list-2 thead th { padding: 0 0 0 10px;}
+.table-list-2 tbody tr { background-color: #f9f9f9; color: #666;}
+.table-list-2 tbody tr td { padding: 10px; border-bottom: 1px solid #fff;}
+
+.show-sift { height: 60px; background-color: #f5f5f5; margin: 10px 0 0 0;}
+.show-sift h3 { font-size: 14px; font-weight: bold; color: #00651c; line-height: 60px; padding: 0 0 0 10px; width: 70px; float: left;}
+.show-sift dl { width: 300px; height: 40px; border: 1px solid #999; float: left; background-color: #fff; margin: 9px 9px 0 0; _display: inline; overflow: hidden;}
+.show-sift dt { background-color: #999; width: 80px; height: 40px; line-height: 40px; float: left; text-align: center;}
+.show-sift dd { width: 220px; float: left; overflow: hidden;}
+.show-sift dd ul.num { overflow: hidden; zoom: 1; margin: 5px 0 0 8px; width: 240px;}
+.show-sift dd ul.num li { width: 60px; float: left;}
+.show-sift dd ul.btn { overflow: hidden; zoom: 1; margin: 0 0 0 20px;}
+.show-sift dd ul.btn li { width: 56px; height: 16px; line-height: 16px; float: left; margin: 0 5px 0 0;} 
+.show-sift dd ul.btn a { display: block; width: 56px; height: 16px; line-height: 16px; background-color: #bbb; text-align: center; color: #fff; font-weight: bold;}
+.show-sift dd ul.btn a { color: #fff!important; text-decoration: none;}
+.show-sift dd ul.btn .btn1 a:hover,.show-sift dd ul.btn .btn1 a.on { background-color: #00651c;}
+.show-sift dd ul.btn .btn2 a:hover,.show-sift dd ul.btn .btn2 a.on { background-color: #090;}
+.show-sift dd ul.btn .btn3 a:hover,.show-sift dd ul.btn .btn3 a.on { background-color: #f60;}
+/* 注册&登录 begin */
+.reg-te,.login {border: 1px solid #eaeaea; clear: both; overflow: auto; zoom: 1; border-top:none;}
+.login {border-top:2px solid #c3d600;}
+.reg { margin: 30px 100px 100px 100px; position: relative; overflow: hidden; zoom: 1; }
+.login .reg { margin: 20px 18px;}
+.h400{height:400px;}
+.login h1 { font-size: 14px; font-weight: bold; color: #00651c; margin: 0 0 30px 0;}
+.reg dl { overflow: hidden; zoom: 1; margin-bottom: 25px;padding:10px 0;}
+.reg dl.dl-w{width:369px;}
+.dlhover{ background:#f7f7f7;}
+.reg dt { width: 90px; float: left; text-align: right; line-height: 28px; font-size: 14px;}
+.reg dt.t12{ color:#666px; font-size:12px;}
+.reg dt span { font-family: \5b8b\4f53; color: #f00; font-size: 12px; padding: 0 5px 0 0;}
+.reg dd { float: left;}
+.reg dd.forget-code{ height:28px; line-height:28px;margin-left:7px;}
+.mr60{margin-left:170px;}
+.reg dd input { border: 1px solid #f0f0f0; border-top-color:#d6d6d6; padding: 5px; width: 270px; color: #444;}
+.login  .reg dd input { width: 200px;}
+.reg dd input:focus { background-color: #ffffe0;}
+.reg dd input.w100 { width: 100px;}
+.reg dd .ico { display: block; float: left; width: 19px; height: 19px; margin: 4px 0 0 8px;}
+.reg dd .code { display: block; float: left; width: 101px; height: 27px; margin: 0 0 0 8px;}
+.reg dd .text { display: block; float: left; height: 28px; background:url(http://dui.damai.cn/secondhand_ticket/img/bg-reg-tipslr_lt.png) no-repeat left 0; padding-left: 15px; margin: 0 0 0 8px;}
+.texts-nobg{ background:none !important;}
+.reg dd .text em { display: block; float: left; height: 28px; background:url(http://dui.damai.cn/secondhand_ticket/img/bg-reg-tips_rt.png) no-repeat right 0; line-height: 28px; padding-right: 8px; color: #888; font-style: normal;}
+.reg dd .text em a{ color:#015b1a;}
+.t-red em{ color:#e90a3f !important;}
+.reg .tips { border: 1px solid #f0e1ab; background-color: #fffdee; width: 183px; padding: 20px 26px; line-height: 1.618; position: absolute; right: 0; top: 106px;}
+.reg .tips strong { font-weight: normal; color: #bd0505;}
+.reg-btn-te { padding-left: 90px; overflow: auto; zoom: 1;}
+.reg-btn-te input {width:161px; height: 31px; float: left; border: none; cursor: pointer; background:url(http://dui.damai.cn/secondhand_ticket/img/reg_btn.png) no-repeat 0 0; padding: 0 20px; text-align:center; *padding: 0 10px; font-size: 14px; font-weight: bold; color: #fff;}
+.reading-protocol{    height: 25px;padding:20px 0 15px 0;line-height: 25px;text-indent: 90px;}
+.reading-protocol input{ vertical-align:middle;margin-right:5px;}
+.registration-success1{padding:60px 40px; border:1px solid #eaeaea;}
+.registration-success2{padding:100px 40px;}
+.registration-success1 p{ line-height:45px; color:#007c25; font-size:24px;font-family:\5fae\8f6f\96c5\9ed1; text-align:center; font-weight:bold;}
+.registration-success1 p .login-txt{ color: #0066ff; font-size: 16px;  font-weight: normal;}
+.registration-success1 p .send-txt{ color: #0066ff; font-size: 16px;  font-weight: normal;}
+.success-c{ background:url(http://dui.damai.cn/secondhand_ticket/img/hook.png) no-repeat 138px 8px;}
+.registration-success1 p input{width:104px; height:30px;margin:0 15px; text-align:center;  background:url(http://dui.damai.cn/secondhand_ticket/img/public_btnw104h30.png) no-repeat 0 0; border:medium; *border:none; font-size:16px; color:#fff; vertical-align:middle; cursor: pointer;}
+.registration-success1 p input:hover{ background-position: 0 -30px;}
+.reg-btn-log{width:365px; padding-left:90px;}
+.login-goes,.login-nseuser{width:61px; height:31px; border:medium;*border:none; background:url(http://dui.damai.cn/secondhand_ticket/img/login_goes.png) no-repeat 0 0; font-size:14px; color:#fff;font-family:\5fae\8f6f\96c5\9ed1;}
+.login-nseuser{width:104px; height:31px;margin-left:15px;background:url(http://dui.damai.cn/secondhand_ticket/img/login_nseuser.png) no-repeat 0 0;}
+.reg-btn-texts{width:275px;margin:30px 0 0 70px;; font-size:14px;}
+.reg-btn-texts h3{ color:#666; font-size:14px; height:25px; line-height:25px;}
+.reg-btn-texts p{ color:#aaaaaa; height:25px; line-height:25px;}
+.reg-btn-te input:hover { background-color: #31a6fe;}
+.reg-treaty { clear: both; height: 200px; overflow-y: scroll; border: 1px solid #d5d5d5; background-color: #fff; padding: 10px; line-height: 2; margin-top: 10px;}
+.reg-treaty h1 { font-weight: bold; text-align: center; color:#2a2a2a; font-size:14px;}
+.reg-treaty h2 { font-weight: bold;}
+.reg-treaty p { text-indent: 2em;}
+.treaty-start{ text-indent:0 !important;}
+.reg-te-nav { overflow: auto; zoom: 1; position: relative; z-index: 10;}
+.reg-te-nav li { float: left;}
+.reg-te-nav a { background-image: url(http://dui.damai.cn/secondhand_ticket/img/ti-reg-te.gif); display: block; text-indent: -1000em;}
+.reg-te-nav .btn-email-on { width: 137px; height: 51px; background-position: 0 0;}
+.reg-te-nav .btn-tel-on { width: 137px; height: 51px; background-position: 0 -51px;}
+.reg-te-nav .btn-email-off { width: 109px; height: 36px; margin-top: 10px; background-position: 0 -102px;}
+.reg-te-nav .btn-email-off:hover { background-position: 0 -138px;}
+.reg-te-nav .btn-tel-off { width: 109px; height: 36px; margin-top: 10px; background-position: 0 -174px;}
+.reg-te-nav .btn-tel-off:hover { background-position: 0 -210px;}
+.login-other { margin: 30px 0 0 0;}
+.login-other span { display: block; color: #999; margin: 0 0 10px 0;}
+.login-other ul { overflow: auto; zoom: 1;}
+.login-other ul li { width: 64px; float: left; height: 16px; line-height: 16px; _line-height: 18px; padding: 0 10px 0 0; margin: 0 10px 0 0; border-right: 1px solid #ebebeb;}
+.login-other ul li.last { border-right: none;}
+.login-other ul li a { display: block; height: 16px; width: 48px; background-image: url(http://dui.damai.cn/secondhand_ticket/img/ico-web.gif); background-repeat: no-repeat; padding-left: 20px; color: #999; overflow: hidden;}
+.login-other ul li a.weibo { background-position: 0 0;}
+.login-other ul li a.tqq { background-position: 0 -16px;}
+.login-other ul li a.tsohu { background-position: 0 -32px;}
+.login-other ul li a.t163 { background-position: 0 -48px;}
+.reg-now { position: absolute; width: 554px; height:270px; right: 0; top:85px;}
+.reg-now h2 { font-size: 14px; font-weight: bold;}
+.reg-now p { margin: 20px 0 80px 0; font-size: 14px; line-height: 1.5;}
+.reg-now a { display: block; height: 32px; float: left; background-color: #00651c; padding: 0 20px; font-size: 14px; font-weight: bold; color: #fff; line-height: 32px;}
+.reg-now a:hover { background-color: #31a6fe; color: #fff!important; text-decoration: none;}
+/* 注册&登录 end */
+.flow { border: 1px solid #f5f5f5; margin: 10px 0 0 0; text-align: center; *text-align: left; padding: 20px 10px;_height:65px;}
+.flow-step{_padding: 35px 10px;}
+.flow ol { position: relative; z-index: 1200;zoom:1;margin:0 auto;}
+.flow ol li { width: 230px; display: inline-block; *display: block; *float: left; *text-align: center;}
+.flow ol li .txt { font-size: 14px; font-weight: bold; color: #7e7e7e;; display: inline-block;}
+.flow ol li .num { background: url(http://dui.damai.cn/secondhand_ticket/img/bg-flow-1.png) 0 -37px no-repeat; display: block; line-height: 36px; font-size: 16px; color: #fff; font-weight: bold; width: 36px; height: 36px; margin: 5px auto 0 auto;}
+.flow ol li.ie6mg{*margin-left:49px;*width:205px;}
+.flow ol li.ie6mg2{*margin-left:63px;*width:180px;}
+.flow ol li.on .txt { color: #015b1a;}
+.flow ol li.on .num { background-position: 0 0;}
+.flow-line { height: 21px; background: url(http://dui.damai.cn/secondhand_ticket/img/bg-flow-2.png) 0 -75px repeat-x;}
+.flow-line div { background: url(http://dui.damai.cn/secondhand_ticket/img/bg-flow-2.png) 0 0 repeat-x; height: 17px;}
+.flow-line-3 { width: 470px;*width: 485px; margin: -27px auto 0 auto;}
+.flow-line-3-1 div ,
+.flow-line-3-2 div{ width: 50%;}
+.flow-line-3-3 div,
+.flow-line-4-4 div { width: 100%;}
+.flow-line-3-3,
+.flow-line-3-1{*margin-left:165px;_margin-left:220px;}
+.flow-line-4,.flow-line-5 { width: 700px; margin: -27px auto 0 auto; text-align: left;}
+.flow-line-4-1 div ,.flow-line-3-10 div{ width: 0%;}
+.flow-line-4-2 div { width: 33%;}
+.flow-line-4-3 div { width: 65%;}
+/*良票-我的良票-我的购物车-确认订单信息*/
+.sure-step-three-box{ border: 1px solid #eaeaea; border-top: 2px solid #c3d600; padding: 1px;}
+.flow-step ol li{ width: 185px;}
+.flow-line-5m,.flow-line-6{ width: 780px; *width: 758px;}
+.flow-line-5-1 div{ width: 50%;}
+/*电子钱包支会*/
+.flow-line-6 div{ width: 75%;}
+.flow-line-6-0 div{ width: 50%;}
+.flow-line-6-1 div{ width: 100%;}
+.electronic-purse-flow ol li{ width: 185px;}
+/*支付成功*/
+.public-btn{ width: 104px; height: 30px; border: medium none; background: url(http://dui.damai.cn/secondhand_ticket/img/public_btnw104h30.png) no-repeat 0 0; color: #fff; font-size:14px;font-family:\5fae\8f6f\96c5\9ed1; font-weight: 800;}
+.public-btn:hover{ background-position: 0 -30px;}
+/*支付失败*/
+.payfailure p{ background: url(http://dui.damai.cn/secondhand_ticket/images/payfailure.png) no-repeat 40px center;}
+.payfailure span{ color: #1f8b3f; font-size: 14px;font-family:\5fae\8f6f\96c5\9ed1; font-weight: bold;}
+.my-index-h3 { height: 30px; line-height: 30px; padding: 0 10px; color:#00651c; background-color: #f8f8f7; clear:both; overflow:hidden;zoom:1;border:1px solid #ccc;}
+.txt7{  color:#666;}
+.my-index-h3 a:hover span{ color:#00651c !important;}
+.my-index-info { border: 1px solid #ebeff4; background-color: #f8f8f8; margin-bottom:10px; overflow: hidden; zoom: 1;}
+.my-index-info-photo { width: 81px; float: left; margin: 10px; _display: inline;}
+.my-index-info-photo .img { display: block; width: 75px; height: 75px; padding: 2px; border: 1px solid #ccc;}
+.my-index-info-photo .txt { display: block; text-align: center; margin: 5px 0 0 0;}
+.my-index-info-detail { width: 672px; float: left; margin: 10px 10px 10px 0; color: #666; _display: inline;}
+.my-index-info-detail ul{width:300px; float:left;margin-top:53px;}
+.my-index-info-detail ul li {line-height:28px;}
+.my-index-info-detail ul li strong { font-size:14px;}
+.my-index-info-detail ul a{padding:2px 5px; height:13px; background:url(http://dui.damai.cn/secondhand_ticket/images/track_record01.gif) repeat-x left top; border:1px solid #c4c4c4;}
+.my-index-info-detail ul a:hover{ border:1px solid #00651c; color:#00651c !important; text-decoration:none;}
+.my-index-info-detail ul a.c-hover:hover{ border:1px solid orange; color:#FF6600 !important;}
+.my-index-info-detail ul a.txt6{ color:#666666;}
+.s-a-bg,.gary-d,.see-hd{ background:url(http://dui.damai.cn/secondhand_ticket/images/track_record01.gif) repeat-x left top;padding:2px 5px; border:1px solid #f3f3f3; line-height:15px;*padding:3px 5px 1px 5px;*line-height:20px;}
+
+.gary-d{color:#d2d2d2 !important;}
+.gary-d:hover{ border:1px solid #d2d2d2; color:#d2d2d2 !important;text-decoration:none;}
+.s-a-bg:hover{ border:1px solid #00651c;color:#00651c !important; text-decoration:none;}
+.my-index-info-detail ol{width:114px; height:63px; background:url(http://dui.damai.cn/secondhand_ticket/images/buy_header.gif) repeat-x left top; float:left; border:1px solid #c4c4c4;padding:8px 0;margin-left:8px;;}
+.my-index-info-detail ol li{ line-height:22px; text-align:center;}
+.my-index-info-detail ol li span.d-lt,.my-index-info-detail ol li span.d-rt{width:70px; display:block;_display:inline-block;}
+.my-index-info-detail ol li span.d-lt{ background:url(http://dui.damai.cn/secondhand_ticket/images/d-lt.gif) no-repeat left center;margin-left:22px;_margin-left:2px; cursor:pointer;}
+.my-index-info-detail ol li span.d-rt{ background:url(http://dui.damai.cn/secondhand_ticket/images/d-rt.gif) no-repeat right center;}
+.my-index-info-detail ol li a{ color:#666;}
+.my-index-other { overflow: hidden; zoom: 1; margin: 5px 0 0 0;}
+.my-index-other .history { width: 390px; float: left;}
+.my-index-other .history-wid{width:785px;}
+.my-index-other .history-con { border: 1px solid #ebeff4; border-top: none; padding: 10px 0 10px 10px; overflow: hidden; zoom: 1; clear:both;}
+.my-index-other .history-con-b{padding:0;_width:783px;}
+.my-index-other .maybe { width: 390px; float: right;}
+.my-index-other dl { width: 98px;_height:225px; margin: 0 10px 0 0; float: left; background-color: #f8f8f8; border: 1px solid #ebeff4; padding: 8px; _display: inline;}
+.my-index-other dl dt { width: 98px; height: 80px; margin: 0 auto;}
+.my-index-others dl{width:85px;padding:6px 0 0 23px;margin:0;border:none; background:#f7f7f7 url(http://dui.damai.cn/secondhand_ticket/img/center_line.jpg) no-repeat right center; float:left;}
+.my-index-others dl.c1{ background:#f7f7f7;}
+.my-index-others dl dt{ height:30px; line-height:30px !important; font-size:14px; color:#555; font-weight:bold;width:82px !important;}
+.my-index-others dl dd{ height:35px; line-height:35px; color:#FF5A00; font-size:16px;font-family:\5fae\8f6f\96c5\9ed1;}
+.my-index-other dl dt a { display: block; width: 94px; height: 76px; padding: 1px; border: 1px solid #ccc;}
+.my-index-other dl dt a:hover { border: 1px solid #00651c;}
+.my-index-other dl dd { color: #666; line-height: 1.8; margin: 5px 0 0 0;}
+.my-index-other dl dd a.address{ height:13px;padding:2px 10px; background:url(http://dui.damai.cn/secondhand_ticket/images/track_record01.gif) repeat-x left top; border:1px solid #c4c4c4;margin-left:15px; color:#ff6600;}
+.my-index-other dl dd a.address:hover{ border:1px  solid #FF6600!important; text-decoration:none; }
+.module-1,.module-5 { margin: 10px 0 0 0;}
+.rechargeing-tips{  border: 1px solid #eaeaea;}
+.my-index-others dl dd{ height:35px; line-height:35px; color:#FF5A00;; font-size:16px;font-family:\5fae\8f6f\96c5\9ed1;}
+.module-1 h2,.fl-2px h2{ height: 40px; line-height: 40px; padding: 0 10px; font-size: 16px;font-family:\5fae\8f6f\96c5\9ed1;color: #555; border:1px solid #eaeaea; border-top:2px solid #c3d600; border-bottom:none;}
+.rechargeing-tips h2{ border: none !important; border-bottom: 1px solid #eaeaea !important;}
+.exclamation-mark,
+.exclamation-mark2,
+.exclamation-mark3,
+.wait-mark,
+.submit-mark{padding:45px; color:#015b1a; font-size:20px;font-family:\5fae\8f6f\96c5\9ed1; border:5px solid #bebebe;width:210px; text-indent:45px; position:relative; background: #fff; }
+.error-tip{ background:#fff url(http://dui.damai.cn/secondhand_ticket/img/exclamation_mark.png) no-repeat 45px 41px;}
+.right-tip{ background:#fff url(http://dui.damai.cn/secondhand_ticket/img/hook.png) no-repeat 45px 41px;}
+.exclamation-mark-box,.exclamation-mark-box2,.exclamation-mark-box3{width:310px;position:absolute; right:78px; top:65px;}
+.shut-btns{width:22px; height:22px; background:url(http://dui.damai.cn/secondhand_ticket/img/shut_btns.png) no-repeat 0 0; position:absolute; right:-14px; top:-12px;}
+.exclamation-mark-box{top: 222px;}
+.exclamation-mark-box3{top:-32px;left:145px; z-index: 10}
+.exclamation-mark2{right:89px;top:-88px;}
+.exclamation-mark3{padding:45px 25px;width:250px; background:#fff url(http://dui.damai.cn/secondhand_ticket/img/exclamation_mark.png) no-repeat 25px 41px;}
+.nbg{border-top:2px solid #eaeaea !important;}
+.module-1 .list-1 { padding: 10px; line-height: 1.5; color: #666;}
+.module-1 .list-1 li { margin: 0 0 10px 0;}
+.module-1 .list-1 li strong { font-weight: normal; color: #00651c;}
+.module-1-con { background-color: #fff;border: 1px solid #eee;padding: 20px 20px 20px 20px;*padding: 10px 10px 20px 10px; overflow: hidden; zoom: 1;min-height:461px;zoom:1;_height:461px;_height:expression((document.documentElement.clientHeight||document.body.clientHeight)<461?"461px":"");overflow:hidden;}
+.city-item-slet{ width: 445px; height: 185px; padding:8px 3px 8px 8px; border: 1px solid #dedede; background: #fff; position: absolute; left: 356px;*left: 346px; top:102px;*top:93px;  display: none;}
+.city-item-slet dl dt{ width: 61px; height: 18px; float: left; text-align: center; background:url(http://dui.damai.cn/secondhand_ticket/images/city_item_slet_dl%20_dt.png) no-repeat 0 0;  }
+.city-item-slet dl dd{ width: 379px; overflow:hidden; float: left;}
+.adress-listing{ width: 369px; margin-left: 10px;}
+.adress-listing a{ padding: 0 8px; line-height: 22px; display: inline-block; margin:0 1px 10px 0;}
+.adress-listing a.on,.adress-listing a:hover{ background: #fb660a; color: #fff !important;}
+.city-txt-Letter{ width: 364px; height: 23px;display: block; margin-left: 15px; position:relative; z-index: 5px;/* background: url(http://dui.damai.cn/secondhand_ticket/images/city_txt_Letter.jpg) repeat-x left bottom;*/}
+.city-txt-Letter li{ float: left; width: 19px; text-align: center;display: inline-block;height: 23px; line-height: 23px; color: #000; cursor: pointer;}
+.city-txt-Letter li.active{ color: #015118; background: url(http://dui.damai.cn/secondhand_ticket/images/city_li_a.jpg) no-repeat 0 0;}
+.city-list-detail{ width: 369px; height: 65px; margin-left: 10px; margin-top: -1px; border-top: 1px solid #ccc;}
+.city-list-detail ol{ width: 375px; padding: 10px 2px  !important;}
+.city-list-detail ol li{ float: left;}
+.city-list-detail ol li a{ padding: 0 8px; display: inline-block; line-height: 22px; float: left;color: #000; margin: 0 1px 10px 0;}
+.current-city{ width: 60px; padding-right: 19px; height: 21px; line-height:21px; cursor: pointer; text-align: center; position: absolute; right: 245px; top: 82px;*top:72px;*right: 255px; background: url(http://dui.damai.cn/secondhand_ticket/images/current_city.png) no-repeat 0 0;}
+
+
+.module-1-cons{min-height:inherit;padding:20px 23px;padding-bottom:38px;*padding-bottom:30px;_padding-bottom:0;*min-height:313px;_min-height:313px;_height:343px;}
+.mh430{ min-height:420px;}
+.mh476{ min-height:476px;padding:0 0 29px 0;_padding-bottom:30px; position:relative;}
+.mht343{min-height:258px;padding:0 10px;*padding-bottom:10px;_height:258px;}
+.mh450{min-height:343px;padding-bottom:0;padding-top:0;*padding-bottom:38px;_padding-bottom:30px;}
+.module-1-con ol,.module-1-con2 ol,.module-1-con3 ol,.module-1-con4 ol{padding:15px 8px;}
+.pad ol{padding:15px 0;}
+.module-1-con3 ol{ padding: 19px 8px 18px 8px;}
+.module-1-con ol li p,.module-1-con2 ol li p,.module-1-con3 ol li p,.module-1-con4 ol li p{ line-height:28px; text-indent:25px;color:#7e7e7e;padding:5px 0; border-bottom:1px dashed #eaeaea;}
+.module-1-con3 ol li p{ line-height:28px;margin-top:4px; padding-bottom:10px; border-bottom:1px dashed #eaeaea;}
+.num_1{ background:url(http://dui.damai.cn/secondhand_ticket/img/num_1.png) no-repeat 0 12px;}
+.num_2{ background:url(http://dui.damai.cn/secondhand_ticket/img/num_2.png) no-repeat 0 12px;}
+.noline{ border-bottom:none !important;}
+.num_3{ background:url(http://dui.damai.cn/secondhand_ticket/img/num_3.png) no-repeat 0 12px; border-bottom:none !important;}
+.num_3_2{ background:url(http://dui.damai.cn/secondhand_ticket/img/num_3.png) no-repeat 0 12px;}
+.num_4{ background:url(http://dui.damai.cn/secondhand_ticket/img/num_4.png) no-repeat 0 12px;}
+/*我要卖票-一口价*/
+.price-tips-list{ padding: 0 17px; _height: 401px;}
+.dark-green{ color: #015b1a;}
+.down-btns{ width: 159px; height: 30px; display: inline-block; border: medium none;font-family: \5b8b\4f53; font-size: 12px; line-height: 30px; text-align: center; background: url(http://dui.damai.cn/secondhand_ticket/images/down_btns.png) no-repeat 0 0;color: #fff; cursor: pointer; margin:20px 0 0 30px;}
+.down-btns:hover{ background-position: 0 -30px; }
+.fl-2px{ border:1px solid #eaeaea; border-top:2px solid #c3d600; margin: 10px 0 0 0;}
+.trans-infor-table tr td{ height: 38px; border-bottom: 1px solid #eaeaea; border-top: 1px solid #eaeaea; padding:0 0 0 20px;}
+.trans-infor-table tr td.h100{ height: 100px;}
+.trans-infor-table tr td dl dt,.trans-infor-table tr td dl dd{float:left; color:#a7a7a7;}
+.trans-infor-table tr td dl dt{ width: 75px; height:22px; line-height:22px; text-align: right; color: #555;}
+.trans-infor-table tr td dl dd input.v{ vertical-align: middle; margin: 0 5px 0 0;}
+.trans-infor-table tr td dl dd label,.trans-infor-table tr td dl dd .w47,.trans-infor-table tr td dl dd .w110{ color: #555;}
+.trans-infor-table tr td dl dd .w110{ width:110px; height:22px; padding: 3px;}
+.trans-infor-table tr td dl dd .w47{ width:47px; height:22px; padding: 3px;}
+.mh255{ min-height:245px;_height:245px;}
+
+
+.module-1-con .fl-100 { width: 96px; border: 1px solid #eee; float: left; min-height: 407px;padding:1px;_height:407px;_height:expression((document.documentElement.clientHeight||document.body.clientHeight)<407?"407px":"");overflow:hidden;}
+.module-1-con .fm-240 { width: 310px; border: 1px solid #eee; float: left; margin: 0 0 0 10px; min-height: 409px;_height:409px;_height:expression((document.documentElement.clientHeight||document.body.clientHeight)<409?"409px":"");overflow:hidden;}
+.module-1-con .fr-309{width:309px;}
+.module-1-con .fr-298 { width: 203px; border: 1px solid #eee; float: left; margin: 0 0 0 10px; min-height: 409px;_height:409px;_height:expression((document.documentElement.clientHeight||document.body.clientHeight)<409?"409px":"");overflow:hidden;}
+.module-1-con .fr-309{width:309px;}
+.module-1-con h3 { height: 34px; background-color: #eee; line-height: 34px; font-size: 14px; font-weight: bold; color: #015b1a; text-align: center; background:url(http://dui.damai.cn/secondhand_ticket/img/module_1_h3.png) repeat-x 0 0; text-indent:20px; text-align:left;}
+.module-1-con .list-2 { clear: both; padding: 1px 1px 0 1px;}
+.module-1-con .list-2 li { margin: 0 0 1px 0; height:28px;}
+.module-1-con .list-2 li a { display: block; height: 28px;overflow: hidden; background-color: #f7f7f7; line-height: 28px; padding: 0 0 0 10px; color: #555555;text-overflow: ellipsis; white-space: nowrap;}
+.module-1-con .list-2 li a:hover { border: 1px solid #f7f7f7; height: 28px; line-height: 28px; padding: 0 0 0 9px; color: #fff!important; text-decoration: none; background:#c3d600;}
+.module-1-con .list-2 li.on a { background-color: #c3d600; color: #fff;}
+.module-1-con .list-2 li.on a:hover { color: #fff!important;}
+.module-1-con .pro-type li a{ width: 84px; }
+.module-1-con .pro-name li a{ width: 298px; }
+.module-1-con .pro-time li a{ width: 191px; }
+
+.module-1-con .ticket { width: 632px; height: 256px; background: url(http://dui.damai.cn/secondhand_ticket/img/ticket.jpg) 0 0 no-repeat; position: relative;}
+.module-1-con .ticket dt { font-size: 24px; position: absolute; top: 15px; left: 170px;font-family:\9ed1\4f53; }
+.module-1-con .ticket dd { position: absolute; font-size: 14px;color:#555; width: 245px;}
+.module-1-con .ticket dd input { border: 1px solid #d8d5d6; font-family: \5b8b\4f53; font-size: 12px; padding: 2px; height: 14px; line-height: 14px;}
+.module-1-con .ticket dd select { border: 1px solid #d8d5d6; font-family: \5b8b\4f53; font-size: 12px;}
+.module-1-con .ticket dd span { color: #f00; font-size: 16px; font-family: \5b8b\4f53; font-weight: bold; padding: 0 5px 0 0;}
+.module-1-con .ticket dd.date {top: 105px; left: 43px;}
+.module-1-con .ticket dd.venue { top: 65px; left: 43px; }
+.module-1-con .ticket dd.seat { top: 138px; left: 43px;}
+.module-1-con .ticket dd.price { top: 142px; left: 290px;}
+.module-1-con .ticket dd.code { top: 138px; left: 270px;}
+.module-1-con .ticket dd.type { top: 172px; left: 30px;}
+.module-1-con .ticket dd.area { top: 65px; left: 290px;}
+.module-1-con .ticket dd.origin { top: 105px; left: 290px;}
+
+.btn-c1 { overflow: hidden; zoom: 1; padding: 0 10px 10px 10px;}
+.btn-c1 input { display: block; width: 69px; height: 25px; background: url(http://dui.damai.cn/secondhand_ticket/img/btn-c1.gif) 0 0 no-repeat; border: none; cursor: pointer; text-indent: -1000em; float: left; margin: 0 10px 0 0;}
+.btn-c1 input.collect { background-position: 0 0;}
+.btn-c1 input.collect:hover { background-position: 0 -25px;}
+.btn-c1 input.focus { background-position: 0 -50px;}
+.btn-c1 input.focus:hover { background-position: 0 -75px;}
+.btn-c1 input.share { background-position: 0 -100px;}
+.btn-c1 input.share:hover { background-position: 0 -125px;}
+
+.module-2 { padding: 10px;}
+.module-2 h3 ,.module-2-ti{ font-size: 14px; color: #00651c; padding: 0 0 10px 0; border-bottom: 1px solid #00651c;}
+.module-2-ti { overflow: hidden; zoom: 1;}
+.module-2-ti h3 { padding: 0; border: none; float: left;}
+.module-2-ti span { display: block; float: right; font-size: 12px;}
+.module-2-con { line-height: 2; padding: 10px 0; overflow: hidden; zoom: 1;}
+.module-2-con .radio span { color: #666;}
+.module-2-con .total { font-size: 14px; color: #666; display: block;}
+.module-2-con .total strong { font-weight: bold; color: #f60;}
+
+.module-3 { padding: 20px;}
+.module-3-ti { font-size: 14px; line-height:30px;color: #555; padding: 0 0 20px 0; overflow: hidden; zoom: 1; border-bottom:1px dashed #eaeaea;}
+.module-3-ti input.wid{ height:28px;width:70px;  border:1px solid #eaeaea; color:#555; vertical-align:middle;}
+.nbor{ border-bottom:none;}
+.mr55{margin:10px 55px 0 0;}
+.module-3-ti h3 { color: #00651c; height: 30px; background-color: transparent; line-height: 30px; text-align: left; float: left;}
+.noback{ background:none !important; font-weight:normal !important; color:#555 !important;}
+.module-3-ti select{ height:20px; line-height:20px;}
+.module-3-ti option{ height:20px; border:1px solid #00651c;width:70px;}
+.module-3-ti h3 span ,.boss li span,.buyer li span{ color: #f00; font-size: 16px; font-family: \5b8b\4f53; font-weight: bold; padding: 0 5px 0 0;}
+.module-3-ti p { float: left; height: 16px; line-height: 16px; font-size: 12px; color: #666; text-indent:8px;}
+.module-3-con { line-height: 2; padding: 0 0 10px 0; overflow: hidden; zoom: 1;}
+.module-3-con .text { border: 1px solid #00651c; font-size: 12px; padding: 2px; height: 14px; line-height: 14px;}
+.boss,.buyer{width:500px;border: 1px solid #eee;margin:10px 0 0 80px;padding-bottom:20px; text-indent:20px; font-size:12px; color:#555;}
+.boss h4,.buyer h4{ background:#f7f7f7; text-indent:20px;}
+.boss-h{padding:1px; border-bottom:1px solid #eaeaea;}
+.boss li,.buyer li{ line-height:30px;margin-top:10px; float:left;}
+.liw{width:120px; float:left;}
+.choose{width:100%;margin-top:20px;width:300px; float:left;}
+.boss input,.buyer input{ vertical-align:middle;margin-right:10px;}
+.search-show .text { border: 3px solid #fd8c2a; width: 235px; height: 17px; line-height: 17px; margin: 1px 0 0 1px; padding: 1px; display: block; float: left; background:url(http://dui.damai.cn/secondhand_ticket/img/sou_text.png) no-repeat 5px 4px; text-indent:20px; color:#bbbbbb;}
+.search-show .button { border: none; display: block; width: 65px; height: 25px; background-color: #fd8928; color: #fff; float: left; margin: 1px 0 0 0; cursor: pointer;}
+.search-show .button:hover { background-color: #f93;}
+.pay-nav { margin: 10px 0 -1px 0; overflow: hidden; zoom: 1; position: relative; z-index: 10;}
+.pay-nav li { width: 80px; height: 40px; float: left; margin: 0 10px -1px 0;}
+.pay-nav li a { display: block; width: 78px; height: 38px; border: 1px solid #00651c; font-size: 14px; font-weight: bold; text-align: center; line-height: 38px; background-color: #00651c; color: #fff;}
+.pay-nav li a:hover { color: #fff!important;}
+.pay-nav li.hover a { background-color: #fff; border-bottom: 1px solid #fff; color: #00651c;}
+.pay-nav li.hover a:hover { color: #00651c!important;}
+.pay-con { border-top: 1px solid #00651c;}
+.banks { overflow: hidden; zoom: 1; padding: 10px 0;}
+.banks li { width: 185px; height: 40px; float: left; margin-top: 10px;}
+.banks li input,.banks li img { vertical-align: middle;}
+.banks li img { border: #eedab4 solid 1px; margin: 0 0 0 10px;}
+.banks li label { cursor: pointer;}
+.pay-tips-1,
+.pay-tips-2,
+.pay-tips-3{ background-color: #f7f7f7; text-align: center; padding: 60px 305px; margin: 10px 0 0 0;border:1px solid #eaeaea;}
+.pd325{ padding: 60px 325px;}
+.pay-tips-1 p,
+.pay-tips-2 p,
+.pay-tips-3 p{ color:#007c25;font-family: \5fae\8f6f\96c5\9ed1;font-weight:bold;  font-size:24px; }
+.pdx{ padding: 45px 0 45px 135px; text-align: left;}
+.payseccess{ background: url(http://dui.damai.cn/secondhand_ticket/img/hook.png) no-repeat left center; margin:0 0 20px 0;}
+.pay-tips-1 a{ margin-top: 20px; display: inline-block; font-size:14px;color:#0062da;}
+.pay-tips-1 p.cc1{ background:url(http://dui.damai.cn/secondhand_ticket/img/hook.png) no-repeat 5px 3px; padding-left: 45px; margin-top:16px;}
+.pay-tips-1 .cc2,.pay-tips-1 ul li a{color:#0062da; margin:0;}
+.pay-tips-1 .cc2 li{ line-height: 35px; padding-left: 10px;}
+.goon-btn{width:104px; height:30px; background:url(http://dui.damai.cn/secondhand_ticket/img/goon.png) no-repeat 0 0; border:medium; *border:none; text-indent:-9999px; cursor:pointer;margin-top:10px;}
+/*jQuery UI Datepicker 1.8.16 begin*/
+.ui-datepicker { width: 17em; padding: .2em .2em 0; display: none; }
+.ui-datepicker .ui-datepicker-header { position:relative; padding:.2em 0; }
+.ui-datepicker .ui-datepicker-prev, .ui-datepicker .ui-datepicker-next { position:absolute; top: 2px; width: 1.8em; height: 1.8em; text-indent: -1000em; cursor: pointer;}
+.ui-datepicker .ui-datepicker-prev-hover, .ui-datepicker .ui-datepicker-next-hover { top: 1px; }
+.ui-datepicker .ui-datepicker-prev { left:2px; background: url(http://dui.damai.cn/secondhand_ticket/img/ico-date-prev.gif) 50% 6px no-repeat;}
+.ui-datepicker .ui-datepicker-next { right:2px; background: url(http://dui.damai.cn/secondhand_ticket/img/ico-date-next.gif) 50% 6px no-repeat;}
+.ui-datepicker .ui-datepicker-prev-hover { left:1px; background: url(http://dui.damai.cn/secondhand_ticket/img/ico-date-prev.gif) 50% -18px no-repeat;}
+.ui-datepicker .ui-datepicker-next-hover { right:1px; background: url(http://dui.damai.cn/secondhand_ticket/img/ico-date-next.gif) 50% -18px no-repeat;}
+.ui-datepicker .ui-datepicker-prev span, .ui-datepicker .ui-datepicker-next span { display: block; position: absolute; left: 50%; margin-left: -8px; top: 50%; margin-top: -8px; }
+.ui-datepicker .ui-datepicker-title { margin: 0 2.3em; line-height: 1.8em; text-align: center; }
+.ui-datepicker .ui-datepicker-title select { font-size:1em; margin:1px 0; }
+.ui-datepicker select.ui-datepicker-month-year { width: 100%; }
+.ui-datepicker select.ui-datepicker-month, .ui-datepicker select.ui-datepicker-year { width: 49%; }
+.ui-datepicker table { width: 100%; font-size: 12px; border-collapse: collapse; margin:0 0 .4em; }
+.ui-datepicker th { padding: 10px 4px; text-align: center; font-weight: bold; border: 0; }
+.ui-datepicker td { border: 0; padding: 1px; font-size: 10px; }
+.ui-datepicker td span, .ui-datepicker td a { display: block; padding: .2em; text-align: right; text-decoration: none; }
+.ui-datepicker .ui-datepicker-buttonpane { background-image: none; margin: .7em 0 0 0; padding:0 .2em; border-left: 0; border-right: 0; border-bottom: 0; }
+.ui-datepicker .ui-datepicker-buttonpane button { float: right; margin: .5em .2em .4em; cursor: pointer; padding: .2em .6em .3em .6em; width:auto; overflow:visible; }
+.ui-datepicker .ui-datepicker-buttonpane button.ui-datepicker-current { float:left; }
+
+.ui-datepicker.ui-datepicker-multi { width:auto; }
+.ui-datepicker-multi .ui-datepicker-group { float:left; }
+.ui-datepicker-multi .ui-datepicker-group table { width:95%; margin:0 auto .4em; }
+.ui-datepicker-multi-2 .ui-datepicker-group { width:50%; }
+.ui-datepicker-multi-3 .ui-datepicker-group { width:33.3%; }
+.ui-datepicker-multi-4 .ui-datepicker-group { width:25%; }
+.ui-datepicker-multi .ui-datepicker-group-last .ui-datepicker-header { border-left-width:0; }
+.ui-datepicker-multi .ui-datepicker-group-middle .ui-datepicker-header { border-left-width:0; }
+.ui-datepicker-multi .ui-datepicker-buttonpane { clear:left; }
+.ui-datepicker-row-break { clear:both; width:100%; font-size:0em; }
+
+.ui-datepicker-rtl { direction: rtl; }
+.ui-datepicker-rtl .ui-datepicker-prev { right: 2px; left: auto; }
+.ui-datepicker-rtl .ui-datepicker-next { left: 2px; right: auto; }
+.ui-datepicker-rtl .ui-datepicker-prev:hover { right: 1px; left: auto; }
+.ui-datepicker-rtl .ui-datepicker-next:hover { left: 1px; right: auto; }
+.ui-datepicker-rtl .ui-datepicker-buttonpane { clear:right; }
+.ui-datepicker-rtl .ui-datepicker-buttonpane button { float: left; }
+.ui-datepicker-rtl .ui-datepicker-buttonpane button.ui-datepicker-current { float:right; }
+.ui-datepicker-rtl .ui-datepicker-group { float:right; }
+.ui-datepicker-rtl .ui-datepicker-group-last .ui-datepicker-header { border-right-width:0; border-left-width:1px; }
+.ui-datepicker-rtl .ui-datepicker-group-middle .ui-datepicker-header { border-right-width:0; border-left-width:1px; }
+
+.ui-datepicker-cover { display: none; display: block; position: absolute; z-index: -1; filter: mask(); top: -4px; left: -4px; width: 200px; height: 200px;}
+.ui-widget { font-size: 1.1em; }
+.ui-widget .ui-widget { font-size: 1em; }
+.ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button { font-size: 1em; }
+.ui-widget-content { border: 1px solid #aaaaaa; background-color: #fff; color: #222; }
+.ui-widget-content a { color: #222222; }
+.ui-widget-header { border: 1px solid #fff; background-color: #5c9ccc; color: #fff; font-weight: bold; }
+.ui-widget-header a { color: #222; }
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default { border: 1px solid #d3d3d3; background-color: #e6e6e6; font-weight: normal; color: #555555; }
+.ui-state-default a, .ui-state-default a:link, .ui-state-default a:visited { color: #555555; text-decoration: none; }
+.ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus { border: 1px solid #5c9ccc; font-weight: normal; color: #212121; }
+.ui-state-hover a, .ui-state-hover a:hover { color: #212121; text-decoration: none; }
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active { border: 1px solid #aaaaaa; background-color: #ffffff; font-weight: normal; color: #212121; }
+.ui-state-disabled, .ui-widget-content .ui-state-disabled, .ui-widget-header .ui-state-disabled { opacity: .35; filter:Alpha(Opacity=35); background-image: none; }
+/*jQuery UI Datepicker 1.8.16 end*/
+/*帮助首页开始*/
+.logo p.my-help{ width: 96px; height: 25px; background:url(http://dui.damai.cn/secondhand_ticket/images/help_logo.gif) 0 0 no-repeat; margin: 31px 0 0 10px;}
+.nav-my-help{width:960px; height:37px; border:1px solid #0065b0; background:url(http://dui.damai.cn/secondhand_ticket/images/help_navbg.png) repeat-x left top; margin:2px auto 0 auto;}
+.nav-help li{ display:inline-block; float:left; line-height:37px;}
+.nav-help li a{ display:inline-block; font-size:15px; float:left; line-height:37px; color:#fff;padding:0 20px; color:#004375; border-right:1px solid #0065b0;}
+.nav-help li a.on,.nav-help li a:hover{ background:url(http://dui.damai.cn/secondhand_ticket/images/help-navhover.png) repeat-x 0 0;color:#004375 !important;}
+.nav-help li a.on{ color:#fff !important;}
+
+.help-content {margin:10px 0 20px 0 ;}
+.notop10{margin:0 0 20px 0 ;}
+.help-content-lt { width:200px;float:left;}
+.self-service{ width:198px;border:1px solid #d2d2d2; border-top:2px solid #c3d600; }
+.noborder2{ border-top:0 !important;}
+.self-h{ height:28px; border-bottom:1px solid #d2d2d2; padding:0 10px; font-size:15px; color:#555; line-height:28px; font-family:\5fae\8f6f\96c5\9ed1; }
+.Introduction{width:748px; height:170px;}
+.self-con{padding:0 10px;}
+.self-con li{ line-height:28px;}
+.self-con li a{color:#666;padding-left:18px; background: url(http://dui.damai.cn/secondhand_ticket/img/icon_poter.png)no-repeat 5px -52px; display:block; *height:28px;}
+.self-con li a:hover{ background-position: 5px -82px; color:#ff5a00 !important;}
+.help-crt{ background:url(http://dui.damai.cn/secondhand_ticket/images/help_logo.gif) no-repeat 92px 38px;}
+
+.help-content-rt{width:750px;float:right;}
+.trade-flow{width:748px; height:199px;border:1px solid #d2d2d2; border-top:2px solid #c3d600;}
+ /*常见问题引导*/
+.Problem-Guide{width:748px;margin-top:10px; border:1px solid #d2d2d2; border-top:2px solid #c3d600;}
+.Problem-Guide-con { padding:30px 0; clear:both; overflow:hidden;width:750px;  }
+.Problem-Guide-list{overflow:hidden;width:210px;padding:0 20px;float:left;margin-bottom:25px;}
+.Guide-h{line-height:28px; color:#ff5a00;}
+.guide-con li{width:249px; line-height:28px; color:#0066ff;}
+.guide-con li a{ display:inline-block; float:left; line-height:28px;margin-right:8px;}
+.guide-con li a.mr{margin-right:0;}
+ /*常见问题快速引导*/
+.fast-Guide{width:748px;border:1px solid #d2d2d2; border-top:2px solid #c3d600;}
+.self-con3 li{ line-height:28px; border-bottom:1px solid #d2d2d2;padding:0 15px; font-size:14px; color:#666; text-indent:20px;}
+.self-second{ display:none;}
+.back-add{ background:url(http://dui.damai.cn/secondhand_ticket/images/add_bg.gif) no-repeat 15px 9px;}
+.back-Reduction{background:url(http://dui.damai.cn/secondhand_ticket/images/Reduction-bg.gif) no-repeat 15px 9px;}
+.self-second li{padding:0 12px; border-bottom:none;  background:url(http://dui.damai.cn/secondhand_ticket/images/tip-right.png) no-repeat 145px center;}
+.self-second li a { font-size:12px; color:#666; display:block; background:url(http://dui.damai.cn/secondhand_ticket/images/pot.png) no-repeat 28px 13px; text-indent:38px; _height:28px; _line-height:28px; }
+.self-second li a:hover {color:#ff5a00 !important;}
+/*选择支付方式-完成付款（弹出框）*/
+.bg-layers-paymethod-cover,
+.bg-layers-moneytips-cover,
+.bg-deliver-goods-cover,
+.bg-receipt-goods-cover,
+.bg-apply-goods-cover,
+.bg-wait-goods-cover,
+.bg-account-goods-cover,
+.bg-submit-goods-cover,
+.bg-tell-goods-cover{ width: 100%; position:absolute; top:0;z-index: 10000; background: url(http://dui.damai.cn/secondhand_ticket/images/bg-cover.png) repeat 0 0; display:none;}
+.pt-paymethod-box,
+.pt-moneytips-box,
+.deliver-goods_box,
+.receipt-goods_box1,
+.apply-goods_box,
+.wait-mark,
+.account-goods_box,
+.submit-mark,
+.tell-goods_box{width: 418px; height: 218px; position: fixed; margin: -119px 0 0 -209px; left: 50%; top: 50%; z-index: 10009; _position: absolute;_top: 180px; _margin-top: 0; display:none; }
+.pt-paymethod-bg,
+.pt-moneytips-bg,
+.deliver-goods_bg,
+.receipt-goods_bg,
+.apply-goods_bg,
+.account-goods_bg,
+.tell-goods_bg{ width: 418px; height: 218px; float: left;background: #b8b8b8; opacity: 0.37;}
+.pt-paymethod-in,
+.pt-moneytips-in,
+.deliver-goods_in,
+.receipt-goods_in,
+.apply-goods_in,
+.apply_con_in,
+.account-goods_in,
+.tell-goods_in{width: 418px; height: 218px; position: relative;}
+.pt-paymethod-content,
+.pt-moneytips-content,
+.goods_in_con,
+.goods_in_con1{ width: 408px; height: 208px; overflow: hidden; border: 1px solid #b7b6b6; margin: 4px; position: absolute; right: 0; top: 0;*top: -218px; background: #fff;}
+.pt-paymethod-content-into{ padding: 30px;}
+.pt-paymethod-content p{ line-height: 30px; color: #555; font-size: 14px; text-indent: 40px;}
+.pt-paymethod-content p.f{ color: #015b1a; font-size: 20px; font-weight: bold;font-family:\5fae\8f6f\96c5\9ed1; background: url(http://dui.damai.cn/secondhand_ticket/img/exclamation_mark.png) no-repeat left center;}
+.pt-paymethod-btn1,.pt-paymethod-btn2{ height: 26px; border: medium none; text-align: center; color: #fff; cursor: pointer; font-weight: 800; background:url(http://dui.damai.cn/secondhand_ticket/images/pt-paymethod-btn.png) no-repeat 0 0;}
+.pt-paymethod-btn1{ width: 99px; margin: 0 10px;}
+.pt-paymethod-btn2{ width: 114px; background-position: 0 -26px;}
+.deliver_con_in h3,
+.receipt_con_in h3,
+.apply_con_in h3,
+.account_con_in h3,
+.tell_con_in h3 {background: url(http://dui.damai.cn/secondhand_ticket/img/collect_h.png) repeat-x scroll 0 0 transparent;color: #555555;font-size: 16px;font-weight: bold;height: 37px;line-height: 37px;padding: 0 20px;}
+.deliver-goods_in .deliver_shut,
+.receipt_con_in .deliver_shut,
+.apply_con_in .deliver_shut,
+.account_con_in .deliver_shut,
+.tell_con_in .deliver_shut {background: url(http://dui.damai.cn/secondhand_ticket/img/bg_beg_shut.png) no-repeat scroll 0 0 transparent;display: inline-block;height: 16px;position: absolute;right: 10px;top: 15px;width: 16px;}
+.con_in_inner,
+.con_in_inner1{ padding: 20px;}
+.con_in_inner dl{ overflow: hidden;zoom:1; padding-bottom: 20px; color: #555;}
+.con_in_inner dl dt,
+.con_in_inner dl dd{ float: left;}
+.con_in_inner dl dt{ padding: 5px;}
+.con_in_inner dl dd{_height: 24px;}
+.con_in_inner dl dt span{ color: #ff0000;padding:5px;vertical-align: middle;  }
+.con_in_inner input,
+.con_in_inner select{ vertical-align: middle; outline: none; border: medium; border: 1px solid #f4f4f4;}
+.con_in_inner input{ height: 12px; line-height: 12px; padding: 5px;border-top: 1px solid #e2e2e2;}
+.con_in_inner select{ height:22px;line-height: 22px;}
+.con_in_inner .t_icon img{ margin-left: 10px; vertical-align: middle;}
+.con_in_inner .deliver_btn_box,
+.tell_con_in .deliver_btn_box{ margin: 15px 0 0 13px; overflow: hidden; zoom:1;}
+.con_in_inner .deliver_btn_box input,
+.tell_con_in .deliver_btn_box input,
+.priec_pop_txt button {background: url(http://dui.damai.cn/secondhand_ticket/img/bg_beg_btn.png) no-repeat 0 0; color: #fff; font-weight: bold;border: medium none;cursor: pointer;float: left;height: 26px;margin-right: 20px;width: 64px;}
+.con_in_inner .deliver_btn_box .deliver_btn1:hover,
+.tell_con_in .deliver_btn_box .deliver_btn1:hover{ background-position: 0 -26px;}
+.con_in_inner .deliver_btn_box .deliver_btn2,
+.tell_con_in .deliver_btn_box .deliver_btn2{ background-position: 0 -52px;}
+.con_in_inner .deliver_btn_box .deliver_btn2:hover,
+.tell_con_in .deliver_btn_box .deliver_btn2:hover{ background-position: 0 -78px;}
+.con_in_inner p{ line-height: 28px; color: #555; font-size: 14px;}
+.con_in_inner p strong{font-family:\5fae\8f6f\96c5\9ed1;display: block; font-size: 20px; color: #015b1a; text-align: center; margin-bottom: 10px;}
+.con_in_inner p.code_con{ font-size: 12px; color: #ff0000;_margin-top: 10px;}
+.con_in_inner p.code_con a{ color: #0063dc; margin-left: 10px;}
+.con_in_inner p.code_con img{ vertical-align: middle;}
+.con_in_inner p.warning{ padding-left: 30px;}
+.wait-mark,
+.submit-mark{ width: 258px; height:60px; padding: 30px 20px 30px 80px; text-indent: 0; background: #fff url(http://dui.damai.cn/secondhand_ticket/img/hook.png) no-repeat 36px 36px;}
+.con_in_inner p.account_p{ text-align: center; padding: 5px;}
+.submit-mark{ width: 133px; height: 40px; padding: 40px 65px 40px 105px;background: #fff url(http://dui.damai.cn/secondhand_ticket/img/hook.png) no-repeat 65px 42px; }
+.tell_in_inner{ padding: 10px;}
+.tell_in_inner strong{ width: 100%;}
+.tell_in_inner textarea{ width: 378px; height: 90px; border: 1px solid #efefef; margin-top: 5px;}
+
+/*确认充值信息(金额提示-弹出框)，部分样式与“完成付款”相同*/
+.bg-layers-moneytips-cover{ z-index: 1000;}
+.pt-moneytips-box{ width: 338px; height: 118px; margin: -69px 0 0 -119px;}
+.pt-moneytips-bg{ width: 338px; height: 118px;}
+.pt-moneytips-in{width: 338px; height: 118px;}
+.pt-moneytips-content{ width: 328px; height:108px; *top:-117px;*left:1px; overflow: visible;}
+.pt-moneytips-content-into{ padding: 42px 20px;*padding: 38px 0 26px 20px; position: relative;} 
+.pt-moneytips-content-into p{ text-indent: 36px; color: #015b1a; font-weight: bold;font-family:\5fae\8f6f\96c5\9ed1; font-size: 20px; line-height: 25px; background: url(http://dui.damai.cn/secondhand_ticket/img/exclamation_mark.png) no-repeat left center;}
+.pt-moneytips-shut{ width: 22px; height: 22px;background: url(http://dui.damai.cn/secondhand_ticket/img/shut_btns.png) no-repeat 0 0; position: absolute; right: -11px; top: -11px;}
+
+/*新手学堂*/
+.novice-school-menu{width:960px;margin:10px auto 0 auto; height:29px; background:url(http://dui.damai.cn/secondhand_ticket/images/school_line.gif) repeat-x left bottom;}
+.my-school-menu{ height:28px;}
+.my-school-menu li{ line-height:28px; display:inline-block;}
+.my-school-menu li a{ display:inline-block;padding:0 26px; font-size:14px; font-weight:bold; background:url(http://dui.damai.cn/secondhand_ticket/images/school_pic02.gif) repeat-x left top;margin-right:5px; color:#666;}
+.my-school-menu li a.on,.my-school-menu li a:hover{ background:url(http://dui.damai.cn/secondhand_ticket/images/school_pic01.gif) repeat-x left top; color:#fff !important;}
+.Catalog-list{padding: 0 20px; color:#666; line-height:28px; border-bottom:1px solid #d2d2d2;}
+.Catalog-list dt{ font-size:14px; font-weight:bold; background:url(http://dui.damai.cn/secondhand_ticket/images/Reduction-bg.gif) no-repeat 0 13px; text-indent:20px; color:#ff5a00;}
+.Catalog-list dd{ font-size:12px; text-indent:48px; background:url(http://dui.damai.cn/secondhand_ticket/images/self-tip.gif) no-repeat 38px 13px;}
+.bor-no{ border-bottom:none;}
+.Demonstration{padding:0;}
+.instruction{ height:30px;margin-top:10px;}
+.instru-h{width:300px; line-height:30px;  font-size:14px; color:#015b1a;padding:0 10px;font-family:\5fae\8f6f\96c5\9ed1;}
+.instru-next{ display:inline-block;color:#fff; float:right;width: 76px; height: 30px; line-height:30px; text-align: center;margin-right:10px; background:url(http://dui.damai.cn/secondhand_ticket/img/instru_next.png) no-repeat 0 0; font-weight:800; border:medium none; cursor: pointer; vertical-align:middle;}
+.instru-next:hover{color:#fff !important; background-position: 0 -31px;}
+.product-details{width:746px; height:632px;padding:1px;margin-top:5px;}
+
+/*自助服务*/
+.mr2{margin-top:0;}
+.self-con2 li{ line-height:28px; border-bottom:1px solid #d2d2d2;padding:0 10px;}
+.self-con2 li a{color: #666666; font-size:14px; background: url(http://dui.damai.cn/secondhand_ticket/img/icon_poter.png) no-repeat 0 -21px; display:block;height:28px;line-height:28px; text-indent:25px;}
+.self-con2 li a:hover{ color:#ff5a00 !important; background: url(http://dui.damai.cn/secondhand_ticket/img/icon_poter.png) no-repeat 0 9px;}
+/*客服中心*/
+.Customer-center{height:350px;margin: 10px auto; width: 960px; border:1px solid #d2d2d2;}
+.Customer-center-in{padding:51px 220px;}
+.Customer-center-con{ height:115px; background-color:#fdfdfd;}
+.Customer-center-con p{ line-height:22px; font-weight:bold; font-size:14px; color:#015b1a;}
+.ask-bor{width:508px; height:143px; border:1px solid #bdbdbd; line-height:23px;padding:5px; color:#959595;}
+.service-ask{ height:38px; line-height:38px; text-align:right; color:#014a16;}
+.ask-btn{ width:76px; height:30px; text-indent:-9999px;display:inline-table; float:right; background:url(http://dui.damai.cn/secondhand_ticket/images/ask_btn.png) no-repeat left top; vertical-align:middle;  border:medium;border:none;margin:9px 0 0 5px; cursor: pointer;}
+.service-ask strong{ font-size:20px;}
+/*注册与激活*/
+.self-h3{ height:25px; line-height:25px; font-size:16px; font-weight:bold; color:#02581b;margin:20px 0 10px 0;}
+.Problem-Guide-con3{padding:0 40px 25px 40px;width:668px;}
+.Problem-Guide-con3 dl dt,.Problem-Guide-con3 dl dd{line-height:25px;}
+.Problem-Guide-con3 dl dt{ font-size:14px; color:#555;text-indent:23px;}
+.Problem-Guide-con3 dl dd{ text-indent:36px; color:#666;}
+
+
+.wthout-result{width:958px; height:426px; border:1px solid #eaeaea;}
+.hot-itemes{width:958px;border:1px solid #eaeaea; border-top:2px solid #c3d600;}
+.hot-hd{ height:35px; line-height:35px; color:#555;padding-left:20px; font-size:16px; border-bottom:1px solid #eaeaea;font-family:\5fae\8f6f\96c5\9ed1;}
+.hot-lists{padding:20px;}
+.hot-lists dl{width:123px; float:left;margin-right:75px;}
+.hot-lists dl.mr-nomr{margin-right:0;}
+.hot-lists dl dt{width:123px; height:167px;}
+.hot-lists dl dd{ color:#555; height:30px; line-height:30px;}
+.hot-lists dl dd.cr{margin-left:10px;}
+.hot-lists dl dd h2{ height:30px; line-height:30px;}
+.hot-lists dl dd h2 a{display: block;font-size: 14px;overflow: hidden; text-overflow: ellipsis;white-space: nowrap;width: 123px; color:#555;}
+.hot-lists dl dd strong{ color:#aaa; font-weight:normal;}
+.hot-lists dl dd .so-see{width:104px; height:30px; font-size:16px; display:block; text-align:center; background:url(http://dui.damai.cn/secondhand_ticket/images/so_see.png) no-repeat 0 0; color:#fff;font-family:\5fae\8f6f\96c5\9ed1;}
+.hot-lists dl dd .so-see:hover{ color:#fff !important;}
+
+/*热门项目推荐*/
+.mt20{margin-top:20px;}
+.hot-lister{padding:20px;}
+.hot-lister-tp{padding:0 20px;}
+.hot-lister ul{clear: both;display: block;overflow: hidden;width:960px;}
+.hot-lister ul.rw{width:785px;}
+.hot-lister ul li{width:435px;display:block; float:left;padding:20px 0; margin-right:45px; border-top:1px dashed #c1c1c1;}
+.hot-lister ul li.btm{ border:none;}
+.hot-lister ul.rw li{margin-right:20px;}
+.hot-lister ul li.hot-wid{width:360px !important;}
+.hot-lister ul li p{width:298px; height:22px;float:left;margin-left:8px;white-space:nowrap;text-overflow:ellipsis; line-height:22px; color:#555;overflow:hidden; font-family:Verdana, Geneva, sans-serif;}
+.hot-lister ul li p.pic{width:123px; height:167px; display:block; float:left; border:1px solid #ccc;padding:2px;margin-left:0;}
+.hot-lister ul li p img{ width:123px; height:167px; display:block;}
+.hot-lister ul li p span{ color:#C00;}
+.hot-lister ul li p span.cor{ color:#aaa;}
+.hot-lister ul li p a.on-line{padding-left:20px; background:url(images/on-line.png) no-repeat left center;  color:#F39;}
+.hot-lister ul li p a.on-line:hover{ color:#36F;}
+.hot-lister ul li h2{width:298px; float:left;margin-left:8px;text-overflow:ellipsis;}
+.hot-lister ul li h2 a{width:298px; height:25px; line-height:25px; display:block;color:#555; font-size:14px;white-space:nowrap;text-overflow:ellipsis;overflow:hidden; font-weight:bold;}
+.hot-lister ul li h2 a:hover{ color:#33F;}
+.infor2{ overflow:hidden;margin:3px 0 0 8px; float:left;}
+.hot-wd{width:222px !important;}
+
+/*登录良票弹出框开始*/
+.t-login-lp{width:370px; height:385px; border:5px solid #bebebe;margin-left:50px; position:fixed; left:50%; top:50%;margin:-198px 0 0 -185px; background:#fff;}
+.t-login-lp h2{ height:37px; line-height:37px; background:url(http://dui.damai.cn/secondhand_ticket/img/collect_h.png) repeat-x 0 0; border-bottom:1px solid #e9e9e9; font-size:16px; color:#555;font-family:\5fae\8f6f\96c5\9ed1;padding-left:10px;}
+.t-login-in{padding:10px 20px;}
+.login-tip{ height:40px; line-height:40px; font-size:20px; color:#015b1a;font-family:\5fae\8f6f\96c5\9ed1; border-bottom:1px dashed #c1c1c1;margin-bottom:10px;}
+.reg-logines dl { clear:both; overflow: hidden;zoom:1;padding: 10px 0;}
+.reg-logines dt{float: left; font-size: 14px; line-height: 28px; text-align: right; width: 90px;float: left;font-size: 14px; line-height: 28px;text-align: right; width:56px;}
+.reg-logines dd{ float:left;}
+.reg-logines dd input{ color: #444444;padding: 5px;width:195px;}
+.reg-logines dd input.w100 { width: 100px;}
+.reg-logines dd.code {display: block;float: left; height: 34px; margin: 0 0 0 8px;width: 92px;}
+.reg-logines dd .text { width:38px;background:url(http://dui.damai.cn/secondhand_ticket/img/bg-reg-tipslr_lt.png) no-repeat left 0;
+ display: block;float:right; height: 28px; margin: 0 0 0 8px;padding-left: 8px;}
+.reg-logines dd .text em {background:url(http://dui.damai.cn/secondhand_ticket/img/bg-reg-tips_rt.png) no-repeat right 0;color: #888888;display: block;font-style: normal;height: 28px;line-height: 28px;}
+.reg-logines dd .text em a{ }
+.code-logines{ float:left;margin-left:10px;}
+.time-logins{ height:27px;margin:10px 0;}
+.time-logins .fast-logines{width:88px; height:27px; font-size:14px;font-family:\5fae\8f6f\96c5\9ed1; color:#fff; background:url(http://dui.damai.cn/secondhand_ticket/img/fast_logines.png) no-repeat 0 0;margin: 0 10px 0 58px; border:medium;*border:none;} 
+.forgot-codes{ color:#014a16}
+.user-tip{ height:31px;width:330px;margin-left:10px;padding:20px 0; border-top:1px dashed #c1c1c1;}
+.user-tip p{width:120px;height:31px; line-height:31px; font-size:14px; color:#666;padding-left:20px; float:left; font-weight:bold;}
+.the-users{ float:left;}
+
+/*弹出层-卖家详情/订单详情/联系卖家/投诉详情*/
+.t-seller-detail,.t-seller-contact,.t-Complaint-detail,.t-Refund-detail{width:266px; height:296px;border:2px solid #cccccc;padding:10px 10px 10px 20px; background:#f9f9f9; color:#666;position:fixed; left:50%; top:50%; margin:-149px 0 0 -260px; _position:absolute;display:none;z-index:2;}
+.t-seller-contact,.t-seller-detail{position:fixed; left:50%; top:50%; margin:-160px 0 0 -150px; _position:absolute;}
+.t-seller-detail h2,.t-order-detail-in h2,.t-seller-contact h2{ height:22px; line-height:22px; font-size:14px; font-weight:bold;}
+.t-seller-detail ul li,.t-seller-contact ul li,.t-Complaint-detail li,.t-Refund-detail li{ line-height:35px;}
+.t-seller-detail ul li strong,.t-order-detail-in ul li strong,.t-seller-contact ul li strong,.t-Complaint-detail li strong,.t-Refund-detail ol li strong{ color:#007dd7; font-weight:normal;}
+.t-seller-detail ul li a,.t-seller-contact ul li a,.t-order-sure a,.t-correlation-shut a,.t-business-choose a,.t-jion-shop-vehicle a,.t-Complaint-detail a,.t-Refund-detail a,.t-ticket-star ol li a.t-ticket-star-sure{ background:#007DD7;padding:0 10px;; display:inline-block; float:right; color:#fff; line-height:25px;}
+.t-seller-detail ul li a:hover,.t-order-sure a:hover,.t-correlation-shut a:hover,.t-business-choose a:hover,.t-seller-contact ul li a:hover,.t-jion-shop-vehicle a:hover,.t-Complaint-detail a:hover,.t-Refund-detail a:hover,.t-ticket-star ol li a.t-ticket-star-sure:hover{ background:#31A6FE;color:#fff !important;}
+
+.t-order-detail{width:522px; height:285px;background:#f9f9f9; color:#666; position:fixed; left:50%; top:50%;margin:-142px 0 0 -260px;_position:absolute;display:none;z-index:2; _border-bottom:2px solid #ccc;}
+.t-order-detail-boxs{padding:10px;width:498px; height:261px;background:#f9f9f9;border:2px solid #cccccc;}
+.t-order-detail-in{width:249px;float:left;}
+.t-order-detail-in ul li{ line-height:30px; clear:both; overflow:hidden;}
+.t-order-sure{ height:30px;}
+.t-order-fl{ float:left;width:60px; display:inline-block;}
+.t-order-lh{ float:left;width:165px; height:22px; line-height:22px;padding:4px 0;}
+.t-order-lh img{margin-right:10px;_margin-right:5px;}
+.t-seller-contact ul li a.station-in{ background:url(http://dui.damai.cn/secondhand_ticket/images/track_record01.gif) repeat-x top left;padding:2px 5px; height:15px; line-height:15px; text-align:center; display:inline-block; float:left; border:1px solid #ccc; color:#007dd7;}
+.t-seller-contact ul li a.station-in:hover{ font-weight:bold;color:#007dd7 !important;}
+/*弹出层-相关消息*/
+.t-correlation-detail{width:480px; _height:152px;border:1px solid #ccc; background:#f9f9f9; color:#666;position:fixed; left:50%; top:50%; margin:-76px 0 0 -252px; _position:absolute;display:none;z-index:2;}
+.t-correlation-detail-in{border:2px solid #ccc; padding: 10px 10px 5px; background:#f9f9f9;width:482px; _height:156px;}
+.t-correlation-detail table td{ height:35px;}
+.t-correlation-shut{ height:30px;}
+/*弹出层-终止交易/订单删除/收藏取消/*/
+.t-business-end,.t-order-delete,.t-pack-away,.t-jion-shop-vehicle,.t-change-price,.t-ticket-down{width:265px; background:#f9f9f9;height:112px; font-size:14px; color:#666;;position:fixed; left:50%; top:50%; margin:-56px 0 0 -138px; _position:absolute; display:none;z-index:2;}
+.t-business-end p,.t-order-delete p,.t-pack-away p,.t-change-price p,.t-ticket-down p{ line-height:30px;}
+.t-jion-shop-vehicle{ height:130px;}
+.t-business-end-in{ height:142px;}
+.t-change-price-in,.t-order-delete-in,.t-ticket-down-in,.t-jion-shop-vehicle-in,.t-pack-away-in,.t-business-end-in{ background:#f9f9f9;width:245px;height:88px;border:2px solid #cccccc;padding:10px;}
+.t-jion-shop-vehicle-in{ height:107px;}
+.t-business-end-in{ height:118px;}
+.t-business-end-in a,.t-order-delete a{margin-top:5px;}
+.t-business-end-in input{margin-top:3px;_margin-top:0; vertical-align:}
+.t-business-choose{ height:30px; line-height:30px;}
+.t-business-input{ height:20px; line-height:20px;padding:10px 0 0 0;}
+.t-business-choose input{margin-right:5px; vertical-align:middle;}
+.t-business-choose a{margin-right:5px;}
+.t-business-choose a.t-business-cancel{ background:#ff6600;}
+.t-business-choose a.t-business-cancel:hover{ background:#F90;}
+
+/*弹出层-加入购物车*/
+.t-jion-shop-vehicle h2{ height:22px; line-height:22px; font-size:14px; font-weight:bold;}
+.t-jion-shop-vehicle h2 a{ background:url(http://dui.damai.cn/secondhand_ticket/images/t-jion-vehicle.gif) no-repeat left top; height:20px; display:inline-block; float:right;}
+.t-jion-shop-vehicle h2 a:hover{ background:url(http://dui.damai.cn/secondhand_ticket/images/t-jion-vehicle.gif) no-repeat left -20px;}
+.t-jion-shop-vehicle p{ line-height:30px;}
+/*投诉详情*/
+.t-Complaint-detail,.t-Refund-detail{ height:210px; position:fixed; left:50%; top:50%; margin:-116px 0 0 -150px; _position:absolute; z-index:2;
+}
+/*弹出层-完善票品星级/修改交易模式*/
+.t-ticket-star,.t-change-mode {width:332px; height:252px; background:#f9f9f9;position:fixed; left:50%; top:50%; margin:-118px 0 0 -151px; _position:absolute;z-index:2;display:none;}
+.t-change-mode-in,.t-ticket-star-in{ background:#f9f9f9;width:308px; height:228px;border:2px solid #cccccc;padding:10px;}
+.t-ticket-star-in{ height:200px;}
+.t-ticket-star ol,.t-change-mode ol{ background:url(http://dui.damai.cn/secondhand_ticket/images/t-ticket-star.gif) no-repeat left 7px;}
+.t-ticket-star ol li,.t-change-mode ol li{ line-height:33px; text-indent:30px;_text-indent:0;_padding-left:30px; clear:both; overflow:hidden; color:#666; height:33px;}
+.t-ticket-star ol li strong{ color:#007dd7; font-weight:normal;}
+.t-ticket-star ol li a{ background:url(http://dui.damai.cn/secondhand_ticket/images/track_record01.gif) repeat-x  left top; border:1px solid #ccc;line-height:15px;padding:2px 5px; float:right; text-indent:0;margin-top:7px;}
+.t-change-mode ol{ background:none;}
+.t-change-mode{ text-indent:none;_height:248px;}
+.t-change-mode ol li input{ vertical-align:middle;margin-right:5px;}
+.t-change-mode ol li div.t-business-choose a{ text-indent:0;}
+/*我要买票—设定购票条件*/
+.trans-infor-table tr td dl dd .to_guide{ margin: 0 5px;}
+.set-list-in{ overflow: hidden;zoom:1; width: 570px;}
+.set-list-in li{ height: 30px; overflow: hidden; zoom:1;}
+.set-list-in li a{border: 1px solid #eaeaea;color: #555555;display: inline-block;float: left;height: 28px;line-height: 28px;margin-bottom: 10px;margin-right: 5px; padding: 0 10px;text-align: center;width: 45px;}
+.set-list-in li a.on,
+.set-list-in li a:hover {background: url(http://dui.damai.cn/secondhand_ticket/img/menu_list3.gif) no-repeat scroll 0 0;color: #555555 !important;}
+.trans-infor-table3 tr td{ padding: 15px 0 15px 10px;}
+.trans-infor-table3 tr td.ladder{ padding: 0 0 0 25px; color: #555555; font-size: 14px; font-weight: bold; border-top: none;}
+.trans-infor-table3 tr td.ladder span{ color: #fa680a;}
+
+.trans-infor-detail01{ width: 682px; overflow: hidden;zoom:1;}
+.pay-tips-2,
+.pay-tips-3 { font-size: 14px;}
+.pay-tips-2 .payseccess,
+.pay-tips-3 .payseccess{ padding-left: 35px; background: url(http://dui.damai.cn/secondhand_ticket/img/hook.png) no-repeat 0 center;} 
+.pay-tips-3 .payseccess{ background: url(http://dui.damai.cn/secondhand_ticket/img/hook.png) no-repeat 50px center;}
+.pay-tips-2 .txt_formal,
+.pay-tips-3 .txt_formal{ font-size: 14px; color: #555;}
+.pay-tips-2 .txt_formal a,
+.pay-tips-3 .txt_formal a{ color: #0062da;}
+
+.venues{ padding: 20px; border: 1px solid #eaeaea;}
+.venues p{ line-height: 30px; text-indent: 2em; color: #444; padding: 10px 0;}
+.find_code{ padding: 30px 0 30px 200px; border: 1px solid #eaeaea;}
+.find_code dl{ overflow: hidden; zoom:1; padding: 10px;}
+.find_code dl dt,
+.find_code dl dd{ float: left; color: #666;}
+.find_code dl dt{ padding: 5px 5px 5px 10px;}
+.find_code dl dd input{ border: 1px solid #eaeaea;color: #666666;float: left;padding: 5px; height: 12px; vertical-align: middle; border-top-color: #d5d5d5;}
+.find_code dl dd .icon {display: block;float: left;height: 19px;margin: 4px 0 0 10px;width: 19px;}
+.find_code dl dd .texttip {background: url(http://dui.damai.cn/secondhand_ticket/images/beg_red_tips.png) no-repeat 0 0 ;display: block;float: left;height: 28px;margin: 0 0 0 5px;padding-left: 15px;}
+.find_code dl dd .texttip em {background: url(http://dui.damai.cn/secondhand_ticket/images/beg_red_tips.png) no-repeat scroll right 0;color: #848484;display: block;float: left;font-family: 宋体;font-size: 12px;height: 28px;line-height: 28px;padding-right: 8px;}
+.find_code dl dd .inspec{ float: left; margin-left: 20px; height: 30px; display: inline-block;}
+.find_code dl dd .inspec img{ display: block; width: 86px; height: 30px; overflow: hidden; float: left;}
+.find_code dl dd .inspec a{ margin-left: 10px; float: left; display: inline-block; height: 30px; line-height: 30px; vertical-align: middle; color: #0066cc;}
+.find_code dl dd .find-btn1{ width: 76px; height: 30px; color: #ffffff !important; padding: 0; border: medium none !important; background: url(http://dui.damai.cn/secondhand_ticket/images/addresses.png) no-repeat -31px -123px;cursor: pointer;font-family: 微软雅黑;font-size: 14px; margin-left: 63px;}
+.find_code dl dd .find-btn1:hover{background-position: -31px -93px;}
+.find_code dl dd.dd_con1,
+.find_code dl dd.dd_con3{ line-height: 28px;}
+.find_code dl dd.dd_con1 a,
+.find_code dl dd.dd_con3 a{ width: 91px; height: 25px; color: #666;line-height: 25px; margin-left: 20px; text-align: center; display: inline-block; background: url(http://dui.damai.cn/secondhand_ticket/images/modify.png) no-repeat 0 -240px;}
+.find_code dl dd.dd_con3 a{ width: 123px; background-position: 0 -294px;}
+.find_code dl dd.dd_con1 a:hover,
+.find_code dl dd.dd_con3 a:hover{ background-position: 0 -265px; color: #666 !important;}
+.find_code dl dd.dd_con3 a:hover{ background-position: 0 -319px;}
+.find_code dl dd.dd_con2{ margin-left: 12px;*display:inline;}
+
+.inspect_mode{ padding: 5px 0 15px 0;}
+.inspect_mode select{ height: 24px; line-height: 24px; padding: 2px; vertical-align: middle;}
+
+.find_code dl.dl_con1{ padding: 0 10px 15px 10px; margin-top: -4px;_margin:0;}
+.find_code dl dd.dd_con4{ margin-left: 88px; color: #aaaaaa;_display: inline;}
+.find_code dl dd.dd_con5{ margin-left: 24px;*display:inline;}
+
+.pay_step{ margin-top: 10px;}
+.pay_step .step_main{ width: 958px; border: 1px solid #b8edc8; overflow: hidden;}
+.pay_step .step_main ul{ width: 966px; overflow: hidden; zoom:1;}
+.pay_step .step_main ul li{ width: 192px; height: 94px;float: left; color: #7e7e7e;}
+.pay_step .step_main ul li strong{ width: 105px; font-size: 14px; margin: 25px 0 0 15px; float: left;}
+.pay_step .step_main ul li span{ display: inline-block; margin: 15px 0 0 15px;}
+.pay_step .step_main ul li b{ width: 59px; height: 94px; display: inline-block; float: right; background: url(http://dui.damai.cn/secondhand_ticket/img/bg_step.png) no-repeat 0 0;}
+.pay_step .step_main ul li.step_b1 b{ background-position: 0 -192px;}
+.pay_step .step_main ul li.step_c1 b{ background-position: 0 -480px;}
+.pay_step .step_main ul li.step_d1 b{ background-position: 0 -770px;}
+.pay_step .step_main ul li.step_action{background: #3e8251;color: #fff; }
+.pay_step .step_main ul li.step_f1 b{background-position:  0 -962px;}
+.now_state{ margin-top: 20px; border: 1px solid #d4d4d4; padding: 20px;}
+.now_state ul li{ line-height: 25px; color: #555; padding-bottom: 10px;}
+.now_state ul li.li_con1{ color: #2b2b2b; font-size: 16px;font-family:\5fae\8f6f\96c5\9ed1; position: relative;}
+.now_state ul li.li_con1 strong{ color: #015b1a; display: inline-block; width: 135px;}
+.order_from{ margin-top: 20px; border: 1px solid #d4d4d4;}
+.order_from h3{ padding: 0 20px; line-height: 28px;font-size: 16px;font-family:\5fae\8f6f\96c5\9ed1; border-bottom: 1px solid #dfdfdf;}
+.order_from .from_div{ height: 25px; background: #f6f6f6; margin-top: 1px;}
+.order_from .from_details{ padding: 5px 20px 30px 20px;}
+.order_from .from_details ul{ overflow: hidden; zoom:1;}
+
+.order_from .from_details ul li{ width: 370px; line-height: 28px; float: left;}
+.order_from .from_details ul li.from_li{ width: 100%;}
+.order_from .from_details ul li.from_li_2{ width: 250px; margin-top: 10px;}
+.order_from .from_details .from_table{ border: 1px solid #eaeaea; color: #555; margin-top: 5px; }
+.order_from .from_details .from_table .table_th{ padding: 1px;}
+.order_from .from_details .from_table tr th{ height: 28px; line-height: 28px; background: #f7f7f7;}
+.order_from .from_details .from_table tr td{ padding: 15px;}
+.order_from .from_details .from_table tr td img{ vertical-align: middle;}  
+.order_from .from_details .from_table tr td span{ margin-left: 20px;}
+
+.now_state ul li .pay_btn1{ width: 49px;height: 27px;display: inline-block; margin-left: 20px; cursor: pointer; line-height: 27px; border: medium none;color: #fff; text-align: center; background: url(http://dui.damai.cn/secondhand_ticket/img/addresses.png) no-repeat 0 -94px;}
+.now_state ul li .pay_btn1:hover{ background-position: 0 -121px; color: #fff !important;}
+.pay_step .step_main ul li.step_a2 b{ background-position:0 -96px;}
+.order_from .from_details .from_table .form_price{padding: 10px; border-top: 1px solid #eaeaea;overflow: hidden;zoom:1;}
+.order_from .from_details .from_table .form_price strong{ font-size: 14px; float: right; }
+.order_from .from_details .from_table .form_price strong span{ color: #ff6600;}
+
+.pay_step .step_main ul li.step_a3 b{ background-position:0 -1056px;}
+.pay_step .step_main ul li.step_b2 b{background-position:0 -384px;}
+
+.now_state ul li .remind_txt{ margin-left: 30px; color: #0066ff; font-size: 12px;}
+.now_state ul li .remind_box{ width: 195px; border: 1px solid #f7e4c4; background: #ffffe1; padding: 3px 10px 3px 20px; position: absolute; left: 365px; top: -2px;_top: -4px;}
+.now_state ul li .remind_box a{ width: 13px; height: 13px; display: inline-block; background: url(http://dui.damai.cn/secondhand_ticket/img/bg_step.png) no-repeat 0 -1155px; vertical-align: middle;_margin-top: 5px;}
+.now_state ul li .deliver{ width: 59px; height: 25px; line-height: 25px; color: #555; margin-left: 30px; text-align: center; display: inline-block; background: url(http://dui.damai.cn/secondhand_ticket/images/kc.png) no-repeat 0 0;}
+.now_state ul li .deliver:hover{ background-position: 0 -25px; color: #555 !important;}
+.pay_step .step_main ul li.step_c2 b{ background: url(http://dui.damai.cn/secondhand_ticket/img/bg_step.png) 0 -576px;}
+.pay_step .step_main ul li.step_d2 b{background: url(http://dui.damai.cn/secondhand_ticket/img/bg_step.png) 0 -866px;}
+.pay_step .step_main ul li.step_c3 b{background: url(http://dui.damai.cn/secondhand_ticket/img/bg_step.png) 0 -674px;}
+.pay_step .step_main ul li.step_f2 b{background: url(http://dui.damai.cn/secondhand_ticket/img/bg_step.png) 0 -1172px;}
+
+.now_state ul li.li_con3{ color: #ff0000;}
+.now_state ul li.li_con4 .btn_agree,
+.now_state ul li.li_con4 .btn_refuse{border: medium none;color: #FFFFFF;cursor: pointer;font-family: 微软雅黑;font-size: 14px;font-weight: 800;height: 27px;line-height: 27px;width: 48px;  background: url(http://dui.damai.cn/secondhand_ticket/images/buy_ticket.png) no-repeat 0 0;}
+.now_state ul li.li_con4 .btn_agree{  background-position: -50px -203px;}
+.now_state ul li.li_con4 .btn_agree:hover{  background-position: -50px -230px;}
+.now_state ul li.li_con4 .btn_refuse{ background-position: -50px -289px; margin-left: 20px;}
+.now_state ul li.li_con4 .btn_refuse:hover{ background-position: -50px -316px;}
+
+.wrap .about_me{ width: 928px; padding: 15px; border: 1px solid #eaeaea;}
+.wrap .about_me strong{ color: #f84304;}
+.wrap .about_me p{ padding: 10px 0; text-indent: 2em; line-height: 28px; color: #555;}
+.station_guide{ border: 1px solid #eaeaea;}
+.station_guide .guide_title{ padding: 4px 20px; height: 30px; border-bottom: 1px solid #eaeaea;}
+.station_guide .guide_title button,
+.station_guide .guide_main ul li button{border: medium none;cursor: pointer;}
+.station_guide .guide_title button{ width:  87px; height: 30px; line-height: 30px;font-family:\5fae\8f6f\96c5\9ed1; color: #fff; font-size: 16px; background: url(http://dui.damai.cn/secondhand_ticket/img/bg_service_btn.png) no-repeat 0 0;}
+.station_guide .guide_main{ padding: 20px;}
+.station_guide .guide_main ul li{ margin-bottom: 20px; overflow: hidden; zoom:1;}
+.station_guide .guide_main ul li button,
+.station_guide .guide_main ul li a{ height: 24px; line-height: 24px; margin-right: 20px;  }
+.station_guide .guide_main ul li button{ height: 24px; line-height: 24px;width: 87px;float: left; background: url(http://dui.damai.cn/secondhand_ticket/img/bg_service_btn.png) no-repeat 0 -30px; }
+.station_guide .guide_main ul li a{display: inline-block; color: #02581b;   }
+
+/*详情页-弹层价格不统一*/
+.price_bgcover{ width: 100%; position: absolute; top: 0; left: 0; background: url(http://dui.damai.cn/secondhand_ticket/images/bg-cover.png) repeat 0 0; z-index: 100000;}
+.price_pop_box{ width: 418px; height: 172px; position: fixed; left: 50%; top: 50%; margin: -86px 0 0 -209px; _position: absolute; _margin-top: 0;_top: 240px; z-index: 100000;}
+.price_pop_box .price_pop_bg{ width: 418px; height: 172px; float: left; background: #b8b8b8; opacity: 0.37;}
+.price_pop_box .price_inner{ position: relative;}
+.price_pop_box .price_pop_con{ width: 370px; height: 124px; padding: 20px; margin:4px; position: absolute; left: 0 ; top: 0;_top: -172px; background: #fff; color: #555;}
+.price_pop_box .price_pop_con ul{}
+.price_pop_box .price_pop_con ul li{ height: 28px; line-height: 28px;}
+.price_pop_box .price_pop_con ul li.li_con5{ color: #fe640f;}
+.price_pop_box .price_pop_con ul li strong{ color: #015b1a;}
+.priec_pop_txt{ height: 26px; line-height: 26px; overflow: hidden; zoom: 1; margin-top: 8px;}
+.priec_pop_txt button{  width: 88px; margin-right: 10px;}
+.priec_pop_txt .deliver_btn1{ background-position: 0 -104px;}
+.priec_pop_txt .deliver_btn1:hover{ background-position: 0 -130px;}
+.priec_pop_txt .deliver_btn2{ background-position: 0 -156px;}
+.priec_pop_txt .deliver_btn2:hover{ background-position: 0 -182px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,651 @@
+@charset "utf-8";
+/*------------------------------------------------
+Styles Create: 2012-6-15     Author: MR Li JiaXiong
+Styles Last Update: 2011-11-28
+*Filename:                    layout.css
+*Version:                     1.0.0
+*Website:                     良票前台
+*Page width:                  960px
+------------------------------------------------*/
+
+/*地址管理——收货地址/发货地址/添加地址/——共有*/
+.address-btn1,.address-btn1:hover,.address-btn2,.address-btn2:hover,.address-btn3,.address-btn3:hover,.phone-btn,.phone-btn:hover,.send-infor,.send-infor:hover,.lp-v101uc-set-infor-btn1{ background: url(http://dui.damai.cn/secondhand_ticket/images/addresses.png) no-repeat;}
+.font-col{ color: #ff6300 !important}
+button{ cursor: pointer;}
+.public_tip1{ height: 22px; line-height: 22px; color: #999; position: absolute; top: 62px; left: 135px;}
+.lp-v101uc-container2 {zoom: 1 ;}
+.lp-v101uc-my-nav-box{ width: 200px;  float: left;}
+.lp-v101uc-my-nav { width: 198px;border: 1px solid #ccc; }
+.lp-v101uc-my-nav h2 { height: 38px ; border-bottom: 1px solid #ccc ; background: #fbfbfb ; line-height: 38px ; font-size: 16px ; font-family: \5fae\8f6f\96c5\9ed1 ; padding: 0 10px 0 20px ; color: #595959 ; position: relative ;}
+.lp-v101uc-my-nav ul{padding:0 10px 5px 10px;}
+.lp-v101uc-my-nav ul li { height: 30px; line-height: 30px; border-bottom: 1px dashed #ccc ;}
+.lp-v101uc-bdr{ border-bottom: none !important;}
+.lp-v101uc-my-nav ul li a { display: block ; height: 30px ; padding: 0 0 0 25px ; color: #666 ; background:#ffffff url(http://dui.damai.cn/secondhand_ticket/images/self-tip.gif) no-repeat 13px center ;}
+.lp-v101uc-my-nav ul li a:hover,.lp-v101uc-my-nav ul li a.on {text-decoration: none ; color: #02581b !important;}
+.lp-v101uc-my-main { width: 750px ; float: right ; z-index: 400 ;}
+.lp-v101uc-here {color: #aaaaaa ;}
+.lp-v101uc-here a { color: #666 ;}
+.lp-v101uc-my-main .lp-v101uc-here {height: 32px ; line-height: 32px ;}
+.lp-v101uc-my-main .lp-v101uc-here a { color: #555555 ;}
+.lp-v101uc-contain-m {border: 1px solid #ebeff4 ;}
+.address-box{ height: 25px ; line-height: 25px;margin: 15px 0 0 0 ; overflow: hidden ; }
+.lp-v101uc-contain{ margin: 10px 0 0 0;}
+.new-address{ height: 25px ; width: 430px ; color: #aaaaaa ;}
+.new-address strong{ color: #02581b ;}
+.address-btn,.address-btn:hover,.lp-v101uc-resived,.rr-line,.chimb,.lp-v101uc-income-subnav ul li a{ background:url(http://dui.damai.cn/secondhand_ticket/images/receive.png) no-repeat ;}
+.address-btn{width: 100px; height: 27px; line-height:27px; _height: 25px; background-position: 0 0; border:medium none;margin:0 10px 0 0 ;padding-left:15px; color: #666 !important; vertical-align:middle; display: inline-block;}
+.address-btn:hover{ background-position: 0 -25px ;}
+.con_show_1,.con_show_2{ margin: 10px 0 0 0;}
+.lp-v101uc-bdr-cor{ border-top:2px solid #c3d600;}
+.lp-v101uc-contain-m-con { padding: 10px 20px;}
+.lp-v101uc-contain-m-con dl { overflow: hidden; zoom: 1; margin: 0 0 15px 0; _margin: 0 0 10px 0;}
+.lp-v101uc-contain-m-con dt,.lp-v101uc-contain-m-con dd{ float: left; line-height: 22px; color: #555; font-family:Verdana, Geneva, sans-serif;}
+.lp-v101uc-contain-m-con dd,.lp-v101uc-contain-m-con dd span{ color: #999;}
+.lp-v101uc-contain-m-con dt { width: 72px; float: left; text-align: right;margin-right:5px;*height:28px; *line-height: 28px;  *display: block;}
+/*.lp-v101uc-contain-m-con dt  strong{*height:28px; *line-height: 28px;  *display: block;}*/
+.address-dl dd{ letter-spacing:2px;}
+/*地址管理——收货地址/发货地址/——独有*/
+.con_show_2{ display:none;}
+.lp-v101uc-contain-nav {overflow: auto; zoom: 1; height: 31px; overflow: hidden; }
+.lp-v101uc-contain-nav li { width: 90px; height: 31px; float: left;}
+.lp-v101uc-contain-nav li a { display: block;height: 25px; text-align: center; line-height: 25px; color: #555;}
+.lp-v101uc-contain-nav li a:hover { color: #00651c !important; font-weight: bold;}
+.lp-v101uc-contain-nav li a.on{ color: #014a16; font-weight: bold;}
+.lp-v101uc-resived{ background-position: 55px -123px;}
+.lp-v101uc-my-add{ height:30px; background:#f7f7f7;}
+.lp-v101uc-my-add span{ line-height: 30px; height: 30px;padding-left:20px; color:#555; font-size:14px;}
+.lp-v101uc-my-add a{ color:#007423;padding:8px 25px 8px 0;}
+.lp-v101uc-add-hd{padding:1px; background:#fff; border-bottom:1px  solid #eaeaea; border-top:1px  solid #eaeaea;}
+/*添加地址—独有*/
+.mt2{margin-top: 2px;}
+.lp-v101uc-contain-m-con .input input { border: 1px solid #eaeaea ; padding: 5px ; width: 198px ;vertical-align: middle; float:left; color: #666; height:16px; line-height: 16px;}
+.lp-v101uc-contain-m-con .text { width: 250px ; float: left ; color: #999 ; line-height: 22px ;}
+.lp-v101uc-contain-m-con .button { clear: both ; padding: 0 0 0 77px ;}
+.lp-v101uc-contain-m-con .select {float: left ; color: #999 ; line-height: 22px ;}
+.w95{width: 95px ; height: 20px ; border: 1px solid #eaeaea ;}
+.w265{width: 265px !important ; color: #666 ;}
+.lh{ height: 22px; line-height: 22px; }
+.address-btn1,.address-btn2,.address-btn3,.send-infor,.lp-v101uc-set-infor-btn1,.lp-v101uc-setout-btn{ height: 27px; border: medium; *border: none; cursor: pointer; font-family: \5fae\8f6f\96c5\9ed1 ; font-size: 14px;}
+.address-btn1,.lp-v101uc-set-infor-btn1,.lp-v101uc-setout-btn,.lp-v101uc-actor-data-add{width: 50px; background-position: -30px -193px; color: #fff;}
+.address-btn1:hover,.lp-v101uc-set-infor-btn1:hover{ background-position: -30px -220px;}
+.address-btn2,.send-infor{ width: 108px; background-position: -32px -4px;margin-left: 10px;}
+.address-btn2:hover,.send-infor:hover{ background-position: -32px -31px;}
+.returns{ color: #0063dc !important;}
+.lp-v101uc-contain-nav li a.returns:hover{ color: #0063dc !important; font-weight: normal !important ;}
+.lp-v101uc-contain-m-con dl dt span{ color: #e90a3f; font-size: 12px; padding: 0 5px 0 0; font-family: 宋体;}
+/*认证管理*/
+.radios{ vertical-align: middle;margin-right: 5px;}
+.lp-v101uc-contain-m-con .input input.h26{ height: 22px !important; line-height:22px !important;}
+.address-dl,.attestat{ padding:20px;}
+.address-dl dl,.attestat dl{ padding: 10px 20px; width: 650px;margin: 0;}
+.attestat dl dd.tcr{ color: #aaaaaa;}
+.address-dl dl.pd5{ padding: 5px 20px; margin: 0  0 2px 0;}
+.address-dl dl.pd10{ padding: 5px 20px; margin: 0  0 10px 0;}
+.my-con-2{ margin: 10px 0 10px 0;}
+.address-btn3{ width: 76px; height: 30px; background-position: -31px -123px; color: #fff;}
+.address-btn3:hover{ background-position: -31px -93px;}
+/*已认证*/
+.certificate-pic{ width: 70px; height: 65px; border: 1px solid #d4d4d4;}
+.psize{width: 64px; height: 59px; border: 2px solid #f9f9f9;padding:1px;}
+.certificate-pic img{width: 64px; height: 59px; overflow: hidden;}
+.looks{margin: 25px 0 0 5px;}
+.attestation-hd{ height: 45px; border-bottom: 1px solid #eaeaea;}
+.attestation-hd h2{line-height: 45px; color: #417750; font-size: 18px; font-family: \5fae\8f6f\96c5\9ed1 ;padding: 0 20px; }
+.chimb{ height: 45px; line-height: 45px; padding: 0 20px; background-position: -24px  -178px; }
+/*更换密码*/
+.change-code-dl{ padding: 15px 30px 30px 40px;}
+.change-code-dl dl{margin-right: 55px; width: 620px;}
+.w255{ width: 255px;}
+.change-code-dl dt{width: 95px;}
+.change-code-dl dl dd input:focus { background-color: #fffce7;}
+.icon{ margin: 4px 0 0 10px; height: 19px;width: 19px; display: block; float: left;}
+.texttip{ height:19 px; display: block; float: left ; padding-left: 15px; background:    url(http://dui.damai.cn/secondhand_ticket/images/beg_red_tips.png) no-repeat 0 0; margin: 0 0 0 5px; height:28px; }
+.texttip em{ height: 28px; line-height: 28px; float: left; background: url(http://dui.damai.cn/secondhand_ticket/images/beg_red_tips.png) no-repeat right 0; display: block; padding-right: 8px; color: #e90a3f; font-size: 12px; font-family:宋体;}
+.texttip em.c{ color: #848484;}
+.texttip em.cr{ color: #848484;}
+.change-code-dl .button{  padding: 0 0 0 100px;}
+.w255{ width: 255px !important;}
+.child-hd{ font-size: 18px; color: #02581b;  font-family: \5fae\8f6f\96c5\9ed1 ;}
+/*手机管理*/
+.mt5{ margin: 5px 0 0 0;}
+.ml15{ margin-left: 15px;}
+.mobile-phones{ height: 25px; border-bottom: 2px solid #C3D600; padding-bottom:8px; margin-top:10px;}
+.mobile-phones-dl{ padding: 25px 30px 12px 30px;}
+.lp-v101uc-bdr-no{ border-top: 1px solid #eaeaea;}
+.lp-v101uc-phones-login dl{width: 600px; padding: 5px 0 20px 0;}
+.phone-btn{width: 55px; height: 27px; color: #fff; background-position: -31px -290px; border: medium none; font-family: \5fae\8f6f\96c5\9ed1 ; font-size: 13px;}
+.phone-btn:hover{ background-position: -31px -316px; }
+/*手机管理第二步*/
+.phones-first{ background: url(http://dui.damai.cn/secondhand_ticket/images/step_first.png) no-repeat right 0;padding: 25px 30px 50px;}
+.phones-first dl dt,.phones-first dl dd,.phones-first dl dd a.returns{ color: #b7b7b7 !important;}
+.phones-second{ position: relative;padding: 10px 30px 12px;_padding: 10px 30px 9px;}
+.phones-second dl{ width: 650px;}
+.lp-v101uc-phones-login{padding: 30px 30px 0;_padding: 10px 30px 9px; position: relative;}
+.lp-v101uc-bdr-cr{ border-color: #f7f7f7;}
+.phone-btned,.phone-btned:hover,.returned,.returned:hover{ background: url(http://dui.damai.cn/secondhand_ticket/images/phone_bg.png) no-repeat 0 0;}
+.phone-btned{ background-position: -37px -103px; text-indent: -9999px;}
+.phone-btned:hover{ background-position: -37px -103px; text-indent: -9999px;}
+.returned{width: 77px; height: 25px; display: inline-block ; background-position: -37px -6px; text-align: center; color: #666 !important;}
+.returned:hover{ background-position: -37px -30px;}
+.phones-second dl.ps,.lp-v101uc-phones-login dl.ps{ position:absolute; left: 33px; top: 118px;}
+.lp-v101uc-phones-login dl.ps{top: 61px;_top: 42px;}
+.phones-second dl.mt10{ margin: 26px 0 0 0 ;}
+.phones-second dl.mt15{ margin: 15px 0 0 0 ;}
+.phones-second dl dd p,.lp-v101uc-phones-login dl dd p { color: #aaaaaa;}
+/*绑定登陆邮箱*/
+.lp-v101uc-mails-box-dl{padding: 40px 20px 20px 20px;}
+.lp-v101uc-mails-box-dl dl{ width: 650px;*padding-bottom: 20px;}
+/*绑定登陆邮箱-绑定成功*/
+.lp-v101uc-repeat-box{width: 275px; padding: 20px 20px 10px 0; margin-left: 115px; background: url(http://dui.damai.cn/secondhand_ticket/images/lp_v101uc_repeat_box.png) repeat-x 20px 0;}
+.lp-v101uc-repeat-box p{ font-size: 14px; color: #666;}
+.lp-v101uc-repeat-box a{ color: #0062da; }
+.lp-v101uc-repeat-send{ width: 250px; margin: 10px 0 0 0; color: #aaaaaa; padding: 10px; border: 1px solid #f2dea9; background:#fffdee;}
+/*手机修改成功*/
+.succeed-con,.succeed-btn,.succeed-btn:hover,.mail-box-btn,.mail-box-btn:hover{ background: url(http://dui.damai.cn/secondhand_ticket/images/rework.png) no-repeat 0 0;}
+.rework{ background: #f7f7f7; padding: 30px 114px;}
+.rework-succeed{padding: 20px 20px 10px 95px;}
+.rework-succeed dl{width: 405px;margin: 0 0 10px 0;}
+.rework-succeed dl dd,.rework-succeed dl dt{ color: #666; font-size:14px; }
+.rework-succeed dl dd span{ color: #0062da; font-size: 14px; letter-spacing: 2px;}
+.succeed-con{ color: #007c25; font-size: 24px; font-family: \5fae\8f6f\96c5\9ed1 ; text-align: center; background-position: 105px -10px; font-weight:bold;}
+.succeed-btn{width: 49px; height: 27px; background-position: -46px -89px;}
+.succeed-btn:hover{ background-position: -46px -116px;}
+/*修改邮箱*/
+.send-infor{ color: #888;}
+.mobile-box-dl{ padding: 5px 30px 12px;}
+.mobile-box-dl dl{width: 600px;}
+.mail-border{ border:none;}
+.mail-box-btn{width: 104px; height: 30px; background-position: -47px -194px;}
+.mail-box-btn:hover{background-position: -47px -224px;}
+/*我的账号—账号管理—资料管理*/
+.lp-v101uc-data-mng{ padding: 20px; position: relative;}
+.lp-v101uc-data-mng dl{ width: 565px; padding: 5px 0;}
+.lp-v101uc-data-mng dl dt{ width: 85px;}
+.lp-v101uc-data-mng dl dd input.checks{ vertical-align: middle; margin: 0 5px 0 0;}
+.w66,.w52{ height:20px; padding: 1px 0; width: 66px;border: 1px solid #EAEAEA;margin: 0 8px 0 0; vertical-align: middle;}
+.w52{ width: 52px;}
+.lp-v101uc-actor-types li,.lp-v101uc-actor-btmnav-con li{ float: left;}
+.lp-v101uc-actor-types li a{ float: left; border: 1px solid #cacbcf; padding: 3px 8px; margin: 0 10px 0 0; color: #555;}
+.lp-v101uc-actor-types li a.n{ border: none;}
+.lp-v101uc-actor-btmnav-box{ height: 32px; border: 1px solid #f1f1f1; width: 275px;}
+.lp-v101uc-actor-btmnav-con{ height: 30px;background: #f7f7f7; margin: 1px; }
+.lp-v101uc-actor-btmnav-con li a{ float: left; padding: 5px 10px; color: #555;}
+.lp-v101uc-actor-data-add{ width:50px !important; height: 27px; line-height: 27px;padding: 0  !important; text-align: center !important; font-weight: 800; margin-left: 10px;background-position: -31px -193px !important; border: medium none !important; color: #fff !important;}
+.lp-v101uc-actor-data-add:hover{background-position: -31px -220px !important;}
+.lp-v101uc-actor-types-text{ padding:0 !important; height:25px !important;}
+.lp-v101uc-head-modifying{width: 125px;position: absolute; right: 20px; top: 20px;}
+.lp-v101uc-hd-modyfyed{width:120px; height:120px; padding:2px 3px 2px 2px;}
+.lp-v101uc-hd-modyfyed img{width:120px; height:120px; overflow: hidden;}
+.lp-v101uc-head-modifying-btnes,.lp-v101uc-head-modifying input.check,.lp-v101uc-head-modifying input.upload,.lp-v101uc-data-mng dl dd .j{ background: url(http://dui.damai.cn/secondhand_ticket/images/modify.png) no-repeat 0 0;}
+.lp-v101uc-head-modifying-btnes{width: 77px; height: 25px; margin: 20px 0 0 25px; display: block; text-align: center; line-height: 25px; color: #333;  background-position: -70px -15px;}
+.lp-v101uc-head-modifying input.texts{ height: 24px; width: 123px; margin: 20px 0;}
+.lp-v101uc-head-modifying input.check,.lp-v101uc-head-modifying input.upload{ width: 53px; height: 21px; border: medium none; background-position: -70px -64px; color: #c7480f;}
+.lp-v101uc-head-modifying input.check:hover{ background-position: -70px -85px;}
+.lp-v101uc-head-modifying input.upload{ background-position: -70px -136px; margin-left: 15px; color: #333;}
+.lp-v101uc-head-modifying input.upload:hover{ background-position: -70px -157px;}
+.lp-v101uc-data-mng dl dd .a{ padding: 0 5px; margin-left: 10px; color: #02581b !important;}
+.lp-v101uc-data-mng dl dd .b{ color: #555;}
+.lp-v101uc-data-mng dl dd .j{ background-position: -70px -214px; padding-left: 15px; color: #555;}
+/*我的消息*/
+.infor_write_btn,.lp-v101uc-sign,.lp-v101uc-show-record-btn,.lp-v101uc-show-record-btnup,.lp-v101uc-dele1,.lp-v101uc-set-infor-btn3,.lp-v101uc-set-infor-btn2,.lp-v101uc-show-order-btn,.lp-v101uc-show-record-btn2,.lp-v101uc-show-record-btnup2,.lp-v101uc-other-bank,.lp-v101uc-shut-bank{ background:url(http://dui.damai.cn/secondhand_ticket/images/infor.png) no-repeat 0 0;}
+.lp-v101uc-my-infor{padding: 0 20px;}
+.lp-v101uc-my-infor-hd,.lp-v101uc-my-system-hd{ height: 40px;}
+.lp-v101uc-my-infor-hd a{color: #0063dc; vertical-align: middle;}
+.lp-v101uc-my-infor-table1 tr td{height: 55px;  font-size: 12px;color: #999; background: url(http://dui.damai.cn/secondhand_ticket/images/line-bottom.png) repeat-x 0 bottom;}
+.lp-v101uc-my-infor-table1 tr td strong{ font-size: 14px; color: #666; font-weight: normal;}
+.lp-v101uc-my-infor-table1 tr td span{ color: #02581b;}
+.infor_write_btn{width: 88px; height: 25px; border: medium none; background-position: -73px -8px;*background-position: -73px -7px; margin: 8px 0 0 20px;padding-left: 18px;_background-position: -73px -8px;}
+.infor_write_btn:hover{ background-position: -73px -33px;*background-position: -73px -32px;_background-position: -73px -33px;}
+ 
+/*我的消息—消息管理-系统消息*/
+.lp-v101uc-my-system-hd dl{padding:10px 20px;}
+.lp-v101uc-my-system-hd dl dt,.lp-v101uc-my-system-hd dl dd{ float:left; height: 21px;}
+.lp-v101uc-my-system-hd dl dt{ height: 20px; line-height:20px;}
+.lp-v101uc-sign{width: 67px; height: 21px; line-height: 21px;_line-height: 22px; border: medium none; background-position: -77px -123px; cursor: pointer; margin-left: 10px;}
+.lp-v101uc-sign:hover{ background-position: -77px -144px;}
+.lp-v101uc-dele1{ width: 47px; height: 21px; line-height: 21px;*height: 22px; *line-height: 23px; _height: 21px; _line-height: 22px;border: medium none; background-position: -77px -208px;  margin: 0 0 0 10px;cursor: pointer;}
+.lp-v101uc-infor-stat{padding: 6px 20px 6px 0; color: #aaaaaa;}
+.lp-v101uc-infor-stat span{ padding-left: 0;color: #aaaaaa; }
+.lp-v101uc-infor-stat span.cr{ color: #02581b;}
+.lp-v101uc-my-infor-table2 dl dt,.lp-v101uc-my-infor-table4 dl dt{ float: left; color: #666;}
+.lp-v101uc-my-infor-table2 dl dt,.lp-v101uc-my-infor-table4 dl dt{width: 50px; height: 50px;  overflow: hidden;}
+.lp-v101uc-my-infor-table2 dl dt img,.lp-v101uc-my-infor-table4 dl dt img{width: 50px; height: 50px;  overflow: hidden; display: block;}
+.lp-v101uc-my-infor-table2 dl dd,.lp-v101uc-my-infor-table4 dl dd{ line-height: 22px; padding:0 0 0 70px;}
+.lp-v101uc-my-infor-table2 tr td,.lp-v101uc-my-infor-table4 tr td{ height: 95px;}
+.lp-v101uc-my-infor-table2 tr td.pr30,.lp-v101uc-my-infor-table4 tr td.pr30{ padding-right: 30px;}
+.infor-dele{width: 9px; height: 8px; display: inline-block ; background: url(http://dui.damai.cn/secondhand_ticket/images/infor_dele.png) no-repeat 0 0;}
+.white-content{ color: #666 !important; font-size: 14px; font-weight: bold;}
+.cr6{ color: #666 !important;}
+.cra{ color: #aaaaaa !important; letter-spacing: 2px; font-family: 宋体;}
+/*我的消息—消息管理-买家消息*/
+.lp-v101uc-buyer-infor{ padding: 0 20px 20px 20px;}
+.mr0{ margin: 0 10px 0 0;}
+.lp-v101uc-show-box,.lp-v101uc-show-box2,.lp-v101uc-show-box3,.lp-v101uc-show-box4{ line-height: 22px; text-align: center; background: #fff; margin-top: -1px;}
+.lp-v101uc-show-record-btn,.lp-v101uc-show-order-btn,.lp-v101uc-show-record-btnup,.lp-v101uc-show-record-btn2,.lp-v101uc-show-record-btnup2{padding: 0 15px 0 0; color: #0063dd; background-position: 5px -260px;_background-position: 5px -258px; }
+.lp-v101uc-show-record-btnup,.lp-v101uc-show-record-btnup2{ background-position: -64px -293px;_ background-position: -64px -290px;}
+.lp-v101uc-tr-show{ display: none;}
+.lp-v101uc-my-infor-table3 tr td.pr30{ padding-right: 30px;}
+.lp-v101uc-my-infor-table3 tr td{ background: url(http://dui.damai.cn/secondhand_ticket/images/line-bottom.png) repeat-x 0 bottom;}
+/*我的消息—消息管理-新建站内信*/
+.lp-v101uc-set-infor{padding: 20px ;}
+.lp-v101uc-set-infor .recently_person{height: 23px;line-height: 23px;margin: 3px 0 0 10px;}
+.lp-v101uc-set-infor dl{ width: 600px; position: relative;overflow: visible;}
+.lp-v101uc-set-infor dl dt{ width: 60px; color:#666;}
+.w350{width: 350px; height: 23px;}
+.lp-v101uc-set-infor-btn2,.lp-v101uc-set-infor-btn3{border: medium none;cursor: pointer;}
+.lp-v101uc-set-infor-btn3{ width: 68px; height: 23px;*height: 22px;_height: 23px;_width: 70px; line-height: 23px;_line-height: 24px; background-position: -79px -336px;*background-position: -78px -336px;  margin: 3px 0 0 10px; *margin: 0 0 0 10px;}
+.lp-v101uc-set-infor-btn2{ width: 50px; height: 27px;*height:28px;_height:27px; background-position: -80px -390px;*background-position: -79px -390px;_background-position: -80px -390px; margin-left: 10px; color: #666;font-family: \5fae\8f6f\96c5\9ed1 ; font-size: 14px;}
+.lp-v101uc-set-infor-btn2:hover{ background-position: -80px -417px;*background-position: -79px -418px; _background-position: -80px -417px;}
+.lp-v101uc-set-infor-text{ width: 350px; height: 100px;}
+.lp-v101uc-set-infor-posi{ position: absolute; left: 70px; top: 28px;}
+.lp-v101uc-set-infor-posi span{ color: #ff0000;}
+.resive-tips-txt{ display: block; float: left; height: 26px;line-height: 27px;margin-left: 10px;}
+/*查看消息*/
+.lp-v101uc-view{border: 1px solid #EBEFF4;padding: 10px 20px; border-top: 2px solid #c3d600; margin: 3px 0 0 0 ;}
+.lp-v101uc-upwards,.lp-v101uc-nextword,.lp-v101uc-return-btn,.lp-v101uc-setout-btn{ background: url(http://dui.damai.cn/secondhand_ticket/images/view.png) no-repeat;}
+.lp-v101uc-upwards,.lp-v101uc-nextword{color: #02581b;}
+.lp-v101uc-upwards{ padding-left: 20px; background-position: -68px -53px; }
+.lp-v101uc-nextword{ padding-right: 20px; background-position: -32px -23px;}
+.lp-v101uc-view-table dl dd {line-height: 22px; padding: 0 0 0 70px; }
+.lp-v101uc-view-table dl dt {color: #666;float: left;height: 50px; overflow: hidden; width: 50px;}
+.lp-v101uc-view-table dl dt img{height: 50px; overflow: hidden; width: 50px; display: block;}
+.lp-v101uc-view-table tr td {border-bottom: 1px dashed #cccccc;padding: 30px 0;}
+.lp-v101uc-view-table tr td  .cr666{ color: #666; line-height: 25px;}
+.lp-v101uc-view-table tr td  span.crgreen{ color: #02581b;}
+.ml25{ margin: 0 0 0 25px;}
+.lp-v101uc-return-text{ border-top: 1px dashed #ccc;}
+.lp-v101uc-return-text h3{ padding: 15px 0; color: #666;}
+.lp-v101uc-return-in{ width: 428px; height: 98px;}
+.lp-v101uc-return-tip{  line-height: 35px; color:#999;}
+.lp-v101uc-return-btn-box{ height: 27px;}
+.no-bottomline td{ border-bottom: none !important;}
+.lp-v101uc-return-btn{ width: 89px; height:27px; border: medium none; margin: 0 0 0 10px; font-size: 14px; font-family: \5fae\8f6f\96c5\9ed1 ; background-position: -47px -120px;}
+.lp-v101uc-return-btn:hover{ background-position: -47px -93px; }
+/*查看发件箱*/
+.lp-v101uc-sentout-table tr td{ padding: 10px 0;}
+.lp-v101uc-sentbox-hd{ margin-left: 92px;}
+.lp-v101uc-sentbox-hd strong,.lp-v101uc-sentbox-hd span{ font-size: 14px; color: #666;font-family:  宋体}
+.lp-v101uc-sentbox-hd span{ letter-spacing: 1px;}
+.lp-v101uc-cr-greenes{ color: #02581b;}
+.lp-v101uc-view-sent-box{  padding: 0 110px 30px 150px; border: 1px solid #eaeaea; border-top: 2px  solid #c3d600;}
+.lp-v101uc-setout-btn{ background-position: -47px -185px;}
+.lp-v101uc-setout-btn:hover{ background-position: -47px -212px;}
+/*买票中心—交易管理-进行中的订单*/
+.lp-v101uc-managing-contain{padding :0 0 20px 0;  border: 1px solid #eaeaea;  border-top: 2px  solid #c3d600;}
+.lp-v101uc-order-table-box{ padding: 0 20px;}
+.lp-v101uc-order-nummber-in{border: 1px solid #eaeaea; border-left: none; border-right: none; padding: 1px;}
+.lp-v101uc-order-nummber{ height: 28px; line-height: 28px; background: #f7f7f7; padding-left: 20px; color: #555; letter-spacing: 1px;}
+.lp-v101uc-order-table tr td dl dt{ float: left; margin-top: 5px;}
+.lp-v101uc-order-table tr td dl dt,
+.lp-v101uc-order-table tr td dl dt img{width: 59px; height: 77px; overflow: hidden; vertical-align: middle;}
+.lp-v101uc-order-table tr td dl dd{ padding: 0 0 0 79px;}
+.lp-v101uc-order-table tr td dl dd h3{ font-size: 14px; color: #666;}
+.lp-v101uc-order-table tr td dl dd .act_news{}
+.lp-v101uc-order-table tr td dl dd .act_news li{ line-height: 22px; color: #666;}
+.lp-v101uc-order-table tr td dl dd .act_news li.top_con1{ margin-top: -2px;}
+.lp-v101uc-order-table tr td { padding: 20px 0;}
+.lp-v101uc-order-table tr td.pr30{ padding-right: 30px;}
+.lp-v101uc-order-table tr td.pr20{ padding-right: 20px;}
+.lp-v101uc-order-table tr td span{ color: #aaaaaa; line-height: 28px;}
+.lp-v101uc-order-table tr td .fontcr{ color: #ff6300; font-weight: bold; font-family: Verdana, Geneva, sans-serif;}
+.user-name{ color: #0063dd !important;}
+.lp-v101uc-payfor-btn,
+.ordering-con-rt button,
+.lp-v101uc-agreed-btn,
+.lp-v101uc-refuse-btn,
+.beg .beg_in dl dd button{ background: url(http://dui.damai.cn/secondhand_ticket/images/buy_ticket.png) no-repeat;}
+.lp-v101uc-payfor-btn{ width: 61px; height: 27px; line-height: 27px; border: medium none; cursor:pointer; background-position: -50px -15px;  font-size: 14px;  font-family: \5fae\8f6f\96c5\9ed1 ; color: #fff; margin-left: 7px; font-weight: 600;}
+.lp-v101uc-payfor-btn:hover{ background-position: -50px -42px;}
+.ordering-box{height: 30px;line-height: 30px;margin: 15px 0 2px 0;overflow: hidden; padding-bottom: 2px;}
+.ordering-box ul li{ float: left;}
+.ordering-box ul li a{ width: 60px; display: block; float: left; text-align: center; height: 30px; line-height:30px;}
+.ordering-box ul li a.on{ color: #014a16; font-weight: bold;}
+.rr-line{ background-position: 28px -120px;}
+.ordering-con-rt{ height: 30px; padding: 0 0 1px 0;}
+.ordering-con-rt input{width: 105px; padding: 0 5px; height: 22px;*height: 16px;*padding: 3px 5px; cursor: pointer; border: 1px solid #eaeaea; vertical-align: middle ; margin: 0 8px; color: #555; letter-spacing: 2px;}
+.ordering-con-rt button,
+.beg .beg_in dl dd button{ width: 47px;*width:48px;_width:47px; height: 24px; line-height: 24px; border: medium none; vertical-align: middle; background-position: -50px -121px;*background-position: -49px -121px; _background-position: -50px -121px; display: inline-block;}
+.ordering-con-rt button:hover{ background-position: -50px -145px;*background-position: -49px -145px;_background-position: -50px -145px;}
+/*退款中的订单*/
+.lp-v101uc-show-recede-btn{color: #0063DD;}
+/*买票中心—交易管理-进行中的订单-确认收货*/
+.send-explain{ height: 30px; line-height: 30px; border: 1px solid #f2dea9; font-family:Verdana, Geneva, sans-serif; color: #999; padding: 0 20px; background: #fffdee;margin: 8px 0  20px 0;}
+.lp-v101uc-order-detail-content{  padding: 10px 20px;}
+.lp-v101uc-order-detail-content h3{ color: #02581b; line-height:25px; font-weight: bold;}
+.lp-v101uc-order-detail-content ul{ padding: 5px 28px;}
+.lp-v101uc-order-detail-content ul li{ line-height: 35px;}
+.lp-v101uc-order-detail-content ul li strong,.lp-v101uc-order-detail-content ul li span{ color: #555; font-weight: normal;}
+.lp-v101uc-order-detail-content ul li strong.r{ margin: 0 0 0 30px;}
+.lp-v101uc-order-detail-content ul li a{ color: #0063dd;}
+.lp-v101uc-sure-receipt-in{ padding: 1px;border: 1px solid #EAEAEA; border-left: none; border-right: none;}
+.lp-v101uc-sure-receipt-table tr th{ background: #f7f7f7;}
+.lp-v101uc-sure-receipt-table tr th.pr30{ padding: 0 30px 0 0;}
+.lp-v101uc-be-careful{ color: #e90a3f; line-height: 25px;}
+.surereceipt{ width: 79px; height: 27px; border: medium none; font-size: 14px; font-family: \5fae\8f6f\96c5\9ed1 ; color: #fff; font-weight: 800; background: url(http://dui.damai.cn/secondhand_ticket/images/sure-receipt.png) no-repeat -70px -26px;}
+.surereceipt:hover{ background-position: -70px -53px;}
+
+/*买票中心—交易管理-进行中的订单-收货成功*/
+.lp-v101uc-success-raceipt{ padding: 20px; }
+.lp-v101uc-order-in-box{ border-top: 1px solid #eaeaea;}
+.lp-v101uc-success-raceipt strong{ color: #007c25;font-size: 24px; font-family: \5fae\8f6f\96c5\9ed1 ;}
+.lp-v101uc-success-raceipt p span{ color: #ff6300; height: 22px; line-height:22px;}
+.lp-v101uc-evaluation{ margin: 15px 20px 0 20px; color: #666;padding: 15px 0;}
+.lp-v101uc-evaluation p,.lp-v101uc-success-raceipt p{ height: 22px; line-height:22px; color:#666;}
+.lp-v101uc-success-raceipt-detail ul{ padding:0;}
+.lp-v101uc-no20{padding-bottom: 0;}
+/*买票中心—交易管理-进行中的订单-收货成功(弹出框）/申请退款（弹出框）*/
+.bg-layers-cover,
+.bg-layers-apply-cover,
+.bg-apply-second-covering{ width: 100%; position:absolute; top:0;z-index: 10000; background: url(http://dui.damai.cn/secondhand_ticket/images/bg-cover.png) repeat 0 0; display: none;}
+.lp-v101uc-evaluation-box,
+.lp-v101uc-apply-box,
+.apply-second_box{width: 428px; height: 238px; position: fixed; margin: -119px 0 0 -209px; left: 50%; top: 50%; z-index: 10009; _position: absolute;_top: 180px; _margin-top: 0; display: none; }
+.lp-v101uc-don-bg,
+.lp-v101uc-apply-bg,
+.apply-second_bg{ width: 428px; height: 238px; float: left;background: #b8b8b8; opacity: 0.37;}
+.lp-v101uc-evaluation-in,
+.lp-v101uc-apply-in,
+.apply-second_in{width: 428px; height: 238px; position: relative;}
+.lp-v101uc-evaluation-content,
+.lp-v101uc-apply-content,
+.second_in_con1{ width: 418px; height: 228px; overflow: hidden; border: 1px solid #b7b6b6; margin: 4px; position: absolute; right: 0; top: 0;*top: -238px; background: #fff;}
+.lp-v101uc-evaluation-box h2,
+.lp-v101uc-apply-box h2{ height: 37px; background:url(http://dui.damai.cn/secondhand_ticket/images/raceipt_seccess_head.png) repeat-x 0 0;}
+.lp-v101uc-raceipt-seccess-shut,
+.lp-v101uc-apply-shut,
+.lp-v101uc-raceipt-seccess-btn,
+.lp-v101uc-apply-btn{ background:url(http://dui.damai.cn/secondhand_ticket/images/raceipt_seccess.png) no-repeat 0 0;}
+.lp-v101uc-raceipt-seccess-shut,
+.lp-v101uc-apply-shut{ height: 8px; width: 8px; display: inline-block; background-position: -70px -128px; margin: 15px 15px 0 0;}
+.lp-v101uc-raceipt-check,
+.lp-v101uc-apply-check{ padding: 17px;}
+.lp-v101uc-raceipt-check input{ vertical-align: middle; margin-right: 5px;}
+.lp-v101uc-raceipt-seccess-text,
+.lp-v101uc-apply-text{ width: 380px; height: 85px; margin: 15px 0;}
+.lp-v101uc-raceipt-seccess-btn,
+.lp-v101uc-apply-btn{ width: 81px; height: 26px; border: medium none; background-position: -70px -20px; font-size: 14px; cursor: pointer;}
+.lp-v101uc-raceipt-seccess-btn:hover,
+.lp-v101uc-apply-btn:hover{ background-position: -70px -46px;}
+
+/*进行中的订单弹层*/
+.second_con_in h3{background: url(http://dui.damai.cn/secondhand_ticket/img/collect_h.png) repeat-x scroll 0 0 transparent;color: #555555;font-size: 16px;font-weight: bold;height: 37px;line-height: 37px;padding: 0 20px;}
+.second_con_in .deliver_shut{background: url(http://dui.damai.cn/secondhand_ticket/img/bg_beg_shut.png) no-repeat scroll 0 0 transparent;display: inline-block;height: 16px;position: absolute;right: 10px;top: 15px;width: 16px;}
+.con_in_second{ padding: 20px;}
+.con_in_second p{ line-height: 28px; color: #555; font-size: 14px;}
+.con_in_second p strong{font-family:\5fae\8f6f\96c5\9ed1;display: block; font-size: 20px; color: #015b1a; text-align: center; margin-bottom: 10px;}
+.con_in_second p.code_con{ font-size: 12px; color: #ff0000;_margin-top: 10px;}
+.con_in_second p.code_con a{ color: #0063dc; margin-left: 10px;}
+.con_in_second p.code_con img{ vertical-align: middle;}
+.con_in_second p.warning{ padding-left: 30px;}
+.con_in_second .deliver_btn_box{ margin: 15px 0 0 13px; overflow: hidden; zoom:1;}
+.con_in_second .deliver_btn_box input{background: url(http://dui.damai.cn/secondhand_ticket/img/bg_beg_btn.png) no-repeat -12px 0; color: #fff; font-weight: bold;border: medium none;cursor: pointer;float: left;height: 26px;margin-right: 20px;width: 64px;}
+.con_in_second .deliver_btn_box .deliver_btn1:hover{ background-position: -12px -26px;}
+.con_in_second .deliver_btn_box .deliver_btn2{ background-position: -12px -52px;}
+.con_in_second .deliver_btn_box .deliver_btn2:hover{ background-position: -12px -78px;}
+
+/*买票中心—交易管理-进行中的订单-申请退款（弹出框）*/
+.lp-v101uc-apply-check  strong{ color: #666;}
+
+/*买票中心—交易管理-进行中的订单-确认收货(输入支付密码)*/
+.lp-v101uc-payfor-box{ padding: 10px 20px ;}
+.lp-v101uc-payfor-code{padding: 30px 30px 30px 40px;}
+.lp-v101uc-payfor-code dl{ width: 600px;}
+.lp-v101uc-payfor-code dl dt{ width: 110px;}
+
+
+/*卖票中心—票品管理-仓库中的票品*/
+.lp-v101uc-warehouse-table tr td{ background: url(http://dui.damai.cn/secondhand_ticket/images/line-bottom.png) repeat-x 0 bottom;}
+.lp-v101uc-itemes-check{ height: 38px; line-height: 38px; background: #f7f7f7; border: 1px solid #ebebeb; margin: 15px 0 0 0; padding: 3px 10px 3px 15px;_padding: 10px 10px 2px 15px;_height: 14px;_line-height: 14px;}
+.lp-v101uc-itemes-check .w295{border: 1px solid #EAEAEA;color: #555555;height: 22px;margin: 0 8px;vertical-align: middle;width: 295px; padding: 1px 0;}
+.lp-v101uc-itemes-check strong.c1{ font-weight: normal; color: #666;}
+.lp-v101uc-warehous-down{ padding:0 20px;}
+.lp-v101uc-warehous-down input{ vertical-align: middle;}
+.lp-v101uc-warehous-down a{ border: none !important; margin-right: 10 px;}
+.lp-v101uc-warehous-down a.c1{ color: #ff0000;}
+
+/*我的账号—账号管理-竞拍管理*/
+.lp-v101uc-auction h2{ font-size: 18px; font-family: \5fae\8f6f\96c5\9ed1 ; color:#014a16; }
+.lp-v101uc-auction-tables th{ background: #f7f7f7;}
+.lp-v101uc-auction-tables th.pr30,.lp-v101uc-auction-tables td.pr30{ padding-right: 30px;}
+.lp-v101uc-auction-tables tr td .fontcr {color: #FF6300; font-family: Verdana,Geneva,sans-serif;font-weight: bold;}
+.lp-v101uc-auction-tables tr td{ padding: 20px 0; color: #666;}
+.lp-v101uc-auction-tables tr td h3 {color: #666;line-height: 28px;}
+.lp-v101uc-auction-tables tr td span {color: #666;line-height: 28px;}
+.lp-v101uc-auction-tables tr td span.cr999{ color: #999;}
+/*卖家中心-交易管理-退款中的订单*/
+.lp-v101uc-agreed-btn,.lp-v101uc-refuse-btn{ width: 48px; height: 27px; line-height: 27px; border: medium none; cursor: pointer; color: #fff; font-size: 14px; font-family: \5fae\8f6f\96c5\9ed1 ; font-weight: 800; }
+.lp-v101uc-agreed-btn{background-position: -50px -203px;}
+.lp-v101uc-agreed-btn:hover{ background-position: -50px -230px;}
+.lp-v101uc-refuse-btn{ background-position: -50px -289px;}
+.lp-v101uc-refuse-btn:hover{ background-position: -50px -316px;}
+/*用户中心换页总写*/
+.lp-v101uc-pageination{clear: both; color: #666666; height: 26px;padding: 20px 0 0 0; text-align: center;}
+.pdbm20{ padding: 20px 0 20px 0;}
+.lp-v101uc-pageination a {border: 1px solid #E1E1E1;font-family: 'simSun';padding: 5px 10px;}
+.lp-v101uc-pageination a.on{background: none repeat scroll 0 0 #014e17;border: 1px solid #014e17;color: #FFFFFF;}
+.ml10 { margin-left: 10px;}
+.lp-v101uc-pageination a,.lp-v101uc-pageination a.oning{ color: #333;}
+.lp-v101uc-pageination .endpages,.lp-v101uc-pageination .firstpages,.lp-v101uc-pageination .prev,.lp-v101uc-pageination .next{ color: #999;}
+.lp-v101uc-pageination .firstpages,.lp-v101uc-pageination .prev{margin-right:10px;}
+.lp-v101uc-pageination .next {margin: 0 10px;}
+.lp-v101uc-pageination .t { border: 1px solid #d5d5d5; padding: 2px 0;position: relative;text-align: center; width: 30px; vertical-align: middle;}
+.lp-v101uc-pageination .sured {border: 1px solid #d5d5d5;cursor: pointer; height:25px;*height:24px; *line-height: 24px;padding: 0 10px;*padding: 0 5px 0 5px; margin: 1px 5px 0 5px; background: #fff; vertical-align: middle; color: #333;}
+/*我的钱包—电子钱包管理-收支明细*/
+.lp-v101uc-income,.lp-v101uc-kc{ border-bottom: 2px solid #c3d600;}
+.lp-v101uc-income-search{ padding: 15px 0; background: url(http://dui.damai.cn/secondhand_ticket/images/line-bottom.png) repeat-x 0 bottom;}
+.lp-v101uc-income-search ul{ width: 300px; height:22;}
+.lp-v101uc-income-search ul li,.lp-v101uc-income-subnav ul li{ float: left;}
+.lp-v101uc-income-search ul li a{ float: left; margin-left: 10px; line-height: 22px;}
+.lp-v101uc-income-subnav{  line-height: 22px;}
+.lp-v101uc-income-subnav ul{ width: 200px; height:30px;}
+.lp-v101uc-income-subnav ul li a{ float: left; margin-right: 10px; line-height: 30px; padding-right: 10px;background-position: 2px -119px;}
+.pr10{ padding-right: 10px !important;}
+.lp-v101uc-income-subnav ul li a.on{ font-weight: bold;}
+.lp-v101uc-income-contain{ border: 1px solid #eaeaea;}
+.lp-v101uc-income-tabel-hd{ padding: 1px; border-bottom: 1px solid #eaeaea;}
+.lp-v101uc-income-tabel th,.lp-v101uc-income-tabel td{text-align: center; line-height: 22px;}
+.lp-v101uc-income-tabel th,.lp-v101uc-caution-money-tabel tr th{ background: #f7f7f7; height: 28px;}
+.lp-v101uc-income-tabel th.nopr30,.lp-v101uc-income-tabel td.nopr30{ padding-right:0 ;}
+.lp-v101uc-income-tabel td,.lp-v101uc-caution-money-tabel tr td{ height: 45px; background: url(http://dui.damai.cn/secondhand_ticket/images/line-bottom.png) repeat-x 0 bottom;}
+.lp-v101uc-income-tabel td a,.lp-v101uc-caution-money-tabel tr td a{ color: #0063dd;}
+.lp-v101uc-income-tabel td span,.lp-v101uc-caution-money-tabel tr td em.cr5,.lp-v101uc-caution-money-tabel tr td span{ color: #555;}
+.lp-v101uc-income-tabel td span.ca,.lp-v101uc-caution-money-tabel tr td span.ca{ color: #aaaaaa;}
+.lp-v101uc-income-tabel td strong{ color: #014e17; font-family: Verdana, Geneva, sans-serif;}
+.lp-v101uc-income-tabel td strong.crb{ color: #02581b;}
+.lp-v101uc-bar{ height: 26px; padding: 15px 0 15px 12px; line-height: 26px;color: #555; width: 125px; text-align: left;}
+.lp-v101uc-bar span{ color: #555;}
+.mr10{ margin-right: 10px;}
+/*我的钱包—电子钱包管理-充值记录*/
+.lp-v101uc-kc-btn{ width: 58px; height: 25px; line-height: 25px; color: #666;  cursor: pointer; border: medium none; text-align: center; background: url(http://dui.damai.cn/secondhand_ticket/images/kc.png) no-repeat 0 0; float: right;}
+.lp-v101uc-kc-btn:hover{ background-position: 0 -25px;}
+.lp-v101uc-kc h2{ width: 150px; float: left;}
+/*我的钱包—收支明细-保证金*/
+.lp-v101uc-caution-money{ margin: 10px 0 5px 0;}
+.lp-v101uc-caution-money h3{ height: 22px; line-height: 22px; color: #02581b; font-weight: bold;}
+.lp-v101uc-caution-money-tabel tr th,.lp-v101uc-caution-money-tabel tr td{ padding-right: 40px; text-align: center;}
+.lp-v101uc-caution-money-tabel tr td em{ color: #ff6300;}
+/*选择银行*/
+.lp-v101uc-colligat-list{ border: 1px solid #eaeaea;}
+.lp-v101uc-colligat-hd-box{ border-bottom: 1px solid #eaeaea; padding: 0 1px; width:746px; }
+.lp-v101uc-colligat-list h2{ width:706px;*width:707px;_*width:708px;height: 35px; line-height: 35px; padding: 0  20px; background: url(http://dui.damai.cn/secondhand_ticket/images/bank_hd.png) repeat-x 0 0;}
+.lp-v101uc-colligat-con{ width: 680px; padding: 35px 35px 10px 35px; overflow: hidden;}
+.lp-v101uc-colligat-con ol{ width: 710px;}
+.lp-v101uc-colligat-con ol li{  float: left; padding-bottom: 15px;}
+.lp-v101uc-colligat-con ol li input,.lp-v101uc-colligat-con ol li img{ vertical-align: middle;}
+.lp-v101uc-colligat-con ol li img{ border: 1px solid #eaeaea; margin: 5px 20px 5px 5px ; width: 107px; height: 25px; overflow: hidden;padding: 5px 80px 5px 3px;*padding: 5px 70px 5px 3px;}
+.lp-v101uc-colligat-gonext{ padding: 20px 0; margin: 0 20px; background: url(http://dui.damai.cn/secondhand_ticket/images/line-bottom.png) repeat-x left top;}
+.lp-v101uc-gonext-btn{ width: 104px; height: 30px; line-height: 30px; cursor: pointer; color: #fff; text-align: center; border: medium none; background: url(http://dui.damai.cn/secondhand_ticket/img/public_btnw104h30.png) no-repeat 0 0; font-weight: 800;}
+.lp-v101uc-gonext-btn:hover{ background-position: 0 -30px;}
+.lp-v101uc-other-bank{ color: #0062da; padding-right: 25px;background-position: -13px -260px;}
+.lp-v101uc-shut-bank{color: #0062da; padding-right: 25px;background-position: -62px -292px;}
+/*我的钱包—激活电子钱包—绑定手机*/
+.lp-v101uc-flow-pace { border: 1px solid #f5f5f5; margin: 10px 0 0 0; text-align: center; *text-align: left; padding: 20px 10px;}
+.lp-v101uc-flow-pace ol { position: relative; z-index: 1200;zoom:1;margin:0 auto;}
+.lp-v101uc-flow-pace ol li { width: 95px; display: inline-block; *display: block; *float: left; *text-align: center; margin-right: 120px;}
+.lp-v101uc-flow-pace ol li .txt { font-size: 14px; font-weight: bold; color: #7e7e7e;; display: inline-block;}
+.lp-v101uc-flow-pace ol li .num { background: url(http://dui.damai.cn/secondhand_ticket/img/bg-flow-1.png) 0 -37px no-repeat; display: block; line-height: 36px; font-size: 16px; color: #fff; font-weight: bold; width: 36px; height: 36px; margin: 5px auto 0 auto;}
+.lp-v101uc-flow-pace ol li.ie6mg{*margin-left:49px;*width:205px;}
+.lp-v101uc-flow-pace ol li.ie6mg2{*margin-left:63px;*width:180px;}
+.lp-v101uc-flow-pace ol li.on .txt { color: #015b1a;}
+.lp-v101uc-flow-pace ol li.on .num { background-position: 0 0;}
+.lp-v101uc-flow-line{ height: 21px; background: url(http://dui.damai.cn/secondhand_ticket/img/bg-flow-2.png) 0 -75px repeat-x;}
+.lp-v101uc-flow-line div { background: url(http://dui.damai.cn/secondhand_ticket/img/bg-flow-2.png) 0 0 repeat-x; height: 17px;}
+.lp-v101uc-flow-line-4,.flow-line-5 { width: 650px; margin: -27px auto 0 auto; text-align: left;}
+.lp-v101uc-flow-line-4-1 div ,.flow-line-3-10 div{ width: 0%;}
+.lp-v101uc-flow-line-4-2 div { width: 35%;}
+.lp-v101uc-flow-line-4-3 div { width: 70%;}
+.lp-v101uc-flow-line-4-4 div { width: 100%;}
+.lp-v101uc-colligat-mobile{ position: relative;padding: 25px 20px 0 35px;}
+.lp-v101uc-colligat-mobile dl{ padding: 5px 0 15px 0;}
+.lp-v101uc-colligat-mobile dl dt{ width: 95px;}
+.lp-v101uc-colligat-mobile dl.ps2{ position: absolute; top: 54px; left: 35px;}
+.lp-v101uc-colligat-mobile dl.ps3{ left:35px;}
+.lp-v101uc-colligat-mobile dl.ps2 dd p{ color: #aaaaaa;}
+.lp-v101uc-colligat-mobile dl.lp-v101uc-pdb{ margin: 0; padding-bottom: 5px;;}
+.ls{ letter-spacing: normal;}
+/*我的钱包—激活电子钱包—设置安全信息*/
+.lp-v101uc-colligat-tips{ padding: 25px 20px 25px 90px; background: #f7f7f7; border: 1px solid #eaeaea;}
+.lp-v101uc-colligat-tips p.succeed-con{ width: 375px; text-align: left; padding-left: 50px;background-position: -52px -10px;}
+.lp-v101uc-colligat-tips a{ height: 30px; line-height: 30px;}
+.lp-v101uc-safety-information-hd{ padding: 10px 20px;background: #f7f7f7; border-bottom: 1px solid #eaeaea; font-size: 14px; color: #595959;}
+.lp-v101uc-safety-information{ padding: 20px 20px 15px 20px; position: relative;}
+.lp-v101uc-safety-information dl dt{ width: 120px; color: #666;}
+.lp-v101uc-safety-information dl{margin: 0; padding-bottom: 10px;}
+.lp-v101uc-next-step-box{ padding: 30px 0 20px 0; text-align: center;}
+.lp-v101uc-next-step-btn{ width: 118px; height: 27px; line-height: 27px; border: medium none; text-align: center; background: url(http://dui.damai.cn/secondhand_ticket/images/public_bnt118_27.png) no-repeat 0 0; color: #fff;font-size: 14px; font-family: \5fae\8f6f\96c5\9ed1 ; font-weight: 800; cursor: pointer;}
+.lp-v101uc-next-step-btn:hover{ background-position: 0 -27px;}
+.lp-v101uc-safety-information-select{width: 205px; height:26px;}
+.lp-v101uc-account-information dl{ padding: 5px 0 15px 0; width: 600px;}
+.lp-v101uc-account-information dl.ps2{ position: absolute; left: 22px; top:45px;*top:48px;}
+/*我的钱包—激活电子钱包—激活成功*/
+.lp-v101uc-activat-seccess{ padding: 25px 200px 50px 200px; background: #f7f7f7; border: 1px solid #eaeaea;}
+.lp-v101uc-activat-seccess p{ background-position: -50px -10px; margin: 0 0 25px 0;}
+.lp-v101uc-activat-seccess span{ margin-left: 60px;}
+/*我的钱包—账户信息-激活电子钱包*/
+.lp-v101uc-activation-description{ padding: 10px; background: #fffdee; border: 1px solid #f2dea9;}
+.lp-v101uc-activation-description p{ color: #aaaaaa;line-height: 25px;}
+.lp-v101uc-service-agreement{ margin: 0 55px; padding: 5px 20px; overflow-y: scroll; height: 230px; border: 1px solid #eaeaea; color: #aaaaaa;}
+.lp-v101uc-service-agreement h3{ text-align: center; line-height: 25px;}
+.lp-v101uc-service-agreement p{ line-height:22px; color: #aaaaaa;}
+/*我的钱包—电子钱包管理-提现记录-提现*/
+.lp-v101uc-mention-now{ padding: 20px; border: 1px solid #f2dea9; background: #fffdee;}
+.lp-v101uc-mention-now p{ color: #aaaaaa; line-height: 25px;}
+.lp-v101uc-mention-now p span{ vertical-align:middle;}
+.lp-v101uc-mention-now-box{ padding: 30px 0 20px 0;}
+.lp-v101uc-mention-now-box dl dt{ width: 65px;}
+.lp-v101uc-mention-now-box dl.ps2{ left: -15px; top: 58px;}
+@media screen and (-webkit-min-device-pixel-ratio:0) { .ps2 {top: 65px !important}} 
+.lp-v101uc-mention-now-box dl span{ color: #ff6300;}
+/*我的钱包—电子钱包管理-首页*/
+.lp-v101uc-wallet-subnav{ padding: 3px 10px;}
+.lp-v101uc-wallet-subnav ul{ width: 350px;}
+.lp-v101uc-wallet-subnav ul li a{ color: #0063dd; background: none;}
+.lp-v101uc-wallet-subnav ul li a.on{ color: #666;}
+.lp-v101uc-wallet-hd-box{padding: 20px; background: #f7f7f7; border:1px solid #eaeaea;}
+.lp-v101uc-wallet-hd{width:80px; height: 78px;  border:1px solid #eaeaea; padding:1px;}
+.lp-v101uc-wallet-hd .walllet-imgs{ width: 80px; height: 78px; overflow: hidden;}
+.lp-v101uc-wallet-ul{ padding: 0 0 0 15px; width: 265px; background: url(http://dui.damai.cn/secondhand_ticket/images/wallet_hdline.png) no-repeat right center;}
+.lp-v101uc-wallet-ul li { line-height: 28px;color:#aaaaaa;}
+.lp-v101uc-wallet-ul li h3{ color: #666; font-weight: bold;}
+.lp-v101uc-safe-level{ width: 137px; height: 15px; display: inline-block; vertical-align: middle; background: url(http://dui.damai.cn/secondhand_ticket/images/safe-level.png) no-repeat 0 0;}
+.lp-v101uc-safe-level00 { background-position:0 -110px;}
+.lp-v101uc-safe-level01 { background-position:0 0;}
+.lp-v101uc-safe-level02 { background-position:0 -41px;}
+.lp-v101uc-safe-level03 { background-position:0 -75px;}
+.lp-v101uc-wallet-ul li a{ padding-left: 18px; margin-right: 5px; color:#aaaaaa; float: left; display: inline-block; background: url(http://dui.damai.cn/secondhand_ticket/images/Wallet.png) no-repeat;}
+.lp-v101uc-wallet-ul li a.a1{ background-position: 0 9px;*background-position: 0 8px;}
+.lp-v101uc-wallet-ul li a.a2{ background-position: 0 -31px;}
+.lp-v101uc-wallet-ul li a.a3{ background-position: 0 -71px;*background-position: 0 -72px;}
+.lp-v101uc-wallet-hd-lr{ padding: 0 20px; width: 145px; overflow: hidden;}
+.lp-v101uc-wallet-hd-lr p{ line-height: 35px; text-align: center;}
+.lp-v101uc-wallet-hd-lr p span{ color: #666; font-size: 14px; font-family: \5fae\8f6f\96c5\9ed1 ; font-weight: bold;}
+.lp-v101uc-wallet-hd-lr p strong{ color: #666; font-size: 20px;}
+.lp-v101uc-wallet-hd-lt{ padding: 5px 0 0 30px;*padding: 5px 0 0 5px;}
+.lp-v101uc-wallet-hd-lt p{ line-height: 35px;}
+.lp-v101uc-wallet-hd-lt p a{ color: #0063dd;}
+/*我的钱包—激活电子钱包—账户安全*/
+.lp-v101uc-account-security{ padding: 10px;}
+.lp-v101uc-account-security dl{ padding: 0 0 10px 0; width: 650px;}
+.lp-v101uc-account-security dl dt{ width: 95px;}
+.lp-v101uc-security-btn-box{ padding: 5px 0 20px 110px;}
+.texttip2{ background: url(http://dui.damai.cn/secondhand_ticket/images/beg_red_tips271x28.png) no-repeat  0 0;}
+.texttip2 em{ background: url(http://dui.damai.cn/secondhand_ticket/images/beg_red_tips271x28.png) no-repeat right 0; color: #848484;}
+/*我的钱包—激活电子钱包—账户信息*/
+.lp-v101uc-account-security dl dd strong{ color: #ff6300;}
+.lp-v101uc-account-details dl{ margin: 0; padding-bottom: 20px;}
+.lp-v101uc-contact-bank img{border: 1px solid #EAEAEA;height: 25px;overflow: hidden;width: 107px; overflow: hidden;}
+/*我的钱包—激活电子钱包—账户信息-银行账户设置/绑定银行账户成功*/
+.lp-v101uc-bank-infor{ padding: 10px 20px; font-size: 14px; color: #666; background: #fbfbfb; border-bottom: 1px solid #eaeaea;}
+.lp-v101uc-account-setting { padding: 10px 20px 30px 20px;}
+.lp-v101uc-account-setting dl,.lp-v101uc-account-setting2 dl{ width: 600px; padding: 5px 0;}
+.bind-succeeded{color: #007C25;font-family: 微软雅黑;font-size: 24px; font-weight: bold;background: url("http://dui.damai.cn/secondhand_ticket/img/hook.png") no-repeat scroll 254px center transparent;margin: 0 0 20px; text-align: center;}
+.lp-v101uc-account-setting2{padding: 35px 20px 40px;}
+.lp-v101uc-account-setting2 dl{ padding: 5px 160px;}
+
+
+
+/*买票中心—交易管理-求购管理*
+/
+/*公用*/
+.beg_main .item_detail .tabel_beg dl dd ul,
+.beg_main .item_detail .beg_state dl,
+.beg_pop_repeat .repeat_send dl{ overflow: hidden; zoom: 1;}
+.beg .beg_in dl dd input,
+.beg_pop_repeat .repeat_send dl dd input{ height: 12px; line-height: 12px; padding: 5px; border: 1px solid #eaeaea; vertical-align: middle; border-top-color: #d5d5d5;}
+
+.beg{ height: auto; background-color: #f7f7f7; padding: 10px;}
+.beg .beg_in{ overflow: hidden; zoom:1; padding: 10px ;}
+.beg .beg_in dl{ float: left; margin-right: 20px; color: #555;}
+.beg .beg_in dl dt{ float: left; height: 22px; line-height: 22px;}
+.beg .beg_in dl dd{ float: left;}
+.beg .beg_in dl dd select{ height: 22px;}
+.beg .beg_in dl dd .bg_date{ background: #fff url(http://dui.damai.cn/secondhand_ticket/img/bg_date.png) no-repeat 60px 4px;}
+.beg .beg_in dl dd button{ margin-left: 20px;}
+.beg .beg_in dl dd strong{ margin: 0 5px;}
+.beg_main{ margin-top: 20px;}
+.beg_main .item_detail{ border: 1px solid #eaeaea;}
+.beg_main .item_detail .tabel_beg dl dd{ padding: 0 0 0 79px; color: #555;}
+.beg_main .item_detail .tabel_beg dl dd ul li{ width: 175px; height: 28px; line-height: 28px; float: left;}
+.beg_main .item_detail .tabel_beg dl dd ul li span{ color: #555;}
+.beg_main .item_detail .tabel_beg dl dd ul li h3{ font-size: 12px;}
+.beg_main .item_detail .tabel_beg dl dd ul li.w_con1{ width: 100%; margin-top:-5px;}
+.tabel_beg tr td .beg_sup{ }
+.tabel_beg tr td .beg_sup a{ padding: 0 10px 0 15px;background: url(http://dui.damai.cn/secondhand_ticket/img/bg_beg_a.png) no-repeat 0 0;}
+.tabel_beg tr td .beg_sup a.t_icon1{ background-position: 0 0; color: #aaaaaa;}
+.tabel_beg tr td .beg_sup a.t_icon2{background-position: 0  -15px;}
+.tabel_beg tr td .beg_sup a.t_icon3{background-position: 0  -30px;}
+.beg_main .item_detail .beg_state{border-top:1px solid #eaeaea; padding: 0 20px;}
+.beg_main .item_detail .beg_state dl dt,
+.beg_main .item_detail .beg_state dl dd{ float: left; height: 30px; line-height: 30px;}
+.beg_main .item_detail .beg_state dl dd{ color: #ff6300;}
+.beg_main .item_detail .beg_state dl dd span{ color: #0063dd;}
+
+/*买票中心—交易管理-求购管理（弹出框）*/
+.bg-beg-paymethod-cover{ width: 100%; position:absolute; top:0;z-index: 10000; background: url(http://dui.damai.cn/secondhand_ticket/images/bg-cover.png) repeat 0 0; display:none;}
+.beg_repeat_box{width: 418px; height: 360px;_height: 365px; position: fixed; margin: -180px 0 0 -209px; left: 50%; top: 50%; z-index: 100000; _position: absolute;_top: 250px; _margin-top: 0; display:none;}
+.beg_repeat_bg{ width: 418px; height: 360px;_height: 365px; float: left;background: #b8b8b8; opacity: 0.37;}
+.bet_repeat_in{width: 418px; height: 360px; position: relative;}
+.beg_pop_content{ width: 408px; height: 350px; overflow: hidden; border: 1px solid #b7b6b6; margin: 4px; position: absolute; right: 0; top: 0;*top: -360px;_top: -365px; background: #fff;}
+.beg_pop_content{ height: auto;}
+.beg_pop_repeat h3{ padding: 0 20px; font-size: 16px; font-weight: bold; color: #555; height: 37px; line-height: 37px; background: url(http://dui.damai.cn/secondhand_ticket/img/collect_h.png) repeat-x 0 0;}
+.beg_pop_repeat .repeat_send{ padding: 20px 15px; color: #555;}
+.beg_pop_repeat .repeat_send dl{ padding: 8px 0;}
+.beg_pop_repeat .repeat_send dl dt,
+.beg_pop_repeat .repeat_send dl dd{ float: left; height: 22px; line-height: 22px;}
+.beg_pop_repeat .beg_shut{ width:16px; height: 16px; display: inline-block; background: url(http://dui.damai.cn/secondhand_ticket/img/bg_beg_shut.png) no-repeat 0 0; position: absolute; right: 10px; top: 15px;}
+.beg_pop_repeat .repeat_send dl dd .select_price{ height: 22px; line-height: 22px; border: 1px solid #efefef;}
+.beg_pop_repeat .repeat_send dl dd .to{ margin: 0 5px;}
+.beg_pop_repeat .repeat_send .beg_btn_box{ overflow: hidden;zoom:1;}
+.beg_pop_repeat .repeat_send .beg_btn_box input{ width: 64px; height: 26px; float: right; margin-right: 20px; border: medium none; cursor: pointer; background: url(http://dui.damai.cn/secondhand_ticket/img/bg_beg_btn.png) no-repeat -12px 0;}
+.beg_pop_repeat .repeat_send .beg_btn_box .beg_btn1:hover{ background-position: -12px -26px;}
+.beg_pop_repeat .repeat_send .beg_btn_box .beg_btn2{ background-position: -12px -52px;}
+.beg_pop_repeat .repeat_send .beg_btn_box .beg_btn2:hover{ background-position: -12px -78px;}
+
+
+
+
+
+
+
+
+
