@@ -9,8 +9,8 @@
   <artifactId>art-web</artifactId>
   <packaging>pom</packaging>
   <modules>
-  	<module>art-web-font</module>
   	<module>art-web-admin</module>
   	<module>art-web-merchant</module>
+  	<module>art-web-front</module>
   </modules>
 </project>
